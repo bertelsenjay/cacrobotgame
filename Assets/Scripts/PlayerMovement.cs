@@ -45,23 +45,33 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
-
-        if (isGrounded && Input.GetKeyDown(KeyCode.Space))
+        
+        if (isGrounded == true && Input.GetKeyDown(KeyCode.Space))
         {
+            isJumping = true;
+            Debug.Log("Jump");
+            jumpTimeCounter = jumpTime;
             rb.velocity = Vector2.up * jumpForce;
         }
 
-        if (Input.GetKey(KeyCode.Space) && isJumping)
+        if (Input.GetKey(KeyCode.Space) && isJumping == true)
         {
             if (jumpTimeCounter > 0)
             {
                 rb.velocity = Vector2.up * jumpForce;
                 jumpTimeCounter -= Time.deltaTime;
             }
-            if (Input.GetKeyUp(KeyCode.Space))
+            else
             {
                 isJumping = false; 
             }
+            
+        }
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+
+            isJumping = false;
         }
     }
+
 }
