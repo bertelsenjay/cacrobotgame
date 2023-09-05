@@ -6,7 +6,8 @@ public class PlayerMovement : MonoBehaviour
 {
     public static bool hasDoubleJump = false;
     public static bool hasDash = false;
-
+    public bool testDoubleJump = false; 
+    private int totalJumps = 1; 
 
     public float speed;
     private float moveInput;
@@ -27,6 +28,11 @@ public class PlayerMovement : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>(); 
+        if (testDoubleJump)
+        {
+            hasDoubleJump = true; 
+        }
+        
     }
 
     // Start is called before the first frame update
@@ -46,14 +52,42 @@ public class PlayerMovement : MonoBehaviour
     {
         isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
         
-        if (isGrounded == true && Input.GetKeyDown(KeyCode.Space))
+        if (isGrounded && hasDoubleJump && !isJumping)
+        {
+            totalJumps = 2;
+            Debug.Log("Has double jump");
+        }
+        else if (isGrounded && !hasDoubleJump && !isJumping)
+        {
+            totalJumps = 1;
+            //Debug.Log("Has single jump");
+        }
+        if (moveInput > 0)
+        {
+            transform.eulerAngles = new Vector3(0, 0, 0);
+        }
+        else if (moveInput < 0)
+        {
+            transform.eulerAngles = new Vector3(0, 180, 0);
+        }
+
+        /*if (isGrounded == true && Input.GetKeyDown(KeyCode.Space))
         {
             isJumping = true;
             Debug.Log("Jump");
             jumpTimeCounter = jumpTime;
             rb.velocity = Vector2.up * jumpForce;
+        }*/
+        if (totalJumps > 0 && Input.GetKeyDown(KeyCode.Space))
+        {
+            totalJumps--;
+            isJumping = true;
+            
+            Debug.Log("Jump");
+            jumpTimeCounter = jumpTime;
+            rb.velocity = Vector2.up * jumpForce;
+            
         }
-
         if (Input.GetKey(KeyCode.Space) && isJumping == true)
         {
             if (jumpTimeCounter > 0)
