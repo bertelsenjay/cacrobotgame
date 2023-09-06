@@ -23,6 +23,6 @@ public class PlayerCombat : MonoBehaviour
     {
         //animator.SetTrigger("Attack");
 
-        Physics2D.OverlapCircleAll(); 
+        Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers); 
     }
 }
