@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     public bool testDash = false;  
     private int totalJumps = 1; 
 
+    Animator animator;
+
     public float speed;
     private float moveInput;
     public float jumpForce;
@@ -34,6 +36,7 @@ public class PlayerMovement : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>(); 
+        animator = GetComponent<Animator>();
         if (testDoubleJump)
         {
             hasDoubleJump = true; 
@@ -70,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
             return; 
         }
         isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
-        
+        animator.SetBool("isGrounded", isGrounded);
         if (isGrounded && hasDoubleJump && !isJumping)
         {
             totalJumps = 2;
@@ -128,6 +131,14 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
         {
             StartCoroutine(Dash());
+        }
+        if (rb.velocity.x > 0 || rb.velocity.x < 0)
+        {
+            animator.SetBool("isRunning", true);
+        }
+        else
+        {
+            animator.SetBool("isRunning", false);
         }
     }
     private IEnumerator Dash()
