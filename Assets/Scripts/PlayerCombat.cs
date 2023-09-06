@@ -7,6 +7,8 @@ public class PlayerCombat : MonoBehaviour
 
     public Animator animator;
 
+    public int attackDamage = 5;
+    public int upgradedAtttackDamage = 8; 
     public Transform attackPoint;
     public float attackRange = 0.5f;
     public LayerMask enemyLayers; 
@@ -23,6 +25,28 @@ public class PlayerCombat : MonoBehaviour
     {
         //animator.SetTrigger("Attack");
 
-        Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers); 
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers); 
+
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            if (Enemy.hasUpgrade == false)
+            {
+                enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+            }
+            else if (Enemy.hasUpgrade == true)
+            {
+                enemy.GetComponent<Enemy>().TakeDamage(upgradedAtttackDamage);
+            }
+             
+        }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (attackPoint == null)
+        {
+            return;
+        }
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 }
