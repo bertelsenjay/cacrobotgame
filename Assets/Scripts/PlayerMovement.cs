@@ -31,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
         if (testDoubleJump)
         {
             hasDoubleJump = true; 
+            
         }
         
     }
