@@ -11,14 +11,21 @@ public class PlayerCombat : MonoBehaviour
     public int upgradedAtttackDamage = 8; 
     public Transform attackPoint;
     public float attackRange = 0.5f;
-    public LayerMask enemyLayers; 
+    public LayerMask enemyLayers;
+    public float attackRate;
+    float nextAttackTime = 0f;
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Time.time >= nextAttackTime)
         {
-            Attack();
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                Attack();
+                nextAttackTime = Time.time + 1f / attackRate;
+            }
         }
+        
     }
 
     void Attack()
