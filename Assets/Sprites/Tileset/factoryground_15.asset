@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: factorygroundplain
+  m_Name: factoryground_15
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: 81dc8e44c0331c24fbbc96b475c71c2f, type: 3}
+  m_Sprite: {fileID: -72876808, guid: 68b16da379842f6418953d7da573832d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

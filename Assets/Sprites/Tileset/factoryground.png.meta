@@ -391,6 +391,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: factoryground_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e787b6d1aff5454eb5999ad3432ae0a
+      internalID: 409884844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: factoryground_15
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ebc00791ce95a4aac87024d5366455
+      internalID: -72876808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -408,6 +450,8 @@ TextureImporter:
       factoryground_11: -305828730
       factoryground_12: 1314039295
       factoryground_13: -1108251308
+      factoryground_14: 409884844
+      factoryground_15: -72876808
       factoryground_2: 791275339
       factoryground_3: -1696369220
       factoryground_4: 937284162
