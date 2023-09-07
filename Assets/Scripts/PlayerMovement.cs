@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI; 
 
 public class PlayerMovement : MonoBehaviour
 {
+    public static bool isPanelEnabled = false; 
     public static bool hasDoubleJump = false;
     public static bool hasDash = false;
     public bool testDoubleJump = false; 
@@ -11,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     private int totalJumps = 1; 
 
     Animator animator;
-
+    public GameObject textPanel; 
     public float speed;
     private float moveInput;
     public float jumpForce;
@@ -58,6 +60,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (isPanelEnabled) { return;  }
         if (isDashing)
         {
             return; 
@@ -68,6 +71,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (isPanelEnabled) { return; } 
         if (isDashing)
         {
             return; 
