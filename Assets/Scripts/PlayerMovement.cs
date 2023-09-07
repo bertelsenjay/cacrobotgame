@@ -106,7 +106,12 @@ public class PlayerMovement : MonoBehaviour
         }*/
         if (totalJumps > 0 && Input.GetKeyDown(KeyCode.Space))
         {
-            totalJumps--;
+            
+            if (hasDoubleJump && totalJumps == 1)
+            {
+                animator.SetTrigger("doubleJump");
+            }
+            totalJumps--; 
             isJumping = true;
             
             Debug.Log("Jump");
