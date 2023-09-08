@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public static bool isPanelEnabled = false; 
     public static bool hasDoubleJump = false;
     public static bool hasDash = false;
+    [Header("MovementUpgradeTests")]
     public bool testDoubleJump = false; 
     public bool testDash = false;  
     private int totalJumps = 1;
@@ -15,8 +16,9 @@ public class PlayerMovement : MonoBehaviour
     PlayerHealth playerHealth; 
     Animator animator;
     public GameObject textPanel; 
-    public float speed;
     private float moveInput;
+    [Header("Movement")]
+    public float speed;
     public float jumpForce;
 
 
@@ -25,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isJumping; 
 
     private bool isGrounded = false;
+    [Header("GroundChecks")]
     public Transform feetPos;
     public float checkRadius;
     public LayerMask whatIsGround; 
@@ -32,12 +35,14 @@ public class PlayerMovement : MonoBehaviour
 
     private bool canDash = true;
     private bool isDashing;
+    [Header("Dashing")]
     [SerializeField] private float dashingPower;
     [SerializeField] private float dashingTime;
     [SerializeField] private float dashingCooldown;
 
 
     private SpriteRenderer spriteRenderer;
+    [Header("IFrames")]
     [SerializeField] private float iFrameDuration;
     [SerializeField] private int noOfFlashes;
     void Awake()
@@ -61,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Physics2D.IgnoreLayerCollision(8, 7, false);
     }
 
     // Update is called once per frame
@@ -161,6 +166,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (hasDash)
         {
+            animator.SetTrigger("Dash");
             canDash = false;
             isDashing = true;
             float originalGravity = rb.gravityScale;
@@ -196,9 +202,9 @@ public class PlayerMovement : MonoBehaviour
         for (int i = 0; i < noOfFlashes; i++)
         {
             spriteRenderer.color = new Color(1, 0, 0, 0.5f);
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(iFrameDuration / noOfFlashes * 2);
             spriteRenderer.color = Color.white;
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(iFrameDuration / noOfFlashes * 2);
         }
         Physics2D.IgnoreLayerCollision(8, 7, false);
     }

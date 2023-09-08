@@ -2305,8 +2305,8 @@ MonoBehaviour:
   dashingPower: 4
   dashingTime: 0.2
   dashingCooldown: 1
-  iFrameDuration: 10
-  noOfFlashes: 2
+  iFrameDuration: 0.75
+  noOfFlashes: 1
 --- !u!50 &1598957771
 Rigidbody2D:
   serializedVersion: 4
