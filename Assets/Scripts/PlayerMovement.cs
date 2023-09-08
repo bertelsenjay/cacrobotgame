@@ -10,8 +10,9 @@ public class PlayerMovement : MonoBehaviour
     public static bool hasDash = false;
     public bool testDoubleJump = false; 
     public bool testDash = false;  
-    private int totalJumps = 1; 
+    private int totalJumps = 1;
 
+    PlayerHealth playerHealth; 
     Animator animator;
     public GameObject textPanel; 
     public float speed;
@@ -33,10 +34,16 @@ public class PlayerMovement : MonoBehaviour
     private bool isDashing;
     [SerializeField] private float dashingPower;
     [SerializeField] private float dashingTime;
-    [SerializeField] private float dashingCooldown; 
-    
+    [SerializeField] private float dashingCooldown;
+
+
+    private SpriteRenderer spriteRenderer;
+    [SerializeField] private float iFrameDuration;
+    [SerializeField] private int noOfFlashes;
     void Awake()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        playerHealth = FindObjectOfType<PlayerHealth>();
         rb = GetComponent<Rigidbody2D>(); 
         animator = GetComponent<Animator>();
         if (testDoubleJump)
@@ -174,5 +181,25 @@ public class PlayerMovement : MonoBehaviour
             canDash = true; 
         }
         
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            StartCoroutine(Invulnerability());
+            playerHealth.health--;
+        }
+    }
+    private IEnumerator Invulnerability()
+    {
+        Physics2D.IgnoreLayerCollision(8, 7, true);
+        for (int i = 0; i < noOfFlashes; i++)
+        {
+            spriteRenderer.color = new Color(1, 0, 0, 0.5f);
+            yield return new WaitForSeconds(0.2f);
+            spriteRenderer.color = Color.white;
+            yield return new WaitForSeconds(0.2f);
+        }
+        Physics2D.IgnoreLayerCollision(8, 7, false);
     }
 }

@@ -6,11 +6,18 @@ public class PlayerHealth : MonoBehaviour
 {
     public int health = 5;
     public int noOfHearts;
-
+    //public GameObject player; 
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
 
+    
+    
+
+    private void Awake()
+    {
+        
+    }
     private void Update()
     {
         if (health > noOfHearts)
@@ -37,5 +44,19 @@ public class PlayerHealth : MonoBehaviour
                 hearts[i].enabled = false;
             }
         }
+        if (health <= 0)
+        {
+            LevelLoader.isDead = true;
+        }
     }
+
+    
+
+    public void LoseHealth(int damage)
+    {
+        
+        health -= damage;
+    }
+
+    
 }
