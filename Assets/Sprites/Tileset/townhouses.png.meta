@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: f3b4120f1c1e5ea43a1c428f04c34da0
+guid: 132096be072cd9646a47414946127f97
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7848298553907342832
-    second: TownGround_0
+      213: -2171571371151591949
+    second: townhouses_0
+  - first:
+      213: -7095030622369803750
+    second: townhouses_1
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +101,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TownGround_0
+      name: townhouses_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 8
         y: 0
-        width: 192
-        height: 192
+        width: 177
+        height: 576
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +115,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 012142b1c0e351390800000000000000
-      internalID: -7848298553907342832
+      spriteID: 3f5f91ae7570dd1e0800000000000000
+      internalID: -2171571371151591949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: townhouses_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 191
+        width: 177
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1211237d33698d90800000000000000
+      internalID: -7095030622369803750
       vertices: []
       indices: 
       edges: []
@@ -128,8 +152,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      TownGround_0: -7848298553907342832
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
