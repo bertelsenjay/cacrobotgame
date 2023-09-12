@@ -200,7 +200,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      playerwallslide_0: -4372328061241685276
+      playerwallslide_1: -6000118408587023242
+      playerwallslide_2: -3959154953406671837
+      playerwallslide_3: -3135921718963941761
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
