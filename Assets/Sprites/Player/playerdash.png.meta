@@ -113,27 +113,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: playerdash_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9ae2baa1daa82eff0800000000000000
-      internalID: -8291773219918167
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: playerdash_1
       rect:
         serializedVersion: 2
@@ -150,27 +129,6 @@ TextureImporter:
       bones: []
       spriteID: a6f1183c07d8af1f0800000000000000
       internalID: -1010339650935382166
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: playerdash_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 24072ea90a5d56370800000000000000
-      internalID: 8315287172779503682
       vertices: []
       indices: 
       edges: []
@@ -281,11 +239,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: playerdash_8
+      name: playerdash_2
       rect:
         serializedVersion: 2
         x: 128
-        y: 0
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -295,8 +253,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4433514d59b884f4f8330c655d09d1d3
-      internalID: 268869423
+      spriteID: d100c298b66526c4cb8865435b49cd77
+      internalID: 8315287172779503682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerdash_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9520ebe43242843a95ba5548c70e43
+      internalID: -8291773219918167
       vertices: []
       indices: 
       edges: []
@@ -320,7 +299,6 @@ TextureImporter:
       playerdash_5: 634371150640423400
       playerdash_6: -1363492075
       playerdash_7: -557366250
-      playerdash_8: 268869423
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
