@@ -58,7 +58,9 @@ public class PlayerMovement : MonoBehaviour
     bool wallJumping;
     public float xWallForce; 
     public float yWallForce;
-    public float wallJumpTime; 
+    public float wallJumpTime;
+
+    int moveDirection = 0;
     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -96,7 +98,11 @@ public class PlayerMovement : MonoBehaviour
             return; 
         }
         moveInput = Input.GetAxisRaw("Horizontal");
-        rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+        if (!wallJumping)
+        {
+            rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+        }
+        
     }
 
     void Update()
@@ -151,14 +157,36 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlidingSpeed, float.MaxValue));
         }
 
-        if(Input.GetKeyDown(KeyCode.Space) && wallSliding)
+        if(Input.GetKeyDown(KeyCode.Space) && isTouchingFront)
         {
             wallJumping = true;
             Invoke("SetWallJumpingToFalse", wallJumpTime);
         }
         if(wallJumping)
         {
-            rb.velocity = new Vector2(xWallForce * -moveInput, yWallForce);
+            
+            if (moveInput == -1)
+            {
+                moveDirection = -1;
+            }
+            else if (moveInput == 1)
+            {
+                moveDirection = 1; 
+            }
+            else if (moveInput == 0)
+            {
+                if (transform.eulerAngles == new Vector3(0, 0, 0))
+                {
+                    moveDirection = 1;
+                }
+                else if (transform.eulerAngles == new Vector3(0, 180, 0))
+                {
+                    moveDirection = -1;
+                }
+            }
+            rb.velocity = new Vector2(xWallForce * -moveDirection, yWallForce);
+            Debug.Log(moveInput);
+            
         }
 
         if (totalJumps > 0 && Input.GetKeyDown(KeyCode.Space))
