@@ -199,7 +199,7 @@ public class PlayerMovement : MonoBehaviour
         if (totalJumps > 0 && Input.GetKeyDown(KeyCode.Space))
         {
             
-            if (hasDoubleJump && totalJumps == 1 && !wallSliding)
+            if (hasDoubleJump && totalJumps == 1 )
             {
                 animator.SetTrigger("doubleJump");
             }
