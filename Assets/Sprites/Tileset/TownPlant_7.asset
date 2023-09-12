@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: TownPlant_7
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -683812698, guid: 74bb30338161a4341b976f16edef78e6, type: 3}
+  m_Sprite: {fileID: -683812698, guid: 7bd8624ad7f807e41a33a8cc46c5f28b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
