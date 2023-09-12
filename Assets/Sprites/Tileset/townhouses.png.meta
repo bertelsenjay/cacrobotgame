@@ -152,7 +152,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      townhouses_0: -2171571371151591949
+      townhouses_1: -7095030622369803750
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
