@@ -8,9 +8,11 @@ public class PlayerMovement : MonoBehaviour
     public static bool isPanelEnabled = false; 
     public static bool hasDoubleJump = false;
     public static bool hasDash = false;
+    public static bool hasWallJump = false; 
     [Header("MovementUpgradeTests")]
     public bool testDoubleJump = false; 
     public bool testDash = false;  
+    public bool testWallJump = false;
     private int totalJumps = 1;
 
     PlayerHealth playerHealth; 
@@ -30,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("GroundChecks")]
     public Transform feetPos;
     public float checkRadius;
+    public float wallJumpCheckRadius; 
     public LayerMask whatIsGround; 
     Rigidbody2D rb;
 
@@ -45,6 +48,17 @@ public class PlayerMovement : MonoBehaviour
     [Header("IFrames")]
     [SerializeField] private float iFrameDuration;
     [SerializeField] private int noOfFlashes;
+
+    [Header("WallJump")]
+    bool isTouchingFront;
+    public Transform frontCheck;
+    bool wallSliding;
+    public float wallSlidingSpeed = 2f;
+
+    bool wallJumping;
+    public float xWallForce; 
+    public float yWallForce;
+    public float wallJumpTime; 
     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -59,6 +73,10 @@ public class PlayerMovement : MonoBehaviour
         if (testDash)
         {
             hasDash = true;
+        }
+        if (testWallJump)
+        {
+            hasWallJump = true;
         }
         
     }
@@ -116,6 +134,33 @@ public class PlayerMovement : MonoBehaviour
             jumpTimeCounter = jumpTime;
             rb.velocity = Vector2.up * jumpForce;
         }*/
+        isTouchingFront = Physics2D.OverlapCircle(frontCheck.position, wallJumpCheckRadius, whatIsGround);
+
+        if (isTouchingFront && !isGrounded && moveInput != 0 && hasWallJump)
+        {
+            wallSliding = true;
+
+        }
+        else
+        {
+            wallSliding = false;
+        }
+
+        if (wallSliding)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlidingSpeed, float.MaxValue));
+        }
+
+        if(Input.GetKeyDown(KeyCode.Space) && wallSliding)
+        {
+            wallJumping = true;
+            Invoke("SetWallJumpingToFalse", wallJumpTime);
+        }
+        if(wallJumping)
+        {
+            rb.velocity = new Vector2(xWallForce * -moveInput, yWallForce);
+        }
+
         if (totalJumps > 0 && Input.GetKeyDown(KeyCode.Space))
         {
             
@@ -161,6 +206,11 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("isRunning", false);
         }
+    }
+
+    void SetWallJumpingToFalse()
+    {
+        wallJumping = false;
     }
     private IEnumerator Dash()
     {
