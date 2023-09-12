@@ -64,8 +64,8 @@ public class EnemyAI : MonoBehaviour
         {
             return; 
         }
-
-        isGrounded = Physics2D.Raycast(transform.position, -Vector3.up, GetComponent<Collider2D>().bounds.extents.y + jumpCheckOffset);
+        Vector3 startOffset = transform.position - new Vector3(0f, GetComponent<Collider2D>().bounds.extents.y + jumpCheckOffset);
+        isGrounded = Physics2D.Raycast(startOffset, Vector3.up, 0.05f);
 
         Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
         Vector2 force = direction * speed * Time.deltaTime;
