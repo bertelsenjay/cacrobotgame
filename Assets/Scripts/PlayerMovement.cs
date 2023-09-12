@@ -145,18 +145,23 @@ public class PlayerMovement : MonoBehaviour
         if (isTouchingFront && !isGrounded && moveInput != 0 && hasWallJump)
         {
             wallSliding = true;
-
+            spriteRenderer.flipX = true;
         }
         else
         {
             wallSliding = false;
+            spriteRenderer.flipX = false;
         }
 
         if (wallSliding)
         {
+            animator.SetBool("isSliding", true); 
             rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlidingSpeed, float.MaxValue));
         }
-
+        if (!wallSliding)
+        {
+            animator.SetBool("isSliding", false);
+        }
         if(Input.GetKeyDown(KeyCode.Space) && isTouchingFront)
         {
             wallJumping = true;
@@ -184,7 +189,9 @@ public class PlayerMovement : MonoBehaviour
                     moveDirection = -1;
                 }
             }
+             
             rb.velocity = new Vector2(xWallForce * -moveDirection, yWallForce);
+            animator.SetTrigger("wallJump");
             Debug.Log(moveInput);
             
         }
@@ -192,16 +199,20 @@ public class PlayerMovement : MonoBehaviour
         if (totalJumps > 0 && Input.GetKeyDown(KeyCode.Space))
         {
             
-            if (hasDoubleJump && totalJumps == 1)
+            if (hasDoubleJump && totalJumps == 1 && !wallSliding)
             {
                 animator.SetTrigger("doubleJump");
             }
-            totalJumps--; 
-            isJumping = true;
+            if (!wallSliding)
+            {
+                totalJumps--;
+                isJumping = true;
+
+                //Debug.Log("Jump");
+                jumpTimeCounter = jumpTime;
+                rb.velocity = Vector2.up * jumpForce;
+            }
             
-            Debug.Log("Jump");
-            jumpTimeCounter = jumpTime;
-            rb.velocity = Vector2.up * jumpForce;
             
         }
         if (Input.GetKey(KeyCode.Space) && isJumping == true)

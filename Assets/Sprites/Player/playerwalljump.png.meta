@@ -1,28 +1,19 @@
 fileFormatVersion: 2
-guid: 7bd8624ad7f807e41a33a8cc46c5f28b
+guid: 47aead984fb3f2d40ae1a1124c31186e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7483273519099703946
-    second: TownPlant_0
+      213: -826442933950339807
+    second: playerwalljump_0
   - first:
-      213: -1309237353551169041
-    second: TownPlant_1
+      213: 8950987473440017611
+    second: playerwalljump_1
   - first:
-      213: -1070264383366223197
-    second: TownPlant_2
+      213: -6049217588843450424
+    second: playerwalljump_2
   - first:
-      213: -1886575216258108888
-    second: TownPlant_3
-  - first:
-      213: -1816205668407600369
-    second: TownPlant_4
-  - first:
-      213: -4888886361576213727
-    second: TownPlant_5
-  - first:
-      213: 357047154206357989
-    second: TownPlant_6
+      213: 7580546418175350649
+    second: playerwalljump_3
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -116,139 +107,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TownPlant_0
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 255
-        width: 122
-        height: 129
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a8276071e9de9d760800000000000000
-      internalID: 7483273519099703946
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TownPlant_1
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 255
-        width: 107
-        height: 121
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fe9f8e64097a4dde0800000000000000
-      internalID: -1309237353551169041
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TownPlant_2
-      rect:
-        serializedVersion: 2
-        x: 255
-        y: 255
-        width: 117
-        height: 117
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3aa24bdb638a521f0800000000000000
-      internalID: -1070264383366223197
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TownPlant_3
-      rect:
-        serializedVersion: 2
-        x: 25
-        y: 127
-        width: 68
-        height: 125
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 82231e816d981d5e0800000000000000
-      internalID: -1886575216258108888
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TownPlant_4
-      rect:
-        serializedVersion: 2
-        x: 158
-        y: 127
-        width: 61
-        height: 99
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f0b9387319a8bc6e0800000000000000
-      internalID: -1816205668407600369
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TownPlant_5
-      rect:
-        serializedVersion: 2
-        x: 255
-        y: 127
-        width: 129
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1237ffea1cf272cb0800000000000000
-      internalID: -4888886361576213727
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TownPlant_6
+      name: playerwalljump_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 129
-        height: 67
+        y: 66
+        width: 38
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,8 +121,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5e9b88abe7c74f400800000000000000
-      internalID: 357047154206357989
+      spriteID: 12522ceb782e784f0800000000000000
+      internalID: -826442933950339807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerwalljump_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 71
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcc0d57ceab483c70800000000000000
+      internalID: 8950987473440017611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerwalljump_2
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 7
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cfe0ff27acdc0ca0800000000000000
+      internalID: -6049217588843450424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerwalljump_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 7
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97793bacdc2833960800000000000000
+      internalID: 7580546418175350649
       vertices: []
       indices: 
       edges: []
@@ -272,14 +200,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      TownPlant_0: 7483273519099703946
-      TownPlant_1: -1309237353551169041
-      TownPlant_2: -1070264383366223197
-      TownPlant_3: -1886575216258108888
-      TownPlant_4: -1816205668407600369
-      TownPlant_5: -4888886361576213727
-      TownPlant_6: 357047154206357989
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
