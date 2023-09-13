@@ -10,7 +10,12 @@ public class NPCScript : MonoBehaviour
 
     public GameObject dialoguePanel;
     public TextMeshProUGUI dialogueText;
+    public int chipRequiredIndex;
+    public int chipNeeded; 
+    bool hasCorrectChip;
     public string[] dialogue;
+    public string[] dialogueWithChip; 
+    
     private int index;
     public GameObject continueButton; 
     public float wordSpeed;
@@ -18,6 +23,23 @@ public class NPCScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (chipNeeded == 1 && PlayerMovement.hasChip1)
+        {
+            hasCorrectChip = true;
+        }
+        else if (chipNeeded == 2  && PlayerMovement.hasChip2)
+        {
+            hasCorrectChip = true;
+        }
+        else if (chipNeeded == 3 && PlayerMovement.hasChip3)
+        {
+            hasCorrectChip = true;
+        }
+        else if (chipNeeded == 4 && PlayerMovement.hasChip4)
+        {
+
+        }
+
         if (Input.GetKeyDown(KeyCode.E) && playerIsClose)
         {
             if (dialoguePanel.activeInHierarchy)
@@ -32,7 +54,11 @@ public class NPCScript : MonoBehaviour
             }
         }
 
-        if (dialogueText.text == dialogue[index])
+        if (dialogueText.text == dialogue[index] && !hasCorrectChip )
+        {
+            continueButton.SetActive(true);
+        }
+        if (dialogueText.text == dialogueWithChip[index] && hasCorrectChip)
         {
             continueButton.SetActive(true);
         }
@@ -64,16 +90,34 @@ public class NPCScript : MonoBehaviour
 
     IEnumerator Typing()
     {
-        foreach (char letter in dialogue[index].ToCharArray())
+        if (!hasCorrectChip)
         {
-            dialogueText.text += letter;
-            yield return new WaitForSeconds(wordSpeed);
+            foreach (char letter in dialogue[index].ToCharArray())
+            {
+                dialogueText.text += letter;
+                yield return new WaitForSeconds(wordSpeed);
+            }
         }
+        else if (hasCorrectChip)
+        {
+            foreach (char letter in dialogueWithChip[index].ToCharArray())
+            {
+                dialogueText.text += letter;
+                yield return new WaitForSeconds(wordSpeed);
+            }
+        }
+        
     }
     public void NextLine()
     {
         continueButton.SetActive(false);
-        if (index < dialogue.Length - 1)
+        if (index < dialogue.Length - 1 && !hasCorrectChip)
+        {
+            index++;
+            dialogueText.text = "";
+            StartCoroutine(Typing());
+        }
+        else if (index < dialogueWithChip.Length -1 && hasCorrectChip)
         {
             index++;
             dialogueText.text = "";

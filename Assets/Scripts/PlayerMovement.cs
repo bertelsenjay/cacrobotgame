@@ -8,11 +8,19 @@ public class PlayerMovement : MonoBehaviour
     public static bool isPanelEnabled = false; 
     public static bool hasDoubleJump = false;
     public static bool hasDash = false;
-    public static bool hasWallJump = false; 
+    public static bool hasWallJump = false;
+    public static bool hasChip1 = false;
+    public static bool hasChip2 = false;
+    public static bool hasChip3 = false;
+    public static bool hasChip4 = false;
     [Header("MovementUpgradeTests")]
     public bool testDoubleJump = false; 
     public bool testDash = false;  
     public bool testWallJump = false;
+    public bool testChip1 = false;
+    public bool testChip2 = false;
+    public bool testChip3 = false;
+    public bool testChip4 = false;
     private int totalJumps = 1;
 
     PlayerHealth playerHealth; 
@@ -82,7 +90,22 @@ public class PlayerMovement : MonoBehaviour
         {
             hasWallJump = true;
         }
-        
+        if (testChip1)
+        {
+            hasChip1 = true;
+        }
+        if (testChip2)
+        {
+            hasChip2 = true;
+        }
+        if (testChip3)
+        {
+            hasChip3 = true;
+        }
+        if (testChip4)
+        {
+            hasChip4 = true;
+        }
     }
 
     // Start is called before the first frame update
