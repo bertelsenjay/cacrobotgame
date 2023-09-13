@@ -2652,6 +2652,8 @@ MonoBehaviour:
   dialogueWithChip:
   - Nice chip you got there
   - Nice chip you got there
+  dialogueAfterChip:
+  - I've Already Talked to You!
   continueButton: {fileID: 598795137}
   wordSpeed: 0.05
   playerIsClose: 0

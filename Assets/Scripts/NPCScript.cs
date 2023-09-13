@@ -13,8 +13,10 @@ public class NPCScript : MonoBehaviour
     public int chipRequiredIndex;
     public int chipNeeded; 
     bool hasCorrectChip;
+    bool hasSpokenWithChip = false;
     public string[] dialogue;
-    public string[] dialogueWithChip; 
+    public string[] dialogueWithChip;
+    public string[] dialogueAfterChip; 
     
     private int index;
     public GameObject continueButton; 
@@ -45,6 +47,7 @@ public class NPCScript : MonoBehaviour
             if (dialoguePanel.activeInHierarchy)
             {
                 ZeroText();
+                
             }
             else
             {
@@ -58,9 +61,17 @@ public class NPCScript : MonoBehaviour
         {
             continueButton.SetActive(true);
         }
-        if (dialogueText.text == dialogueWithChip[index] && hasCorrectChip)
+        else if (dialogueText.text == dialogueWithChip[index] && hasCorrectChip)
         {
             continueButton.SetActive(true);
+        }
+        else if (dialogueText.text == dialogueAfterChip[index] && hasCorrectChip)
+        {
+            continueButton.SetActive(true);
+        }
+        else
+        {
+            continueButton.SetActive(false);
         }
     }
 
@@ -98,12 +109,24 @@ public class NPCScript : MonoBehaviour
                 yield return new WaitForSeconds(wordSpeed);
             }
         }
+        else if (hasCorrectChip && hasSpokenWithChip)
+        {
+            foreach (char letter in dialogueAfterChip[index].ToCharArray())
+            {
+                dialogueText.text += letter;
+                yield return new WaitForSeconds(wordSpeed);
+            }
+        }
         else if (hasCorrectChip)
         {
             foreach (char letter in dialogueWithChip[index].ToCharArray())
             {
                 dialogueText.text += letter;
                 yield return new WaitForSeconds(wordSpeed);
+            }
+            if (index >= dialogueWithChip.Length - 1)
+            {
+                hasSpokenWithChip = true;
             }
         }
         
@@ -117,7 +140,13 @@ public class NPCScript : MonoBehaviour
             dialogueText.text = "";
             StartCoroutine(Typing());
         }
-        else if (index < dialogueWithChip.Length -1 && hasCorrectChip)
+        else if (index < dialogueAfterChip.Length - 1 && hasCorrectChip && hasSpokenWithChip)
+        {
+            index++;
+            dialogueText.text = "";
+            StartCoroutine(Typing());
+        }
+        else if (index < dialogueWithChip.Length -1 && hasCorrectChip && !hasSpokenWithChip)
         {
             index++;
             dialogueText.text = "";
@@ -125,6 +154,7 @@ public class NPCScript : MonoBehaviour
         }
         else
         {
+            Debug.Log("Text zeroed");
             ZeroText();
         }
     }
