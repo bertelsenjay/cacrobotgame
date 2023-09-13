@@ -10,6 +10,7 @@ public class PlayerHealth : MonoBehaviour
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
+    public int heartPieces = 0; 
 
     
     
@@ -20,6 +21,12 @@ public class PlayerHealth : MonoBehaviour
     }
     private void Update()
     {
+        if (heartPieces >= 4)
+        {
+            heartPieces -= 4;
+            noOfHearts++;
+            health = noOfHearts;
+        }
         if (health > noOfHearts)
         {
             health = noOfHearts;

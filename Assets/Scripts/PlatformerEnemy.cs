@@ -20,11 +20,20 @@ public class PlatformerEnemy : MonoBehaviour
         Vector2 playerDirection = player.transform.position - transform.position;
 
         float playerDist = playerDirection.magnitude;
+        float xDirection = player.transform.position.x - transform.position.x;
+        if (xDirection < 0)
+        {
+            xDirection = -1;
+        }
+        else if (xDirection > 0)
+        {
+            xDirection = 1;
+        }
         playerDirection.Normalize();
-
+        
         if (playerDist <= close)
         {
-            rb.velocity = new Vector2(playerDirection.x * speed, rb.velocity.y);
+            rb.velocity = new Vector2(xDirection * speed, rb.velocity.y);
         }
     }
 }

@@ -43,6 +43,8 @@ public class EnemyAI : MonoBehaviour
         {
             PathFollow(); 
         }
+
+
     }
 
     private void UpdatePath()

@@ -61,6 +61,8 @@ public class PlayerMovement : MonoBehaviour
     public float wallJumpTime;
 
     int moveDirection = 0;
+
+    public float wallJumpAnimDelay = 0.5f;
     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -191,9 +193,9 @@ public class PlayerMovement : MonoBehaviour
             }
              
             rb.velocity = new Vector2(xWallForce * -moveDirection, yWallForce);
-            animator.SetTrigger("wallJump");
+            animator.SetBool("wallJump", true);
             Debug.Log(moveInput);
-            
+            Invoke("ResetToIdle", wallJumpAnimDelay);
         }
 
         if (totalJumps > 0 && Input.GetKeyDown(KeyCode.Space))
@@ -284,6 +286,12 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine(Invulnerability());
             playerHealth.health--;
         }
+
+        if (collision.gameObject.tag == "HeartPiece")
+        {
+            playerHealth.heartPieces++;
+            Destroy(collision.gameObject);
+        }
     }
     private IEnumerator Invulnerability()
     {
@@ -296,5 +304,10 @@ public class PlayerMovement : MonoBehaviour
             yield return new WaitForSeconds(iFrameDuration / noOfFlashes * 2);
         }
         Physics2D.IgnoreLayerCollision(8, 7, false);
+    }
+
+    private void ResetToIdle()
+    {
+        animator.SetBool("wallJump", false);
     }
 }
