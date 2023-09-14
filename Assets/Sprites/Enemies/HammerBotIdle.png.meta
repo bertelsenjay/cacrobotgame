@@ -296,7 +296,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HammerBotIdle_0: 7705059868779237199
+      HammerBotIdle_1: 777940599517923773
+      HammerBotIdle_2: -1416262342372326293
+      HammerBotIdle_3: 7783741927590383431
+      HammerBotIdle_4: 5373410410225228454
+      HammerBotIdle_5: 6766790863979931198
+      HammerBotIdle_6: 2967085747876602376
+      HammerBotIdle_7: 6803625847723151646
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
