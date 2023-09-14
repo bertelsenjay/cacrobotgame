@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Slash : MonoBehaviour
 {
-
+    // coment
     Animator animator; 
     SpriteRenderer spriteRenderer;
     public float initialTimer = 0.2f;
