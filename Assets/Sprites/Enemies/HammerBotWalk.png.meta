@@ -488,7 +488,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HammerBotWalk_0: -6095698097921558469
+      HammerBotWalk_1: 3699739964003270189
+      HammerBotWalk_10: 4637487263635252729
+      HammerBotWalk_11: 8260725121637387124
+      HammerBotWalk_12: 8302740097223184619
+      HammerBotWalk_13: -2376123932886155115
+      HammerBotWalk_14: 3850584946024768173
+      HammerBotWalk_15: -1492186981981531441
+      HammerBotWalk_2: -1233046831020410749
+      HammerBotWalk_3: 4885027395668104299
+      HammerBotWalk_4: 6012709748722693479
+      HammerBotWalk_5: -2079088196738092639
+      HammerBotWalk_6: -3937694999260963304
+      HammerBotWalk_7: -7147915621906603348
+      HammerBotWalk_8: 2658841405425519890
+      HammerBotWalk_9: -2723780083447522451
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
