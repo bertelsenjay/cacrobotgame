@@ -118,6 +118,7 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         if (isPanelEnabled) { return;  }
+        if (PauseMenu.isPaused) { return; }
         if (isDashing)
         {
             return; 
@@ -132,7 +133,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if (isPanelEnabled) { return; } 
+        if (isPanelEnabled) { return; }
+        if (PauseMenu.isPaused) { return; }
         if (isDashing)
         {
             return; 
