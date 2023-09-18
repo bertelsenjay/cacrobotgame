@@ -12,6 +12,8 @@ public class Map : MonoBehaviour
     [SerializeField] private bool fadeOut = false;
     [SerializeField] private float fadeInSpeed;
     [SerializeField] private float fadeOutSpeed;
+    [SerializeField] private float resetDelay; 
+    public bool isMap; 
     // Start is called before the first frame update
     void Start()
     {
@@ -48,16 +50,23 @@ public class Map : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.M))
+        if (Input.GetKeyDown(KeyCode.M) && isMap)
         {
             
 
             ShowUI();
         }
-        if (Input.GetKeyUp(KeyCode.M))
+        if (Input.GetKeyUp(KeyCode.M) && isMap)
         {
             
             HideUI();
+        }
+
+        if (PlayerMovement.gotHitByTrap && !isMap)
+        {
+            PlayerMovement.gotHitByTrap = false;
+            ShowUI();
+            Invoke("HideUI", resetDelay);
         }
     }
 

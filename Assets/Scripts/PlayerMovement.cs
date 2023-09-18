@@ -70,6 +70,12 @@ public class PlayerMovement : MonoBehaviour
 
     int moveDirection = 0;
 
+    [Header("RespawnLocations")]
+    public Transform[] locations;
+    public int index = 0;
+
+    public static bool gotHitByTrap = false; 
+
     public float wallJumpAnimDelay = 0.5f;
     void Awake()
     {
@@ -310,6 +316,13 @@ public class PlayerMovement : MonoBehaviour
         {
             StartCoroutine(Invulnerability());
             playerHealth.health--;
+        }
+        if (collision.gameObject.tag == "Trap")
+        {
+            StartCoroutine(Invulnerability());
+            playerHealth.health--;
+            transform.position = locations[index].position;
+            gotHitByTrap = true; 
         }
 
         if (collision.gameObject.tag == "HeartPiece")

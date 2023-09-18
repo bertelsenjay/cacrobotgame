@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - HeartPiece
   - Wall
+  - Trap
   layers:
   - Default
   - TransparentFX
