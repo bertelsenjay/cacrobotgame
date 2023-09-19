@@ -1294,9 +1294,9 @@ MonoBehaviour:
   myUIGRoup: {fileID: 504562046}
   fadeIn: 0
   fadeOut: 0
-  fadeInSpeed: 10
+  fadeInSpeed: 2
   fadeOutSpeed: 1
-  resetDelay: 1
+  resetDelay: 1.1
   isMap: 0
 --- !u!225 &504562046
 CanvasGroup:
@@ -5336,6 +5336,7 @@ MonoBehaviour:
   locations:
   - {fileID: 1926659701}
   index: 0
+  newPositionDelay: 0.8
   wallJumpAnimDelay: 0.4
 --- !u!50 &1598957771
 Rigidbody2D:

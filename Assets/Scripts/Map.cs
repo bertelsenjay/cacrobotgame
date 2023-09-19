@@ -64,9 +64,11 @@ public class Map : MonoBehaviour
 
         if (PlayerMovement.gotHitByTrap && !isMap)
         {
-            PlayerMovement.gotHitByTrap = false;
+            
             ShowUI();
+            ResetTrapHit();
             Invoke("HideUI", resetDelay);
+            //Invoke("ResetTrapHit", resetDelay + 1);
         }
     }
 
@@ -87,6 +89,10 @@ public class Map : MonoBehaviour
         myUIGRoup.alpha = 0f; 
     }
 
+    public void ResetTrapHit()
+    {
+        PlayerMovement.gotHitByTrap = false;
+    }
     /*public void FadeIn()
     {
         if (fadeIn)

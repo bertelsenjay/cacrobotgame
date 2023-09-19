@@ -73,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("RespawnLocations")]
     public Transform[] locations;
     public int index = 0;
-
+    public float newPositionDelay = 0.5f; 
     public static bool gotHitByTrap = false; 
 
     public float wallJumpAnimDelay = 0.5f;
@@ -125,6 +125,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isPanelEnabled) { return;  }
         if (PauseMenu.isPaused) { return; }
+        if (gotHitByTrap) { return; }
         if (isDashing)
         {
             return; 
@@ -141,6 +142,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isPanelEnabled) { return; }
         if (PauseMenu.isPaused) { return; }
+        if (gotHitByTrap) { return; }
         if (isDashing)
         {
             return; 
@@ -286,7 +288,8 @@ public class PlayerMovement : MonoBehaviour
     }
     private IEnumerator Dash()
     {
-        if (hasDash)
+        
+        if (hasDash && !gotHitByTrap)
         {
             animator.SetTrigger("Dash");
             canDash = false;
@@ -321,7 +324,9 @@ public class PlayerMovement : MonoBehaviour
         {
             StartCoroutine(Invulnerability());
             playerHealth.health--;
-            transform.position = locations[index].position;
+            //SetNewPosition();
+            Invoke("SetNewPosition", newPositionDelay);
+            rb.velocity = Vector2.zero;
             gotHitByTrap = true; 
         }
 
@@ -330,6 +335,11 @@ public class PlayerMovement : MonoBehaviour
             playerHealth.heartPieces++;
             Destroy(collision.gameObject);
         }
+    }
+
+    private void SetNewPosition()
+    {
+        transform.position = locations[index].position;
     }
     private IEnumerator Invulnerability()
     {
