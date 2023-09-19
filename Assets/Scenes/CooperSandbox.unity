@@ -5315,8 +5315,8 @@ MonoBehaviour:
   testChip4: 0
   textPanel: {fileID: 815909317}
   speed: 5
-  jumpForce: 10
-  jumpTime: 0.3
+  jumpForce: 9
+  jumpTime: 0.5
   feetPos: {fileID: 320281261}
   checkRadius: 0.05
   wallJumpCheckRadius: 0.25
