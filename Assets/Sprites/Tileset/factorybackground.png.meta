@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 98d6317249383c746a5decfe3ea78d90
+guid: 41b23c66776276147935361c6e53fcd9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -251809588363568884
-    second: FlyingSnakeBot_0
-  - first:
-      213: 3368377604985262556
-    second: FlyingSnakeBot_1
-  - first:
-      213: -1603909843231791662
-    second: FlyingSnakeBot_2
-  - first:
-      213: 8164929806842243365
-    second: FlyingSnakeBot_3
+      213: 980404670106733536
+    second: factorybackground_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -107,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FlyingSnakeBot_0
+      name: factorybackground_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 107
-        width: 69
-        height: 75
+        x: 0
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,71 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c095d867384618cf0800000000000000
-      internalID: -251809588363568884
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlyingSnakeBot_1
-      rect:
-        serializedVersion: 2
-        x: 113
-        y: 105
-        width: 76
-        height: 73
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cd11786d591eebe20800000000000000
-      internalID: 3368377604985262556
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlyingSnakeBot_2
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 11
-        width: 69
-        height: 75
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2d5aa66de74cdb9e0800000000000000
-      internalID: -1603909843231791662
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlyingSnakeBot_3
-      rect:
-        serializedVersion: 2
-        x: 113
-        y: 9
-        width: 76
-        height: 73
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 529a4d05668af4170800000000000000
-      internalID: 8164929806842243365
+      spriteID: 0eb88d16ad81b9d00800000000000000
+      internalID: 980404670106733536
       vertices: []
       indices: 
       edges: []
@@ -200,11 +128,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      FlyingSnakeBot_0: -251809588363568884
-      FlyingSnakeBot_1: 3368377604985262556
-      FlyingSnakeBot_2: -1603909843231791662
-      FlyingSnakeBot_3: 8164929806842243365
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
