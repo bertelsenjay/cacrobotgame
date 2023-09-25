@@ -36,12 +36,13 @@ public class MeleeEnemy : MonoBehaviour
     {
         if (inRange)
         {
-            hit = Physics2D.Raycast(raycast.position, Vector2.left, raycastLength, raycastMask);
+            hit = Physics2D.Raycast(raycast.position, Vector2.right, raycastLength, raycastMask);
             RaycastDebugger();
         }
 
         if (hit.collider != null)
         {
+            Debug.Log("Starting Enemy Logic");
             EnemyLogic(); 
         }
         else if (hit.collider == null)
@@ -78,11 +79,14 @@ public class MeleeEnemy : MonoBehaviour
     void Move()
     {
         anim.SetBool("canWalk", true);
-        if (!anim.GetCurrentAnimatorStateInfo(0).IsName("HammerBotWalk"))
-        {
+        //if (!anim.GetCurrentAnimatorStateInfo(0).IsName("HammerBotWalkAnimation"))
+        //{
             Vector2 targetPosition = new Vector2(target.transform.position.x, transform.position.y);
+            Debug.Log("Moving");
+            Debug.Log(targetPosition);
+            
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
-        }
+        //}
     }
 
     void Attack()
@@ -105,7 +109,15 @@ public class MeleeEnemy : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             target = collision.gameObject;
-            inRange = true; 
+            inRange = true;
+            //Debug.Log("Triggered!");
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            inRange = false;
         }
     }
 
@@ -113,11 +125,11 @@ public class MeleeEnemy : MonoBehaviour
     {
         if (distance > attackDistance)
         {
-            Debug.DrawRay(raycast.position, Vector2.left * raycastLength, Color.red);
+            Debug.DrawRay(raycast.position, Vector2.right * raycastLength, Color.red);
         }
         else if (attackDistance > distance)
         {
-            Debug.DrawRay(raycast.position, Vector2.left * raycastLength, Color.green);
+            Debug.DrawRay(raycast.position, Vector2.right * raycastLength, Color.green);
         }
     }
 }
