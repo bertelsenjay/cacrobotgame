@@ -200,7 +200,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FlyingSnakeBot_0: -251809588363568884
+      FlyingSnakeBot_1: 3368377604985262556
+      FlyingSnakeBot_2: -1603909843231791662
+      FlyingSnakeBot_3: 8164929806842243365
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
