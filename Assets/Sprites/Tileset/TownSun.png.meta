@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TownSun_0: 676239740479055229
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
