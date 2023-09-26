@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 1bdd15d6759860c499d04f03d01e0231
+guid: f23c5eb82984f0f4185e07d26e0ad004
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 980404670106733536
-    second: factorybackground_0
+      213: -2983920558891092006
+    second: NPCbot1_0
+  - first:
+      213: -333092283443680143
+    second: NPCbot1_1
+  - first:
+      213: -9097024873983329912
+    second: NPCbot1_2
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: factorybackground_0
+      name: NPCbot1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 256
-        height: 256
+        x: 6
+        y: 63
+        width: 57
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +118,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0eb88d16ad81b9d00800000000000000
-      internalID: 980404670106733536
+      spriteID: ad7bf49af0cf696d0800000000000000
+      internalID: -2983920558891092006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCbot1_1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 0
+        width: 57
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17c6aef355e906bf0800000000000000
+      internalID: -333092283443680143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCbot1_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 63
+        width: 57
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 889b4514310e0c180800000000000000
+      internalID: -9097024873983329912
       vertices: []
       indices: 
       edges: []
@@ -128,8 +176,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      factorybackground_0: 980404670106733536
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
