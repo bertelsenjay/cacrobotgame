@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 661749c438191a94e8a484017ecf3850
+guid: 326d4231994e9c047a3fee64c9ec7a41
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 676239740479055229
-    second: TownSun_0
+      213: 3145441770373533052
+    second: FactoryMachinery_0
+  - first:
+      213: 5511880272212433523
+    second: FactoryMachinery_1
+  - first:
+      213: 1716281373116313415
+    second: FactoryMachinery_2
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TownSun_0
+      name: FactoryMachinery_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 512
-        height: 512
+        x: 26
+        y: 127
+        width: 80
+        height: 103
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +118,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d75a14a067c726900800000000000000
-      internalID: 676239740479055229
+      spriteID: c7d4ac8ff9ad6ab20800000000000000
+      internalID: 3145441770373533052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FactoryMachinery_1
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 127
+        width: 69
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37a94b587e12e7c40800000000000000
+      internalID: 5511880272212433523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FactoryMachinery_2
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 101
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74fa73bc0d471d710800000000000000
+      internalID: 1716281373116313415
       vertices: []
       indices: 
       edges: []
@@ -128,8 +176,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      TownSun_0: 676239740479055229
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
