@@ -4415,7 +4415,7 @@ GameObject:
   - component: {fileID: 1061933567}
   - component: {fileID: 1061933566}
   - component: {fileID: 1061933565}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HorizontalShootingEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -4519,6 +4519,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 4700613698767522512, guid: 55267ddd5390f0c4388466808090f6b8, type: 3}
   player: {fileID: 1598957769}
+  bulletSpeed: 3
+  bulletDelay: 1
+  spawnPoint: {fileID: 1815362482}
 --- !u!212 &1061933568
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4583,7 +4586,8 @@ Transform:
   m_LocalPosition: {x: 29.73, y: -1.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1815362482}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1122673373
@@ -7226,6 +7230,37 @@ MonoBehaviour:
   followEnabled: 1
   jumpEnabled: 0
   directionLookEnabled: 1
+--- !u!1 &1815362481
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1815362482}
+  m_Layer: 7
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1815362482
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815362481}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.48, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1061933569}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1906649898
 GameObject:
   m_ObjectHideFlags: 0

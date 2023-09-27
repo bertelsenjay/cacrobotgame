@@ -6,27 +6,41 @@ public class HorizontalShooterEnemy : MonoBehaviour
 {
 
     public GameObject bullet;
-    public GameObject player; 
+    public GameObject player;
+    public float bulletSpeed;
+    public float bulletDelay;
+    public Transform spawnPoint; 
+    private float timer; 
+    private GameObject bulletSpawn;
+    Rigidbody2D rb; 
     private bool canFire; 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
+        timer = bulletDelay; 
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector2 fireDirection = (transform.position - player.transform.position).normalized;
-        if (fireDirection.x > 0f && canFire)
+        Vector2 fireDirection = (player.transform.position - transform.position);
+        fireDirection.Normalize();
+        timer -= Time.deltaTime;
+        Vector2 spawnPointLocation = spawnPoint.position; 
+        if (fireDirection.x > 0f && canFire && timer <= 0)
         {
-            Instantiate(bullet, fireDirection, Quaternion.identity);
+            bulletSpawn = Instantiate(bullet, spawnPointLocation, Quaternion.identity);
+            bulletSpawn.GetComponent<Rigidbody2D>().velocity = new Vector2(fireDirection.x * bulletSpeed, 0);
             Debug.Log("Instantiated");
+            timer = bulletDelay;
         }
-        else if (fireDirection.x < 0f && canFire)
+        else if (fireDirection.x < 0f && canFire && timer <= 0)
         {
-            Instantiate(bullet, fireDirection, Quaternion.identity);
+            bulletSpawn = Instantiate(bullet, spawnPointLocation, Quaternion.identity);
+            bulletSpawn.GetComponent<Rigidbody2D>().velocity = new Vector2(fireDirection.x * bulletSpeed, 0);
+            timer = bulletDelay; 
             Debug.Log("Instantiated");
         }
         
