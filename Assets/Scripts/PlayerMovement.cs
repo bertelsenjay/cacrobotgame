@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
+    #region Global Variables
     public static bool isPanelEnabled = false; 
     public static bool hasDoubleJump = false;
     public static bool hasDash = false;
@@ -77,12 +78,14 @@ public class PlayerMovement : MonoBehaviour
     public static bool gotHitByTrap = false; 
 
     public float wallJumpAnimDelay = 0.5f;
+    #endregion
     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         playerHealth = FindObjectOfType<PlayerHealth>();
         rb = GetComponent<Rigidbody2D>(); 
         animator = GetComponent<Animator>();
+        
         if (testDoubleJump)
         {
             hasDoubleJump = true; 
@@ -334,6 +337,15 @@ public class PlayerMovement : MonoBehaviour
         {
             playerHealth.heartPieces++;
             Destroy(collision.gameObject);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            StartCoroutine(Invulnerability());
+            playerHealth.health--;
         }
     }
 
