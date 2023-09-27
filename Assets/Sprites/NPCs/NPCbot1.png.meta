@@ -176,7 +176,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      NPCbot1_0: -2983920558891092006
+      NPCbot1_1: -333092283443680143
+      NPCbot1_2: -9097024873983329912
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
