@@ -78,9 +78,12 @@ public class PlayerMovement : MonoBehaviour
     public static bool gotHitByTrap = false; 
 
     public float wallJumpAnimDelay = 0.5f;
+
+    int currentCurrency; 
     #endregion
     void Awake()
     {
+        UIShop shop = FindObjectOfType<UIShop>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         playerHealth = FindObjectOfType<PlayerHealth>();
         rb = GetComponent<Rigidbody2D>(); 
