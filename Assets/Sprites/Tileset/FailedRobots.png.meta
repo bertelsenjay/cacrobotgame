@@ -200,7 +200,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FailedRobots_0: -7057373748875065415
+      FailedRobots_1: -8850103996662315889
+      FailedRobots_2: -3760401170892121800
+      FailedRobots_3: -7918739156108388925
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
