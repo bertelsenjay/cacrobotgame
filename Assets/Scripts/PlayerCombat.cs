@@ -33,18 +33,20 @@ public class PlayerCombat : MonoBehaviour
     {
         if (PlayerMovement.isPanelEnabled) { return;  }
         animator.SetTrigger("Attack");
-
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers); 
-
+        Debug.Log("Attacked");
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+        Debug.Log(hitEnemies.Length + " enemies");
         foreach (Collider2D enemy in hitEnemies)
         {
             if (Enemy.hasUpgrade == false)
             {
                 enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+                Debug.Log("Did Damage");
             }
             else if (Enemy.hasUpgrade == true)
             {
                 enemy.GetComponent<Enemy>().TakeDamage(upgradedAtttackDamage);
+                Debug.Log("Did Damage");
             }
              
         }

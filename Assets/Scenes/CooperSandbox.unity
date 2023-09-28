@@ -631,7 +631,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAACAn+v+dsJBYwIAABoFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1z2jAQ/SuMziVjQ4Ckt9YhpIckTGgnF1+EtMYaZMmjjwDJ8N+7km3s0hPivbe7b1crfxGhbA3MabMygj9rDuT7iIQz+TbqySc40p1WG/EJneZdcFcGEY2aN+qERjwNYVZX4IxgP9ROBnGCoFei0KZa8h1k2jqLcEGlBaSMdiFaIfQ1Ikf8Gd+HkBOeJotw+sTTfTI645GBcmB6aXoza6Xj5hi0jdQrJmlVAw++BxFJl3w6izqFLbWSYJ9pKYVt/RB3qmO/Ga2tx25QwAXF/qKJ9GaKQAliV7rgdhj+WhQWXNu+oacHYXBQTV7yUzfTq6jdN9Y+qPSh0vw2mmpyPv9Hj9NIF0ZXT13ZpiNXCrZ/oydGrRtMdwg/DJzHAR2o3NOthPcS1IteGe0VR9IZH0K9hclD//fSWVYC2/d4Y/UK9HU/8W7e3VWGHs6x+WMmRbUN1M1tA2ykjgOPGwAGr+YXGo77YdsUiAYXfyz8prvhIrXEozDWIdV2qYK9rfYmSMkyzix0412mjYIIt6ZrUFS60xrTuOsbvOIGZa+YRxqeTFu85bqXcBUS4V6fJFfUWh8ul2VLfXgGW756J4WC3nQgXnBOmVaqWbDhTLqwjTcFZYOwnRf839Ui08mCze6mLFnA/W1SpOOCz1nK5nR+N5ssaLogcfeEwj6pXDdG2/Hgrak+ucI9674ko5WhdVx2buhhJT4rPTQoVKE3zACo1ybFxTkYrILvki+5wAltwDmh4oWTr5xIzfbA80vNPLa6PDpD8z5LTmrxoV1AcpLFb0dOAnxZ5rWBDwGHULxLdibnv1BLAwQUAAAICAAAgJ/rTDTr3G0AAAB4AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9IzNNdRUEovSizIKAaKGII4pZkpIHa0krGRebKphXGygXmqpYlBmqFuWopZsmGyWaKZhamReaKhuVIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAAgJ/r/nbCQWMCAAAaBQAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAAgJ/rTDTr3G0AAAB4AAAACQAkAAAAAAAAAAAAAACwAgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAGgDAAAAAA==
+    dataString: UEsDBBQAAAgIAACAn+t7EFIsZwIAABoFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1z2jAQ/SuMzoWx+Ux6ax1CekhgQju5+CKkNdYgSx5J5iMZ/ntXso1dekK893b37WrlLyKULYE5bVZG8FfNgXwfEH8m3wYd+QJnutdqKz6h1XwI7nIvokHzTp3QiMc+zOoCnBHsh9pLL44QrJTItCmWfA+Jts4inFFpASmjnY9WCH0NyBl/ho8+5IKn8cKfPvH0GA2ueGSgHJhOOp6NprNGPIxHs0ZdiyvFJC1K4N55FzNpA8a1TGFPjcL7Z1pKYRtDxF3K0HBCS1thOyjggmKDwUU8miCQg9jnzifsh6+zzIJr+jf08iQMTqrOS37qenwFtYfa2ZHKyleaT4OpOufrf/QwDnRmdPHSlo0jX8Llgh3e6YVR63rj7cNPPedhPicqD3Qn4SMH9aZXRleKI+lM5UMrC+On7u+tsyQHdujw2uodWJXdwNvbbO/S93ANzZ8TKYqdp0bTGthKHQYeVgAMXs0vNBwWxDYpEPUu/lj4Tff9TWqIZ2GsQ6rpUnl7O10ZLyXLMDPfTeUSbRQEuDFdgqLSXTaYxt3f4B3XK3vHPFP/ZpriDdc+hbuQAHf6KLqjNvp0uyyb69Mr2HxdOSkUdKY98YZzSrRS9YL1Z9KGbSuTUdYL21eC/7taZDJesNnDhEULeJxGWTzM+JzFbE7nD7PxgsYLEnZPKOyTyk1ttBkP3prqkivcs/ZTMlgZWoZl54aeVuKz0L2RC5XpLTMAal1nuBkHg0XwWfIlFzigLTgnVLhv8pUSqdkBeHpLlIZOl2dnaNplSUkpjtp5JCVJ+HakxMO3Xd4YOAo4+eJtsiu5/gVQSwMEFAAACAgAAICf60w069xtAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTXUVBKL0osyCgGihiCOKWZKSB2tJKxkXmyqYVxsoF5qqWJQZqhblqKWbJhslmimYWpkXmioblSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAICf63sQUixnAgAAGgUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAICf60w069xtAAAAeAAAAAkAJAAAAAAAAAAAAAAAtAIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABsAwAAAAA=
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -2316,7 +2316,7 @@ Transform:
   m_GameObject: {fileID: 750167326}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.133869, y: -1.4898393, z: -10.263894}
+  m_LocalPosition: {x: 8.436129, y: -1.4898393, z: -10.263894}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4040,9 +4040,10 @@ GameObject:
   - component: {fileID: 976715095}
   - component: {fileID: 976715094}
   - component: {fileID: 976715098}
-  m_Layer: 0
+  - component: {fileID: 976715099}
+  m_Layer: 7
   m_Name: FlyingEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4076,7 +4077,7 @@ MonoBehaviour:
   version: 5
   radius: 0.7
   height: 2
-  canMove: 0
+  canMove: 1
   maxSpeed: 4
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
@@ -4102,7 +4103,7 @@ MonoBehaviour:
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
-  constrainInsideGraph: 0
+  constrainInsideGraph: 1
 --- !u!114 &976715096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4140,7 +4141,7 @@ Transform:
   m_GameObject: {fileID: 976715093}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.9, y: 6.69, z: -0.05696114}
+  m_LocalPosition: {x: 20.84, y: 0.59, z: -0.05696114}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4193,6 +4194,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.73929596, y: 0.75277877}
   m_EdgeRadius: 0
+--- !u!114 &976715099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976715093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57d9216aef5614b49af3abeea8557eab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10
 --- !u!1 &1031636692
 GameObject:
   m_ObjectHideFlags: 0
@@ -4583,7 +4597,7 @@ Transform:
   m_GameObject: {fileID: 1061933564}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.73, y: -1.45, z: 0}
+  m_LocalPosition: {x: 29.61, y: 4.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4603,9 +4617,10 @@ GameObject:
   - component: {fileID: 1122673377}
   - component: {fileID: 1122673376}
   - component: {fileID: 1122673374}
-  m_Layer: 0
+  - component: {fileID: 1122673380}
+  m_Layer: 7
   m_Name: WallHittingEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4748,12 +4763,25 @@ Transform:
   m_GameObject: {fileID: 1122673373}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.16, y: -2.08, z: 0}
+  m_LocalPosition: {x: -7.24, y: -1.88, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1122673380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122673373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57d9216aef5614b49af3abeea8557eab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10
 --- !u!1 &1144174336
 GameObject:
   m_ObjectHideFlags: 0
@@ -5622,7 +5650,9 @@ GameObject:
   - component: {fileID: 1391657820}
   - component: {fileID: 1391657819}
   - component: {fileID: 1391657822}
-  m_Layer: 0
+  - component: {fileID: 1391657823}
+  - component: {fileID: 1391657824}
+  m_Layer: 7
   m_Name: MeleeEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -5687,7 +5717,7 @@ Transform:
   m_GameObject: {fileID: 1391657818}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -0.19, y: -1, z: 0.21656556}
+  m_LocalPosition: {x: 1.68, y: -0.78, z: 0.21656556}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5722,6 +5752,56 @@ MonoBehaviour:
   inRange: 0
   hotZone: {fileID: 344517854}
   triggerArea: {fileID: 1906649898}
+--- !u!114 &1391657823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391657818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57d9216aef5614b49af3abeea8557eab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10
+--- !u!70 &1391657824
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391657818}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.019866228, y: -0.15495819}
+  m_Size: {x: 1.1595654, y: 1.9933218}
+  m_Direction: 0
 --- !u!1 &1393923003
 GameObject:
   m_ObjectHideFlags: 0
@@ -6576,7 +6656,7 @@ Transform:
   m_GameObject: {fileID: 1598957769}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.87, y: -1.27, z: 0}
+  m_LocalPosition: {x: 32.44, y: -1.27, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8065,7 +8145,7 @@ Transform:
   m_GameObject: {fileID: 2052772594}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.133869, y: -1.4898393, z: -10.263894}
+  m_LocalPosition: {x: 8.436129, y: -1.4898393, z: -10.263894}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

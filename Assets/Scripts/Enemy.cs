@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        
+        Debug.Log("CallingFunction");
         currentHealth -= damage;
         if (currentHealth <= 0)
         {
