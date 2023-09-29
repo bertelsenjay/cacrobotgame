@@ -142,6 +142,7 @@ public class NPCScript : MonoBehaviour
     }
     public void NextLine()
     {
+        
         continueButton.SetActive(false);
         if (index < dialogue.Length - 1 && !hasCorrectChip)
         {
