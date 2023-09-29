@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      factorygroundextra_0: 7510356788445965796
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

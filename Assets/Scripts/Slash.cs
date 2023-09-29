@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Slash : MonoBehaviour
 {
-    // coment
+    // comment
     Animator animator; 
     SpriteRenderer spriteRenderer;
     public float initialTimer = 0.2f;
@@ -22,6 +22,7 @@ public class Slash : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (UIShop.isEnabled) { return; }
         if (PauseMenu.isPaused) { return; }
         if (Time.time >= nextAttackTime)
         {
