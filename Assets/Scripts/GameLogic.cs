@@ -2,17 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameLogic : MonoBehaviour
+public static class GameLogic
 {
-    // Start is called before the first frame update
-    void Start()
+    public static void Init()
     {
-        
+        Debug.Log("GameLogic.Init"); 
     }
 
-    // Update is called once per frame
-    void Update()
+    private static void CreateSprite(Sprite sprite)
     {
-        
+
     }
 }
