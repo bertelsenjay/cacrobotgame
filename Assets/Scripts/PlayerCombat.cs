@@ -32,6 +32,7 @@ public class PlayerCombat : MonoBehaviour
     void Attack()
     {
         if (PlayerMovement.isPanelEnabled) { return;  }
+        if (UIShop.isEnabled) { return; }
         animator.SetTrigger("Attack");
         Debug.Log("Attacked");
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);

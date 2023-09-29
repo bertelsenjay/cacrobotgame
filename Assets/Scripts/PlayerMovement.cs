@@ -79,11 +79,13 @@ public class PlayerMovement : MonoBehaviour
 
     public float wallJumpAnimDelay = 0.5f;
 
-    int currentCurrency; 
+    int currentCurrency;
+
+    public static int amountOfKeys = 0;
     #endregion
     void Awake()
     {
-        UIShop shop = FindObjectOfType<UIShop>();
+        //UIShop shop = FindObjectOfType<UIShop>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         playerHealth = FindObjectOfType<PlayerHealth>();
         rb = GetComponent<Rigidbody2D>(); 
@@ -129,6 +131,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (UIShop.isEnabled) { return; }
         if (isPanelEnabled) { return;  }
         if (PauseMenu.isPaused) { return; }
         if (gotHitByTrap) { return; }
@@ -146,6 +149,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (UIShop.isEnabled) { return; }
         if (isPanelEnabled) { return; }
         if (PauseMenu.isPaused) { return; }
         if (gotHitByTrap) { return; }

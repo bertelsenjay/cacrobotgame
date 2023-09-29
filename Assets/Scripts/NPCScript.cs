@@ -7,7 +7,8 @@ using UnityEditor.Rendering;
 
 public class NPCScript : MonoBehaviour
 {
-
+    public bool isNPC = true;
+    public bool isShop = true; 
     public GameObject dialoguePanel;
     public TextMeshProUGUI dialogueText;
     public int chipRequiredIndex;
@@ -44,16 +45,24 @@ public class NPCScript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E) && playerIsClose)
         {
-            if (dialoguePanel.activeInHierarchy)
+            if (dialoguePanel.activeInHierarchy && isNPC)
             {
                 ZeroText();
                 
             }
             else
             {
-                dialoguePanel.SetActive(true);
-                PlayerMovement.isPanelEnabled = true;
-                StartCoroutine(Typing());
+                if (isNPC)
+                {
+                    dialoguePanel.SetActive(true);
+                    PlayerMovement.isPanelEnabled = true;
+                    StartCoroutine(Typing());
+                }
+
+             }
+            if (isShop)
+            {
+                OpenShopMenu();
             }
         }
 
@@ -157,5 +166,10 @@ public class NPCScript : MonoBehaviour
             Debug.Log("Text zeroed");
             ZeroText();
         }
+    }
+    public void OpenShopMenu()
+    {
+        Debug.Log("Shop Opened");
+        UIShop.isEnabled = true;
     }
 }
