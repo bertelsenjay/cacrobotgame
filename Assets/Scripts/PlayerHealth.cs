@@ -10,7 +10,8 @@ public class PlayerHealth : MonoBehaviour
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
-    public int heartPieces = 0; 
+    public int heartPieces = 0;
+    //public static bool healthLocked = false;
 
     
     
@@ -61,7 +62,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void LoseHealth(int damage)
     {
-        
+        //if (healthLocked) { return; }
         health -= damage;
     }
 

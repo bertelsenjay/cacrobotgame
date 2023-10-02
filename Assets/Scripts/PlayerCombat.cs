@@ -23,6 +23,7 @@ public class PlayerCombat : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 Attack();
+                Debug.Log("Pressed left click");
                 nextAttackTime = Time.time + 1f / attackRate;
             }
         }
@@ -36,6 +37,7 @@ public class PlayerCombat : MonoBehaviour
         animator.SetTrigger("Attack");
         Debug.Log("Attacked");
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+        //Collider2D[] hitBullets = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, bulletLayers);
         Debug.Log(hitEnemies.Length + " enemies");
         foreach (Collider2D enemy in hitEnemies)
         {
@@ -51,6 +53,11 @@ public class PlayerCombat : MonoBehaviour
             }
              
         }
+
+        /*foreach (Collider2D bullet in hitBullets)
+        {
+            Destroy(bullet);
+        }*/
     }
 
     private void OnDrawGizmosSelected()
