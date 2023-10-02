@@ -6238,8 +6238,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 4700613698767522512, guid: 55267ddd5390f0c4388466808090f6b8, type: 3}
   player: {fileID: 1598957769}
-  bulletSpeed: 3
-  bulletDelay: 2.5
+  bulletSpeed: 4
+  bulletDelay: 0.2
   spawnPoint: {fileID: 1815362482}
 --- !u!212 &1061933568
 SpriteRenderer:
@@ -8351,8 +8351,8 @@ MonoBehaviour:
   dashingPower: 6
   dashingTime: 0.25
   dashingCooldown: 1
-  iFrameDuration: 0.75
-  noOfFlashes: 0
+  iFrameDuration: 0.5
+  noOfFlashes: 1
   frontCheck: {fileID: 733441776}
   wallSlidingSpeed: 1
   xWallForce: 30

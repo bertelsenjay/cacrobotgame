@@ -9,6 +9,7 @@ TagManager:
   - Wall
   - Trap
   - Door
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX

@@ -355,6 +355,12 @@ public class PlayerMovement : MonoBehaviour
                 
             }
         }
+
+        if (collision.gameObject.tag == "EnemyBullet")
+        {
+            StartCoroutine(Invulnerability());
+            playerHealth.health--;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -364,6 +370,7 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine(Invulnerability());
             playerHealth.health--;
         }*/
+        
     }
 
     private void SetNewPosition()
@@ -372,15 +379,22 @@ public class PlayerMovement : MonoBehaviour
     }
     private IEnumerator Invulnerability()
     {
+        Debug.Log("Starting iFrames");
         Physics2D.IgnoreLayerCollision(8, 7, true);
+        Physics2D.IgnoreLayerCollision(8, 9, true);
+        //PlayerHealth.healthLocked = true; 
+        //Debug.Log(PlayerHealth.healthLocked);
         for (int i = 0; i < noOfFlashes; i++)
         {
-            spriteRenderer.color = new Color(1, 0, 0, 0.5f);
+            spriteRenderer.color = new Color(1, 1, 1, 0.5f);
             yield return new WaitForSeconds(iFrameDuration / noOfFlashes * 2);
             spriteRenderer.color = Color.white;
             yield return new WaitForSeconds(iFrameDuration / noOfFlashes * 2);
         }
         Physics2D.IgnoreLayerCollision(8, 7, false);
+        Physics2D.IgnoreLayerCollision(8, 9, false);
+        //PlayerHealth.healthLocked = false;
+        //Debug.Log(PlayerHealth.healthLocked);
     }
 
     private void ResetToIdle()
