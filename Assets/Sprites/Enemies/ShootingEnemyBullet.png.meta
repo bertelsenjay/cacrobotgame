@@ -224,7 +224,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ShootingEnemyBullet_0: -1915278010865849669
+      ShootingEnemyBullet_1: -7159361836597126412
+      ShootingEnemyBullet_2: 3557938173254339097
+      ShootingEnemyBullet_3: 7068270300195272676
+      ShootingEnemyBullet_4: -4450927878008136988
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

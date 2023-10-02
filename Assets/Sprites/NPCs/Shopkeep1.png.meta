@@ -320,7 +320,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Shopkeep1_0: -1691681045025334950
+      Shopkeep1_1: -2610974943296770888
+      Shopkeep1_2: -5847481184076684383
+      Shopkeep1_3: -72145378421219060
+      Shopkeep1_4: -184491720553132853
+      Shopkeep1_5: 8764259265289989287
+      Shopkeep1_6: -8631386390983947660
+      Shopkeep1_7: 852181996216457140
+      Shopkeep1_8: 7631357241462376379
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

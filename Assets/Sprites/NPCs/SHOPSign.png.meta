@@ -176,7 +176,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SHOPSign_0: -5607781278714541501
+      SHOPSign_1: 8959930778261849089
+      SHOPSign_2: 7465455307115543035
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
