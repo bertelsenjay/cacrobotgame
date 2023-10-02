@@ -21,15 +21,16 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && isPaused == false)
+        if (Input.GetKeyDown(KeyCode.Escape) && isPaused == false && !UIShop.isEnabled)
         {
             ShowUI();
-            Debug.Log("Showing UI");
+            Debug.Log(UIShop.isEnabled);
+            //Debug.Log("Showing UI");
         }
-        else if (Input.GetKeyDown(KeyCode.Escape) && isPaused == true)
+        else if (Input.GetKeyDown(KeyCode.Escape) && isPaused == true && !UIShop.isEnabled)
         {
             HideUI();
-            Debug.Log("Hiding UI");
+           //Debug.Log("Hiding UI");
         }
         if (fadeIn)
         {

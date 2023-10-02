@@ -6,7 +6,8 @@ using UnityEngine.UI;
 
 public class UIShop : MonoBehaviour
 {
-    public static bool isEnabled = false; 
+    public static bool isEnabled = false;
+    
     public int currentCurrency;
     int itemIndex;
     public TextMeshProUGUI currencyText; 
@@ -96,7 +97,8 @@ public class UIShop : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            CloseShopMenu();
+            Invoke("CloseShopMenu", 0.05f);
+            //CloseShopMenu();
         }
         if (isEnabled)
         {

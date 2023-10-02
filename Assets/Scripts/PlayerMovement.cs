@@ -345,6 +345,16 @@ public class PlayerMovement : MonoBehaviour
             playerHealth.heartPieces++;
             Destroy(collision.gameObject);
         }
+
+        if (collision.gameObject.tag == "Door")
+        {
+            if (amountOfKeys > 0)
+            {
+                Destroy(collision.gameObject);
+                amountOfKeys--;
+                
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
