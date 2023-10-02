@@ -19,7 +19,6 @@ public class Map : MonoBehaviour
     {
 
         canvas = GetComponent<Canvas>();
-        
         HideUIStart();
     }
 
@@ -49,7 +48,7 @@ public class Map : MonoBehaviour
                 }
             }
         }
-
+        
         if (Input.GetKeyDown(KeyCode.M) && isMap)
         {
             
