@@ -12,12 +12,14 @@ public class HorizontalShooterEnemy : MonoBehaviour
     public Transform spawnPoint; 
     private float timer; 
     private GameObject bulletSpawn;
-    Rigidbody2D rb; 
+    Rigidbody2D rb;
+    Animator anim; 
     private bool canFire; 
 
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         timer = bulletDelay; 
     }
@@ -59,7 +61,8 @@ public class HorizontalShooterEnemy : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Debug.Log("Player Exited Trigger");
-            canFire = false; 
+            canFire = false;
+            anim.SetBool("isAttacking", false);
         }
     }
 
@@ -69,6 +72,7 @@ public class HorizontalShooterEnemy : MonoBehaviour
         {
             Debug.Log("Player is in trigger");
             canFire = true;
+            anim.SetBool("isAttacking", true);
         }
     }
 }
