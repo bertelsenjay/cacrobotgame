@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; 
+using UnityEngine.UI;
+using TMPro;
 public class PlayerHealth : MonoBehaviour
 {
     public int health = 5;
@@ -11,6 +12,7 @@ public class PlayerHealth : MonoBehaviour
     public Sprite fullHeart;
     public Sprite emptyHeart;
     public int heartPieces = 0;
+    public TextMeshProUGUI heartText; 
     //public static bool healthLocked = false;
 
     
@@ -22,6 +24,7 @@ public class PlayerHealth : MonoBehaviour
     }
     private void Update()
     {
+        heartText.text = "Heart Pieces: " + heartPieces;
         if (heartPieces >= 4)
         {
             heartPieces -= 4;

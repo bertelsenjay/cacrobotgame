@@ -176,7 +176,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      LittleBot_0: -4059238257539961582
+      LittleBot_1: 4363749800917134751
+      LittleBot_2: 6622311556502421167
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -149,6 +149,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (LevelLoader.isDead)
+        {
+            animator.SetBool("isDead", true);
+            return; 
+        }
         if (UIShop.isEnabled) { return; }
         if (isPanelEnabled) { return; }
         if (PauseMenu.isPaused) { return; }

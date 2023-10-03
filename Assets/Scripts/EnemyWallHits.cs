@@ -14,6 +14,7 @@ public class EnemyWallHits : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.flipX = true;
     }
 
     // Update is called once per frame
@@ -21,11 +22,11 @@ public class EnemyWallHits : MonoBehaviour
     {
         if (transform.eulerAngles == new Vector3(0f, 0f, 0f))
         {
-            rb.velocity = new Vector3(speed, 0, 0);
+            rb.velocity = new Vector3(speed, rb.velocity.y, 0);
         }
         else if (transform.eulerAngles == new Vector3(0f, 180f, 0f))
         {
-            rb.velocity = new Vector3(-speed, 0, 0);
+            rb.velocity = new Vector3(-speed, rb.velocity.y, 0);
         }
     }
 
@@ -33,13 +34,13 @@ public class EnemyWallHits : MonoBehaviour
     {
         if (collision.gameObject.tag == "Wall")
         {
-            if (transform.eulerAngles == new Vector3(0f, 0f, 0f))
-            {
-                transform.eulerAngles = new Vector3(0, 180, 0);
-            }
-            else if (transform.eulerAngles == new Vector3(0, 180, 0))
+            if (transform.eulerAngles == new Vector3(0f, 180f, 0f))
             {
                 transform.eulerAngles = new Vector3(0, 0, 0);
+            }
+            else if (transform.eulerAngles == new Vector3(0, 0, 0))
+            {
+                transform.eulerAngles = new Vector3(0, 180, 0);
             }
         }
     }

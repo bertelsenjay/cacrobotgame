@@ -75,7 +75,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -125,10 +125,10 @@ TextureImporter:
       name: Shopkeep2_0
       rect:
         serializedVersion: 2
-        x: 319
-        y: 3839
-        width: 962
-        height: 1642
+        x: 0
+        y: 192
+        width: 64
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,10 +146,10 @@ TextureImporter:
       name: Shopkeep2_1
       rect:
         serializedVersion: 2
-        x: 1599
-        y: 3839
-        width: 962
-        height: 1642
+        x: 64
+        y: 192
+        width: 64
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,10 +167,10 @@ TextureImporter:
       name: Shopkeep2_2
       rect:
         serializedVersion: 2
-        x: 2879
-        y: 3839
-        width: 962
-        height: 1642
+        x: 128
+        y: 192
+        width: 64
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,10 +188,10 @@ TextureImporter:
       name: Shopkeep2_3
       rect:
         serializedVersion: 2
-        x: 4159
-        y: 3839
-        width: 961
-        height: 1662
+        x: 192
+        y: 192
+        width: 64
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,10 +209,10 @@ TextureImporter:
       name: Shopkeep2_4
       rect:
         serializedVersion: 2
-        x: 319
-        y: 1919
-        width: 962
-        height: 1662
+        x: 0
+        y: 96
+        width: 64
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,10 +230,10 @@ TextureImporter:
       name: Shopkeep2_5
       rect:
         serializedVersion: 2
-        x: 1599
-        y: 1919
-        width: 962
-        height: 1662
+        x: 64
+        y: 96
+        width: 64
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -251,10 +251,10 @@ TextureImporter:
       name: Shopkeep2_6
       rect:
         serializedVersion: 2
-        x: 2879
-        y: 1919
-        width: 962
-        height: 1662
+        x: 128
+        y: 96
+        width: 64
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -272,10 +272,10 @@ TextureImporter:
       name: Shopkeep2_7
       rect:
         serializedVersion: 2
-        x: 4159
-        y: 1919
-        width: 961
-        height: 1662
+        x: 192
+        y: 96
+        width: 64
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -293,10 +293,10 @@ TextureImporter:
       name: Shopkeep2_8
       rect:
         serializedVersion: 2
-        x: 319
+        x: 0
         y: 0
-        width: 962
-        height: 1661
+        width: 64
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,7 +313,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d4bc2b71b80cede44bbbe8ebe08dc807
     internalID: 0
     vertices: []
     indices: 

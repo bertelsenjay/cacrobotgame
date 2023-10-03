@@ -16,6 +16,7 @@ public class PauseMenu : MonoBehaviour
     {
         canvas = GetComponent<Canvas>();
         HideUIStart();
+        canvas.enabled = false;
     }
 
     // Update is called once per frame
@@ -23,12 +24,14 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) && isPaused == false && !UIShop.isEnabled)
         {
+            canvas.enabled = true;
             ShowUI();
             Debug.Log(UIShop.isEnabled);
             //Debug.Log("Showing UI");
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && isPaused == true && !UIShop.isEnabled)
         {
+            canvas.enabled = false;
             HideUI();
            //Debug.Log("Hiding UI");
         }
