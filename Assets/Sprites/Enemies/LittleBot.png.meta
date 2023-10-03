@@ -1,22 +1,16 @@
 fileFormatVersion: 2
-guid: 67adfe5953e4ab9409c4a5b0e084a82e
+guid: c30bc9f4dbaf89a4ab15a6033376f5c0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1915278010865849669
-    second: ShootingEnemyBullet_0
+      213: -4059238257539961582
+    second: LittleBot_0
   - first:
-      213: -7159361836597126412
-    second: ShootingEnemyBullet_1
+      213: 4363749800917134751
+    second: LittleBot_1
   - first:
-      213: 3557938173254339097
-    second: ShootingEnemyBullet_2
-  - first:
-      213: 7068270300195272676
-    second: ShootingEnemyBullet_3
-  - first:
-      213: -4450927878008136988
-    second: ShootingEnemyBullet_4
+      213: 6622311556502421167
+    second: LittleBot_2
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -49,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -63,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -87,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ShootingEnemyBullet_0
+      name: LittleBot_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
-        width: 64
-        height: 64
+        x: 12
+        y: 63
+        width: 40
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bba6934fbc09b65e0800000000000000
-      internalID: -1915278010865849669
+      spriteID: 21da7a0cf40baa7c0800000000000000
+      internalID: -4059238257539961582
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShootingEnemyBullet_1
+      name: LittleBot_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 128
-        width: 64
-        height: 64
+        x: 77
+        y: 63
+        width: 37
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,62 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4fad32f6756d4ac90800000000000000
-      internalID: -7159361836597126412
+      spriteID: f9de854e2572f8c30800000000000000
+      internalID: 4363749800917134751
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShootingEnemyBullet_2
+      name: LittleBot_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 91a80a5fae5506130800000000000000
-      internalID: 3557938173254339097
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShootingEnemyBullet_3
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4e73593836a871260800000000000000
-      internalID: 7068270300195272676
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShootingEnemyBullet_4
-      rect:
-        serializedVersion: 2
-        x: 0
+        x: 13
         y: 0
-        width: 64
-        height: 64
+        width: 38
+        height: 57
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,8 +160,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4ea117e4da02b32c0800000000000000
-      internalID: -4450927878008136988
+      spriteID: fae7a4d264d27eb50800000000000000
+      internalID: 6622311556502421167
       vertices: []
       indices: 
       edges: []
@@ -217,19 +169,14 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 0a9c45bb616e9ce4f96b6ab1403e1ef2
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      ShootingEnemyBullet_0: -1915278010865849669
-      ShootingEnemyBullet_1: -7159361836597126412
-      ShootingEnemyBullet_2: 3557938173254339097
-      ShootingEnemyBullet_3: 7068270300195272676
-      ShootingEnemyBullet_4: -4450927878008136988
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
