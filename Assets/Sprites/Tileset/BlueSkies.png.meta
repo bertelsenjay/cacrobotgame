@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BlueSkies_0: -4943656690647044316
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

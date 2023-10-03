@@ -12,10 +12,15 @@ public class LevelLoader : MonoBehaviour
     public int saveLevelIndex; 
     public Animator transition;
     public float transitionTime = 2f;
+    public float loadDelay = 0.5f;
     // Update is called once per frame
+    private void Start()
+    {
+        isDead = false;
+    }
     private void Awake()
     {
-        isDead = false; 
+        
         saveLevelIndex = SceneManager.GetActiveScene().buildIndex;
     }
     void Update()
@@ -24,7 +29,8 @@ public class LevelLoader : MonoBehaviour
          //LoadNextLevel(); 
         if (isDead)
         {
-            LoadLastSave();
+            Invoke("LoadLastSave", loadDelay);
+            //LoadLastSave();
         }
     }
     public void LoadLastSave()

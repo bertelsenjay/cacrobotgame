@@ -151,7 +151,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (LevelLoader.isDead)
         {
-            animator.SetBool("isDead", true);
+            Debug.Log("triggered");
+            animator.SetTrigger("isDead");
             return; 
         }
         if (UIShop.isEnabled) { return; }
