@@ -200,7 +200,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      stalgamatites_0: -8693531301520996506
+      stalgamatites_1: -1442081325111624373
+      stalgamatites_2: -7952215716118985899
+      stalgamatites_3: -5367630039764235469
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
