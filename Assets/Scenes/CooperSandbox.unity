@@ -5081,7 +5081,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 37.5}
+  m_AnchoredPosition: {x: -15, y: 37.5}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &862792563
@@ -6601,7 +6601,7 @@ MonoBehaviour:
   bullet: {fileID: 4700613698767522512, guid: 55267ddd5390f0c4388466808090f6b8, type: 3}
   player: {fileID: 1598957769}
   bulletSpeed: 4
-  bulletDelay: 0.2
+  bulletDelay: 2
   spawnPoint: {fileID: 1815362482}
 --- !u!212 &1061933568
 SpriteRenderer:
@@ -6664,7 +6664,7 @@ Transform:
   m_GameObject: {fileID: 1061933564}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.643818, y: 5.624585, z: 0.18857373}
+  m_LocalPosition: {x: 9.31, y: -2.89, z: 0.18857373}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10195,7 +10195,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2330622437744055327, guid: 2bb21a25df1b2854496c21a3e90e2889, type: 3}
       propertyPath: testDash
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2330622437744055327, guid: 2bb21a25df1b2854496c21a3e90e2889, type: 3}
       propertyPath: testChip1
@@ -10207,11 +10207,11 @@ PrefabInstance:
       objectReference: {fileID: 815909317}
     - target: {fileID: 2330622437744055327, guid: 2bb21a25df1b2854496c21a3e90e2889, type: 3}
       propertyPath: testWallJump
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2330622437744055327, guid: 2bb21a25df1b2854496c21a3e90e2889, type: 3}
       propertyPath: testDoubleJump
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2330622437744055327, guid: 2bb21a25df1b2854496c21a3e90e2889, type: 3}
       propertyPath: 'locations.Array.data[0]'
@@ -10270,6 +10270,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1071018431}
     m_Modifications:
+    - target: {fileID: 3609769996428015038, guid: 0ffe8efaab9201448a662d3a788abe4f, type: 3}
+      propertyPath: flashDelay
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 7560449577668127586, guid: 0ffe8efaab9201448a662d3a788abe4f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.5038185
@@ -10500,6 +10504,10 @@ PrefabInstance:
     - target: {fileID: 4670723962921494703, guid: 41a4bc2280cc2154bb082c663318f04a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644917813910904072, guid: 41a4bc2280cc2154bb082c663318f04a, type: 3}
+      propertyPath: health
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5644917813910904072, guid: 41a4bc2280cc2154bb082c663318f04a, type: 3}
       propertyPath: heartText
