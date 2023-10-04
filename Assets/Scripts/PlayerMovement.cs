@@ -104,6 +104,11 @@ public class PlayerMovement : MonoBehaviour
         {
             hasWallJump = true;
         }
+        else
+        {
+            hasWallJump = false;
+        }
+        
         if (testChip1)
         {
             hasChip1 = true;
@@ -218,7 +223,7 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("isSliding", false);
         }
-        if(Input.GetKeyDown(KeyCode.Space) && isTouchingFront)
+        if(Input.GetKeyDown(KeyCode.Space) && isTouchingFront && hasWallJump)
         {
             wallJumping = true;
             Invoke("SetWallJumpingToFalse", wallJumpTime);

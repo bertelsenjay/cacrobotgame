@@ -10194,21 +10194,29 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 2330622437744055327, guid: 2bb21a25df1b2854496c21a3e90e2889, type: 3}
+      propertyPath: testDash
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2330622437744055327, guid: 2bb21a25df1b2854496c21a3e90e2889, type: 3}
+      propertyPath: testChip1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2330622437744055327, guid: 2bb21a25df1b2854496c21a3e90e2889, type: 3}
       propertyPath: textPanel
       value: 
       objectReference: {fileID: 815909317}
     - target: {fileID: 2330622437744055327, guid: 2bb21a25df1b2854496c21a3e90e2889, type: 3}
+      propertyPath: testWallJump
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2330622437744055327, guid: 2bb21a25df1b2854496c21a3e90e2889, type: 3}
+      propertyPath: testDoubleJump
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2330622437744055327, guid: 2bb21a25df1b2854496c21a3e90e2889, type: 3}
       propertyPath: 'locations.Array.data[0]'
       value: 
       objectReference: {fileID: 1926659701}
-    - target: {fileID: 3302911007843463209, guid: 2bb21a25df1b2854496c21a3e90e2889, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3302911007843463209, guid: 2bb21a25df1b2854496c21a3e90e2889, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3302911007843463209, guid: 2bb21a25df1b2854496c21a3e90e2889, type: 3}
       propertyPath: m_LocalPosition.x
       value: 38.66
