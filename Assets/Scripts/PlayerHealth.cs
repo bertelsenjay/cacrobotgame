@@ -55,7 +55,7 @@ public class PlayerHealth : MonoBehaviour
                 hearts[i].enabled = false;
             }
         }
-        if (health <= 0)
+        if (health <= 0 && !LevelLoader.localIsDead)
         {
             LevelLoader.isDead = true;
         }

@@ -126,6 +126,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         Physics2D.IgnoreLayerCollision(8, 7, false);
+        
     }
 
     // Update is called once per frame
@@ -149,12 +150,16 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        
         if (LevelLoader.isDead)
         {
-            Debug.Log("triggered");
             animator.SetTrigger("isDead");
+            LevelLoader.isDead = false;
+            LevelLoader.localIsDead = true;
+            Debug.Log("triggered");
             return; 
         }
+        if (LevelLoader.isDead) { return; }
         if (UIShop.isEnabled) { return; }
         if (isPanelEnabled) { return; }
         if (PauseMenu.isPaused) { return; }
