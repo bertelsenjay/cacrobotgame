@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c0197de2d514008439b568c370f34be3
+guid: dd7cb8f89c896c9438c62960f1651799
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7510356788445965796
-    second: factorygroundextra_0
+      213: 9032272055575105451
+    second: factorybackground2_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,7 +98,91 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: factorygroundextra_0
+      name: factorybackground2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bafcd3b5493195d70800000000000000
+      internalID: 9032272055575105451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: factorybackground2_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32066d1cdd76e848a077aafecd4109d
+      internalID: -2108489765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: factorybackground2_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e00e43e0df47be64fa3400a8235ccf3c
+      internalID: -196513710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: factorybackground2_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff1e59dad692cb45a693ab2478e27cb
+      internalID: 390913157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: factorybackground2_4
       rect:
         serializedVersion: 2
         x: 0
@@ -110,10 +194,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4ede3cf15b52a3860800000000000000
-      internalID: 7510356788445965796
+      spriteID: 0d4ee7393c3cbf14f8448cef972185de
+      internalID: 183252385
       vertices: []
       indices: 
       edges: []
@@ -121,7 +205,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: dcd50b0af2851774892f74b9254fe5ee
     internalID: 0
     vertices: []
     indices: 
@@ -129,7 +213,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      factorygroundextra_0: 7510356788445965796
+      factorybackground2_0: 9032272055575105451
+      factorybackground2_1: -2108489765
+      factorybackground2_2: -196513710
+      factorybackground2_3: 390913157
+      factorybackground2_4: 183252385
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
