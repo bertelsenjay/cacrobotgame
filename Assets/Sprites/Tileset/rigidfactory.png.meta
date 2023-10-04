@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c0197de2d514008439b568c370f34be3
+guid: b08b351e3a69b05469e925e342b7e098
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7510356788445965796
-    second: factorygroundextra_0
+      213: -3141868702408778817
+    second: rigidfactory_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,7 +98,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: factorygroundextra_0
+      name: rigidfactory_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4ede3cf15b52a3860800000000000000
-      internalID: 7510356788445965796
+      spriteID: fbbd10ebf07d564d0800000000000000
+      internalID: -3141868702408778817
       vertices: []
       indices: 
       edges: []
@@ -121,7 +121,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 261d65ee29378234d8314822a312f7c4
     internalID: 0
     vertices: []
     indices: 
@@ -129,7 +129,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      factorygroundextra_0: 7510356788445965796
+      rigidfactory_0: -3141868702408778817
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
