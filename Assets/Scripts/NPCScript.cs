@@ -25,7 +25,7 @@ public class NPCScript : MonoBehaviour
 
     public bool inTutorial = false;
     private int index;
-    private int buildIndex;
+    public int buildIndex;
     public GameObject continueButton; 
     public float wordSpeed;
     public bool playerIsClose;
@@ -33,14 +33,14 @@ public class NPCScript : MonoBehaviour
     private void Start()
     {
         levelLoader = FindObjectOfType<LevelLoader>();
-        if (SceneManager.GetActiveScene().buildIndex == 2)
+        if (SceneManager.GetActiveScene().buildIndex == 3)
         {
             inTutorial = true;
             Debug.Log("In tutorial");
         }
         if (inTutorial)
         {
-            buildIndex = 3; 
+            buildIndex = 2; 
         }
         else
         {

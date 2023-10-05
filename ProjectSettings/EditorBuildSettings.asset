@@ -14,5 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CooperSandbox.unity
     guid: e7a6e84b66271a641a5f3b93e2c781ce
+  - enabled: 1
+    path: Assets/Scenes/Factory.unity
+    guid: 4892b2361c8905841b3f2afaa5738eac
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
