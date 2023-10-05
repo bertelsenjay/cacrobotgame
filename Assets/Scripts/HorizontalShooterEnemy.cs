@@ -14,8 +14,9 @@ public class HorizontalShooterEnemy : MonoBehaviour
     private GameObject bulletSpawn;
     Rigidbody2D rb;
     Animator anim; 
-    private bool canFire; 
-
+    private bool canFire;
+    public float close = 2;
+    public static bool isClose; 
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +28,17 @@ public class HorizontalShooterEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Vector3 moveDirection = (player.transform.position - transform.position);
+        float distance = moveDirection.magnitude;
+        moveDirection.Normalize(); 
+        if (distance < close)
+        {
+            isClose = true;
+        }
+        else
+        {
+            isClose = false;
+        }
         Vector2 fireDirection = (player.transform.position - transform.position);
         fireDirection.Normalize();
         timer -= Time.deltaTime;
