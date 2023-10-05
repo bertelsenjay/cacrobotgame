@@ -14,6 +14,7 @@ public class PlayerCombat : MonoBehaviour
     public LayerMask enemyLayers;
     public float attackRate;
     float nextAttackTime = 0f;
+    
     // Update is called once per frame
     void Update()
     {
@@ -41,23 +42,48 @@ public class PlayerCombat : MonoBehaviour
         Debug.Log(hitEnemies.Length + " enemies");
         foreach (Collider2D enemy in hitEnemies)
         {
+
             if (Enemy.hasUpgrade == false)
             {
-                enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
-                Debug.Log("Did Damage");
+                if (enemy.name.Contains("Horizontal"))
+                {
+                    if (HorizontalShooterEnemy.isClose)
+                    {
+                        enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+                        Debug.Log("Did Damage");
+                    }
+                }
+                else
+                {
+                    enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+                    Debug.Log("Did Damage");
+
+                }
             }
             else if (Enemy.hasUpgrade == true)
             {
-                enemy.GetComponent<Enemy>().TakeDamage(upgradedAtttackDamage);
-                Debug.Log("Did Damage");
-            }
-             
-        }
+                if (enemy.name.Contains("Horizontal"))
+                {
+                    if (HorizontalShooterEnemy.isClose)
+                    {
+                        enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+                        Debug.Log("Did Damage");
+                    }
+                }
+                else
+                {
+                    enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+                    Debug.Log("Did Damage");
+                }
 
-        /*foreach (Collider2D bullet in hitBullets)
-        {
-            Destroy(bullet);
-        }*/
+
+            }
+
+            /*foreach (Collider2D bullet in hitBullets)
+            {
+                Destroy(bullet);
+            }*/
+        }
     }
 
     private void OnDrawGizmosSelected()

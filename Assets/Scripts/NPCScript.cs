@@ -4,11 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEditor.Rendering;
+using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 
 public class NPCScript : MonoBehaviour
 {
+    LevelLoader levelLoader; 
     public bool isNPC = true;
-    public bool isShop = true; 
+    public bool isShop = true;
+    public bool isDoor = false; 
     public GameObject dialoguePanel;
     public TextMeshProUGUI dialogueText;
     public int chipRequiredIndex;
@@ -17,12 +21,32 @@ public class NPCScript : MonoBehaviour
     bool hasSpokenWithChip = false;
     public string[] dialogue;
     public string[] dialogueWithChip;
-    public string[] dialogueAfterChip; 
-    
+    public string[] dialogueAfterChip;
+
+    public bool inTutorial = false;
     private int index;
+    private int buildIndex;
     public GameObject continueButton; 
     public float wordSpeed;
-    public bool playerIsClose; 
+    public bool playerIsClose;
+
+    private void Start()
+    {
+        levelLoader = FindObjectOfType<LevelLoader>();
+        if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            inTutorial = true;
+            Debug.Log("In tutorial");
+        }
+        if (inTutorial)
+        {
+            buildIndex = 3; 
+        }
+        else
+        {
+            buildIndex = SceneManager.GetActiveScene().buildIndex; 
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -64,9 +88,14 @@ public class NPCScript : MonoBehaviour
             {
                 OpenShopMenu();
             }
+            else if (isDoor)
+            {
+                Debug.Log("Loading Next level");
+                levelLoader.LoadNextLevel(buildIndex);
+            }
         }
 
-        if (dialogueText.text == dialogue[index] && !hasCorrectChip )
+        if (dialogueText.text == dialogue[index] && !hasCorrectChip)
         {
             continueButton.SetActive(true);
         }
