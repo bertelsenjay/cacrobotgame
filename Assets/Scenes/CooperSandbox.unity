@@ -6315,7 +6315,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &976715094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6497,7 +6497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d34e6b6fd77de846bf2bf81a9a4647a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  saveIndex: 0
+  position: {fileID: 984065358}
 --- !u!61 &984065357
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6553,7 +6553,7 @@ Transform:
   m_GameObject: {fileID: 984065355}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 48.67, y: -1.7309331, z: 0.018379198}
+  m_LocalPosition: {x: 48.67, y: -0.81, z: 0.018379198}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10497,6 +10497,10 @@ PrefabInstance:
       propertyPath: textPanel
       value: 
       objectReference: {fileID: 815909317}
+    - target: {fileID: 2330622437744055327, guid: 2bb21a25df1b2854496c21a3e90e2889, type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 984065358}
     - target: {fileID: 2330622437744055327, guid: 2bb21a25df1b2854496c21a3e90e2889, type: 3}
       propertyPath: testWallJump
       value: 1

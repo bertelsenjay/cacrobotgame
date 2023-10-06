@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI; 
 
 public class PlayerMovement : MonoBehaviour
@@ -82,6 +83,7 @@ public class PlayerMovement : MonoBehaviour
     int currentCurrency;
 
     public static int amountOfKeys = 0;
+    public Transform respawnPoint;
     #endregion
     void Awake()
     {
@@ -130,6 +132,28 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        switch (SavePoint.saveIndex)
+        {
+            case 0:
+                if (SavePoint.hasSaved)
+                {
+                    if (transform.position != respawnPoint.position)
+                    {
+                        transform.position = respawnPoint.position;
+
+                    }
+
+                }
+                break;
+            case 1:
+                if (SavePoint.hasSaved)
+                {
+                    transform.position = respawnPoint.position;
+                }
+                break;
+
+            
+        }
         Physics2D.IgnoreLayerCollision(8, 7, false);
         
     }
