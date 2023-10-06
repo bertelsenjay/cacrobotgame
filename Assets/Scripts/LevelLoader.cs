@@ -9,7 +9,8 @@ using UnityEngine.SceneManagement;
 public class LevelLoader : MonoBehaviour
 {
     public static bool isDead = false;
-    public static bool localIsDead = false; 
+    public static bool localIsDead = false;
+    public static int savePointIndex = 2;
     public int saveLevelIndex; 
     public Animator transition;
     Animator anim; 
@@ -38,12 +39,17 @@ public class LevelLoader : MonoBehaviour
             anim.ResetTrigger("Attack");*/
             //Invoke("LoadLastSave", loadDelay);
             //anim.SetTrigger("isDead");
-            LoadLastSave();
+            LoadSavedLevel();
         }
     }
-    public void LoadLastSave()
+    public void ReloadLevel()
     {
         StartCoroutine(LoadLevel(saveLevelIndex));
+    }
+
+    public void LoadSavedLevel()
+    {
+        StartCoroutine(LoadLevel(savePointIndex));
     }
 
     public void LoadNextLevel(int sceneIndex)
