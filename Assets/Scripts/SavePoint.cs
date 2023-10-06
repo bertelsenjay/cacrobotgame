@@ -10,9 +10,11 @@ public class SavePoint : MonoBehaviour
     public Transform position;
     private GameObject target;
     public static bool hasSaved = false;
+    PlayerHealth playerHealth;
     // Start is called before the first frame update
     void Start()
     {
+        playerHealth = FindObjectOfType<PlayerHealth>();
         /*switch (saveIndex)
         {
             case 0:
@@ -36,6 +38,7 @@ public class SavePoint : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         hasSaved = true;
+        playerHealth.LoseHealth(-8);
         if (SceneManager.GetActiveScene().buildIndex == 0)
         {
             saveIndex = 0;
@@ -46,6 +49,7 @@ public class SavePoint : MonoBehaviour
         }
         if (collision.gameObject.tag == "Player")
         {
+
             switch (saveIndex)
             {
                 case 0:
