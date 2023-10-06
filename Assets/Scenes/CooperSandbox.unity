@@ -3152,6 +3152,7 @@ MonoBehaviour:
   dialogueAfterChip:
   - I've Already Talked to You!
   inTutorial: 0
+  buildIndex: 0
   continueButton: {fileID: 598795137}
   wordSpeed: 0.05
   playerIsClose: 0
@@ -3373,6 +3374,7 @@ MonoBehaviour:
   dialogueAfterChip:
   - I've Already Talked to You!
   inTutorial: 0
+  buildIndex: 0
   continueButton: {fileID: 598795137}
   wordSpeed: 0.05
   playerIsClose: 0
@@ -4307,6 +4309,7 @@ MonoBehaviour:
   dialogueWithChip: []
   dialogueAfterChip: []
   inTutorial: 0
+  buildIndex: 0
   continueButton: {fileID: 0}
   wordSpeed: 0
   playerIsClose: 0
@@ -6154,6 +6157,7 @@ MonoBehaviour:
   dialogueAfterChip:
   - I've Already Talked to You!
   inTutorial: 0
+  buildIndex: 0
   continueButton: {fileID: 598795137}
   wordSpeed: 0.05
   playerIsClose: 0
@@ -6463,6 +6467,98 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!1 &984065355
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 984065358}
+  - component: {fileID: 984065357}
+  - component: {fileID: 984065356}
+  m_Layer: 0
+  m_Name: SavePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &984065356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984065355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d34e6b6fd77de846bf2bf81a9a4647a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveIndex: 0
+--- !u!61 &984065357
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984065355}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.024440765, y: 0.0977633}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 3.346321, y: 2.808622}
+  m_EdgeRadius: 0
+--- !u!4 &984065358
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984065355}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 48.67, y: -1.7309331, z: 0.018379198}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1031636692
 GameObject:
   m_ObjectHideFlags: 0
@@ -6856,7 +6952,7 @@ Transform:
   m_GameObject: {fileID: 1061933564}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.31, y: -2.89, z: 0.18857373}
+  m_LocalPosition: {x: 29.48, y: -2.89, z: 0.18857373}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7120,7 +7216,7 @@ GameObject:
   - component: {fileID: 1232012141}
   m_Layer: 6
   m_Name: Floor (9)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10386,6 +10482,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 2330622437744055327, guid: 2bb21a25df1b2854496c21a3e90e2889, type: 3}
+      propertyPath: index
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2330622437744055327, guid: 2bb21a25df1b2854496c21a3e90e2889, type: 3}
       propertyPath: testDash
       value: 1
       objectReference: {fileID: 0}
@@ -10468,7 +10568,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7560449577668127586, guid: 0ffe8efaab9201448a662d3a788abe4f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.5038185
+      value: 10.56
       objectReference: {fileID: 0}
     - target: {fileID: 7560449577668127586, guid: 0ffe8efaab9201448a662d3a788abe4f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10699,7 +10799,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5644917813910904072, guid: 41a4bc2280cc2154bb082c663318f04a, type: 3}
       propertyPath: health
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5644917813910904072, guid: 41a4bc2280cc2154bb082c663318f04a, type: 3}
       propertyPath: heartText
@@ -10763,3 +10863,4 @@ SceneRoots:
   - {fileID: 846726329}
   - {fileID: 1071018431}
   - {fileID: 760590127}
+  - {fileID: 984065358}
