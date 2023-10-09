@@ -6,12 +6,15 @@ using TMPro;
 public class PlayerHealth : MonoBehaviour
 {
     public int health = 5;
+    public static int publicHealth = 5;
     public int noOfHearts;
+    public static int publicNoOfHearts = 5; 
     //public GameObject player; 
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
     public int heartPieces = 0;
+    public static int publicHeartPieces = 0; 
     public TextMeshProUGUI heartText; 
     //public static bool healthLocked = false;
 
@@ -20,7 +23,9 @@ public class PlayerHealth : MonoBehaviour
 
     private void Awake()
     {
-        
+        health = publicHealth;
+        noOfHearts = publicNoOfHearts;
+        heartPieces = publicHeartPieces;
     }
     private void Update()
     {
@@ -29,6 +34,7 @@ public class PlayerHealth : MonoBehaviour
         {
             heartPieces -= 4;
             noOfHearts++;
+            publicNoOfHearts++;
             health = noOfHearts;
         }
         if (health > noOfHearts)
