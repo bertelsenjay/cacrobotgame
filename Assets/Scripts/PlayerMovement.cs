@@ -401,6 +401,12 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine(Invulnerability());
             playerHealth.health--;
         }
+
+        if (collision.gameObject.tag == "Killbox")
+        {
+            playerHealth.health = 0; 
+        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
