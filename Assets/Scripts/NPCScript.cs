@@ -102,6 +102,22 @@ public class NPCScript : MonoBehaviour
         else if (dialogueText.text == dialogueWithChip[index] && hasCorrectChip)
         {
             continueButton.SetActive(true);
+            if (chipRequiredIndex == 0)
+            {
+                //Give item
+            }
+            else if (chipRequiredIndex == 1)
+            {
+                //Give item
+            }
+            else if (chipRequiredIndex == 2)
+            {
+                //Give item
+            }
+            else if (chipRequiredIndex == 3)
+            {
+                //Give item
+            }
         }
         else if (dialogueText.text == dialogueAfterChip[index] && hasCorrectChip)
         {
