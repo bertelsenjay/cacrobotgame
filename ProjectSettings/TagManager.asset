@@ -12,6 +12,7 @@ TagManager:
   - EnemyBullet
   - Sky
   - Killbox
+  - Chip
   layers:
   - Default
   - TransparentFX
