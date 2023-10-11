@@ -407,6 +407,8 @@ public class PlayerMovement : MonoBehaviour
             playerHealth.health = 0; 
         }
 
+        
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -416,7 +418,30 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine(Invulnerability());
             playerHealth.health--;
         }*/
-        
+        if (collision.gameObject.tag == "Chip")
+        {
+            Destroy(collision.gameObject);
+            if (!hasChip1 && !hasChip2 && !hasChip3 && !hasChip4)
+            {
+                hasChip1 = true;
+                Debug.Log("chip 1");
+            }
+            else if (hasChip1 && !hasChip2 && !hasChip3 && !hasChip4)
+            {
+                hasChip2 = true;
+                Debug.Log("chip 2");
+            }
+            else if (hasChip1 && hasChip2 && !hasChip3 && !hasChip4)
+            {
+                hasChip3 = true;
+                Debug.Log("chip 3");
+            }
+            else if (hasChip1 && hasChip2 && hasChip3 && !hasChip4)
+            {
+                hasChip4 = true;
+                Debug.Log("chip 4");
+            }
+        }
     }
 
     private void SetNewPosition()
