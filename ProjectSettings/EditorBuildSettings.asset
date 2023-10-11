@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/CooperSandbox.unity
-    guid: e7a6e84b66271a641a5f3b93e2c781ce
+    path: Assets/Scenes/MainMenu.unity
+    guid: 9f2a54c44a582654db9f4fc38179e19a
   - enabled: 1
     path: Assets/Scenes/Factory.unity
     guid: 4892b2361c8905841b3f2afaa5738eac

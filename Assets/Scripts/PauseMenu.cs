@@ -1,10 +1,14 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
     Canvas canvas;
+    LevelLoader levelLoader;
     [SerializeField] private CanvasGroup myUIGRoup;
     [SerializeField] private bool fadeIn = false;
     [SerializeField] private bool fadeOut = false;
@@ -14,6 +18,7 @@ public class PauseMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        levelLoader = FindObjectOfType<LevelLoader>(); 
         canvas = GetComponent<Canvas>();
         HideUIStart();
         canvas.enabled = false;
@@ -72,8 +77,13 @@ public class PauseMenu : MonoBehaviour
         }
 
         
+        
     }
 
+    public void LoadMainMenu()
+    {
+        levelLoader.LoadNextLevel(0);
+    }
 
     public void ShowUI()
     {
