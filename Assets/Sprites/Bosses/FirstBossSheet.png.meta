@@ -344,7 +344,17 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FirstBossSheet_0: -6891762290468890532
+      FirstBossSheet_1: -8735770058821490309
+      FirstBossSheet_2: 7103482113185345385
+      FirstBossSheet_3: -9009337194903716102
+      FirstBossSheet_4: 3887546992443346854
+      FirstBossSheet_5: -7101618573711409515
+      FirstBossSheet_6: 1674659424011209086
+      FirstBossSheet_7: 7187196186515775357
+      FirstBossSheet_8: -1401098068834440017
+      FirstBossSheet_9: 3017079758332586349
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
