@@ -9,6 +9,7 @@ public class UIShop : MonoBehaviour
     public static bool isEnabled = false;
     
     public int currentCurrency;
+    public static int publicCurrentCurrency = 0; 
     int itemIndex;
     public TextMeshProUGUI currencyText; 
     public GameObject[] buttons;
@@ -21,6 +22,7 @@ public class UIShop : MonoBehaviour
     private void Awake()
     {
         playerHealth = FindObjectOfType<PlayerHealth>();
+        currentCurrency = publicCurrentCurrency; 
     }
     private void Start()
     {
@@ -40,6 +42,7 @@ public class UIShop : MonoBehaviour
     public void AddCurrency(int amount)
     {
         currentCurrency += amount;
+        publicCurrentCurrency += amount; 
     }
 
     public void SetItemIndex(int index)
