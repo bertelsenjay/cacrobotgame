@@ -84,6 +84,7 @@ public class PlayerMovement : MonoBehaviour
 
     public static int amountOfKeys = 0;
     public Transform respawnPoint;
+    public static bool coroutineStart = false; 
     #endregion
     void Awake()
     {
@@ -330,6 +331,12 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("isRunning", false);
         }
+
+        if (coroutineStart)
+        {
+            StartCoroutine(Invulnerability());
+            coroutineStart = false; 
+        }
     }
 
     void SetWallJumpingToFalse()
@@ -370,6 +377,13 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine(Invulnerability());
             playerHealth.health--;
         }
+
+        if (collision.gameObject.tag == "Boss")
+        {
+            StartCoroutine(Invulnerability());
+            playerHealth.health--;
+        }
+
         if (collision.gameObject.tag == "Trap")
         {
             StartCoroutine(Invulnerability());
@@ -453,6 +467,7 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log("Starting iFrames");
         Physics2D.IgnoreLayerCollision(8, 7, true);
         Physics2D.IgnoreLayerCollision(8, 9, true);
+        Physics2D.IgnoreLayerCollision(8, 11, true);
         //PlayerHealth.healthLocked = true; 
         //Debug.Log(PlayerHealth.healthLocked);
         for (int i = 0; i < noOfFlashes; i++)
@@ -464,6 +479,7 @@ public class PlayerMovement : MonoBehaviour
         }
         Physics2D.IgnoreLayerCollision(8, 7, false);
         Physics2D.IgnoreLayerCollision(8, 9, false);
+        Physics2D.IgnoreLayerCollision(8, 11, false);
         //PlayerHealth.healthLocked = false;
         //Debug.Log(PlayerHealth.healthLocked);
     }

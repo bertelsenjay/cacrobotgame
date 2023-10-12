@@ -12,6 +12,7 @@ public class PlayerCombat : MonoBehaviour
     public Transform attackPoint;
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
+    public LayerMask bossLayers;
     public float attackRate;
     float nextAttackTime = 0f;
     
@@ -38,8 +39,21 @@ public class PlayerCombat : MonoBehaviour
         animator.SetTrigger("Attack");
         Debug.Log("Attacked");
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+        Collider2D hitBoss = Physics2D.OverlapCircle(attackPoint.position, attackRange, bossLayers);
         //Collider2D[] hitBullets = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, bulletLayers);
         Debug.Log(hitEnemies.Length + " enemies");
+        if (hitBoss != null)
+        {
+            if (Enemy.hasUpgrade == false)
+            {
+                hitBoss.GetComponent<FirstBossHealth>().TakeDamage(attackDamage);
+            }
+            else if (Enemy.hasUpgrade == true)
+            {
+                hitBoss.GetComponent<FirstBossHealth>().TakeDamage(upgradedAtttackDamage);
+            }
+        }
+        
         foreach (Collider2D enemy in hitEnemies)
         {
 
@@ -53,12 +67,13 @@ public class PlayerCombat : MonoBehaviour
                         Debug.Log("Did Damage");
                     }
                 }
-                else
+                else if (enemy.name.Contains("Enemy"))
                 {
                     enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
                     Debug.Log("Did Damage");
 
                 }
+                
             }
             else if (Enemy.hasUpgrade == true)
             {
@@ -66,15 +81,16 @@ public class PlayerCombat : MonoBehaviour
                 {
                     if (HorizontalShooterEnemy.isClose)
                     {
-                        enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+                        enemy.GetComponent<Enemy>().TakeDamage(upgradedAtttackDamage);
                         Debug.Log("Did Damage");
                     }
                 }
-                else
+                else if (enemy.name.Contains("Enemy"))
                 {
-                    enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+                    enemy.GetComponent<Enemy>().TakeDamage(upgradedAtttackDamage);
                     Debug.Log("Did Damage");
                 }
+                
 
 
             }
