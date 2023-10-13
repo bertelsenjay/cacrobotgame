@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SewersWIP_0: -2520430924419455618
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
