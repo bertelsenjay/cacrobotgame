@@ -44,11 +44,17 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
         Debug.Log("Dead");
         shop.AddCurrency(moneyWorth);
+        if (gameObject.name == "Boss")
+        {
+            BossSpawn.hasDied1 = true;
+        }
+
     }
 
-    public float GetLocalScale(int health, int maxHealth)
+    public void GetLocalScale()
     {
-        return (float)currentHealth / (float)maxHealth;
+        
+        HealthBar.scale = (float)currentHealth / (float)maxHealth;
     }
 
 }
