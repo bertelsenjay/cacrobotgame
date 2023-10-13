@@ -164,6 +164,7 @@ MonoBehaviour:
   index: 0
   newPositionDelay: 0.8
   wallJumpAnimDelay: 0.4
+  respawnPoint: {fileID: 0}
 --- !u!70 &8349295247765880772
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -221,6 +222,9 @@ MonoBehaviour:
   enemyLayers:
     serializedVersion: 2
     m_Bits: 128
+  bossLayers:
+    serializedVersion: 2
+    m_Bits: 2048
   attackRate: 1
 --- !u!95 &7644923385168340168
 Animator:
