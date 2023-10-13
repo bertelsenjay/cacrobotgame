@@ -45,4 +45,10 @@ public class Enemy : MonoBehaviour
         Debug.Log("Dead");
         shop.AddCurrency(moneyWorth);
     }
+
+    public float GetLocalScale(int health, int maxHealth)
+    {
+        return (float)currentHealth / (float)maxHealth;
+    }
+
 }
