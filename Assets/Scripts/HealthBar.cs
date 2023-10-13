@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; 
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HealthBar : MonoBehaviour
 {
@@ -12,20 +13,19 @@ public class HealthBar : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        //bar = transform.Find("Bar");
-        //bar.localScale = new Vector3(.4f, 1f);
-        //bar.transform.localScale = new Vector3(0.5f, 1f);
+        
     }
 
     private void Update()
     {
-        //Debug.Log("Current local scale " + boss.GetLocalScale());
+        
         Debug.Log(scale);
         boss.GetLocalScale();
         bar.transform.localScale = new Vector3(scale, 1f);
         if (bar.transform.localScale.x <= 0f)
         {
-            //bar.SetActive(false);
+            bar.SetActive(false);
+            Debug.Log("Set to false");
         }
 
     }
