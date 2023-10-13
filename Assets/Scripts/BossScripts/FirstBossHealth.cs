@@ -10,6 +10,7 @@ public class FirstBossHealth : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
+        Debug.Log("Boss Damage Taken");
         if (health <= 0)
         {
             Die(); 
