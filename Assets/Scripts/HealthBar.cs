@@ -20,7 +20,7 @@ public class HealthBar : MonoBehaviour
     {
         
         Debug.Log(scale);
-        boss.GetLocalScale();
+        //boss.GetLocalScale();
         bar.transform.localScale = new Vector3(scale, 1f);
         if (bar.transform.localScale.x <= 0f)
         {
