@@ -23,10 +23,20 @@ public class BossSpawn : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject == bossTriggerArea && !hasSpawned1 && !hasDied1)
+        if (collision.gameObject.name == "Player" && !hasSpawned1 && !hasDied1)
         {
             Instantiate(boss, bossSpawnPoint.position, Quaternion.identity);
             hasSpawned1 = true;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == "Player" && !hasSpawned1 && !hasDied1)
+        {
+            Instantiate(boss, bossSpawnPoint.position, Quaternion.identity);
+            hasSpawned1 = true;
+            Debug.Log("Boss instantiated");
         }
     }
 }

@@ -44,7 +44,7 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
         Debug.Log("Dead");
         shop.AddCurrency(moneyWorth);
-        if (gameObject.name == "Boss")
+        if (gameObject.name == "Boss(Clone)")
         {
             BossSpawn.hasDied1 = true;
         }
