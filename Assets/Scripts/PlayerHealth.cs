@@ -29,6 +29,7 @@ public class PlayerHealth : MonoBehaviour
     }
     private void Update()
     {
+        publicHealth = health;
         heartText.text = "Heart Pieces: " + heartPieces;
         if (heartPieces >= 4)
         {
@@ -73,6 +74,7 @@ public class PlayerHealth : MonoBehaviour
     {
         //if (healthLocked) { return; }
         health -= damage;
+        
     }
 
     
