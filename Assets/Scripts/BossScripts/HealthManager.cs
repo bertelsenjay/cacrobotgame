@@ -7,7 +7,8 @@ public class HealthManager : MonoBehaviour
 {
 
     public GameObject healthBar;
-    public Enemy boss; 
+    public Enemy boss;
+    public BossManager bossManager;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +19,7 @@ public class HealthManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        boss.GetLocalScale();
+        bossManager.GetLocalScale();
         if (HealthBar.scale <= 0)
         {
             healthBar.SetActive(false);
@@ -27,5 +28,6 @@ public class HealthManager : MonoBehaviour
         {
             healthBar.SetActive(true);
         }
+        
     }
 }

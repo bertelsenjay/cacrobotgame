@@ -5,6 +5,7 @@ using UnityEngine;
 public class BossManager : MonoBehaviour
 {
     public GameObject boss;
+    public Enemy bossEnemy; 
     public static bool hasDied1 = false;
     public static bool hasDied2 = false;
     public static bool hasDied3 = false;
@@ -13,7 +14,7 @@ public class BossManager : MonoBehaviour
     bool hasSpawned3 = false;
     int currentSceneIndex;
 
-    private void Start()
+    private void Awake()
     {
         boss.SetActive(false);
     }
@@ -33,5 +34,12 @@ public class BossManager : MonoBehaviour
             boss.SetActive(true);
             hasSpawned1 = true;
         }
+    }
+
+    public void GetLocalScale()
+    {
+        HealthBar.scale = (float)bossEnemy.currentHealth / (float)bossEnemy.maxHealth;
+        Debug.Log("Local scale got");
+        Debug.Log(HealthBar.scale);
     }
 }

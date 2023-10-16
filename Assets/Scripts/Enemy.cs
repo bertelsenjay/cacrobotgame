@@ -10,7 +10,7 @@ public class Enemy : MonoBehaviour
     public float flashDelay;
     UIShop shop;
     SpriteRenderer spriteRenderer; 
-    int currentHealth; 
+    public int currentHealth; 
     
     // Start is called before the first frame update
     void Start()
