@@ -33,7 +33,7 @@ public class NPCScript : MonoBehaviour
     private void Start()
     {
         levelLoader = FindObjectOfType<LevelLoader>();
-        if (SceneManager.GetActiveScene().buildIndex == 3)
+        if (SceneManager.GetActiveScene().buildIndex == 1)
         {
             inTutorial = true;
             Debug.Log("In tutorial");
