@@ -24,7 +24,7 @@ public class HealthBar : MonoBehaviour
         bar.transform.localScale = new Vector3(scale, 1f);
         if (bar.transform.localScale.x <= 0f)
         {
-            bar.SetActive(false);
+            //bar.SetActive(false);
             Debug.Log("Set to false");
         }
 
