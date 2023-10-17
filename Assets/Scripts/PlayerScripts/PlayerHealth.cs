@@ -29,6 +29,7 @@ public class PlayerHealth : MonoBehaviour
     }
     private void Update()
     {
+        
         publicHealth = health;
         heartText.text = "Heart Pieces: " + heartPieces;
         if (heartPieces >= 4)
@@ -65,6 +66,9 @@ public class PlayerHealth : MonoBehaviour
         if (health <= 0 && !LevelLoader.localIsDead)
         {
             LevelLoader.isDead = true;
+            health = noOfHearts;
+            publicHealth = noOfHearts;
+            
         }
     }
 
