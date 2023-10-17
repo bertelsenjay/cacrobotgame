@@ -15,7 +15,8 @@ public class PlayerHealth : MonoBehaviour
     public Sprite emptyHeart;
     public int heartPieces = 0;
     public static int publicHeartPieces = 0; 
-    public TextMeshProUGUI heartText; 
+    public TextMeshProUGUI heartText;
+    UIShop shop;
     //public static bool healthLocked = false;
 
     
@@ -26,6 +27,7 @@ public class PlayerHealth : MonoBehaviour
         health = publicHealth;
         noOfHearts = publicNoOfHearts;
         heartPieces = publicHeartPieces;
+        shop = FindObjectOfType<UIShop>();
     }
     private void Update()
     {
@@ -66,9 +68,10 @@ public class PlayerHealth : MonoBehaviour
         if (health <= 0 && !LevelLoader.localIsDead)
         {
             LevelLoader.isDead = true;
+
             health = noOfHearts;
             publicHealth = noOfHearts;
-            
+            shop.LoseMoneyOnDeath();
         }
     }
 

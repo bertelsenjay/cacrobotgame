@@ -49,6 +49,20 @@ public class UIShop : MonoBehaviour
     {
         itemIndex = index;
     }
+    
+    public void LoseMoneyOnDeath()
+    {
+        currentCurrency -= 20;
+        publicCurrentCurrency -= 20;
+        if (currentCurrency < 0)
+        {
+            currentCurrency = 0;
+        }
+        if (publicCurrentCurrency < 0)
+        {
+            publicCurrentCurrency = 0;
+        }
+    }
 
     public void PurchaseItem()
     {
