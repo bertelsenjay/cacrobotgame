@@ -47,6 +47,10 @@ public class SavePoint : MonoBehaviour
         {
             saveIndex = 1;
         }
+        if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            saveIndex = 2;
+        }
         if (collision.gameObject.tag == "Player")
         {
 
@@ -59,6 +63,9 @@ public class SavePoint : MonoBehaviour
                     break;
                 case 1:
                     LevelLoader.savePointIndex = 1;
+                    break;
+                case 2:
+                    LevelLoader.savePointIndex = 2;
                     break;
 
             }

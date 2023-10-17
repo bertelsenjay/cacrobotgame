@@ -74,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("RespawnLocations")]
     public Transform[] locations;
-    public int index = 0;
+    public static int index = 0;
     public float newPositionDelay = 0.5f; 
     public static bool gotHitByTrap = false; 
 
