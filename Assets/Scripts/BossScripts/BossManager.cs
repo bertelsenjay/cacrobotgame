@@ -39,7 +39,7 @@ public class BossManager : MonoBehaviour
     public void GetLocalScale()
     {
         HealthBar.scale = (float)bossEnemy.currentHealth / (float)bossEnemy.maxHealth;
-        Debug.Log("Local scale got");
+        
         Debug.Log(HealthBar.scale);
     }
 }

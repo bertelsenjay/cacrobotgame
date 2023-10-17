@@ -343,5 +343,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 50
-  moneyWorth: 0
+  moneyWorth: 125
   flashDelay: 0
+  currentHealth: 0
