@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5fd9d5d91c7c07d429c03ab65924f645
+guid: 376ee185fad7994408c139c51c5d2a42
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7310658966428977380
-    second: caveground_0
+      213: 7591552717487624155
+    second: caveblocks_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,7 +98,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: caveground_0
+      name: caveblocks_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,14 +112,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4e80600b89da47560800000000000000
-      internalID: 7310658966428977380
+      spriteID: bdf408b89fc9a5960800000000000000
+      internalID: 7591552717487624155
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caveground_1
+      name: caveblocks_1
       rect:
         serializedVersion: 2
         x: 64
@@ -133,14 +133,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3053b9d1679406240baa3ff0d088ea49
-      internalID: 109934148
+      spriteID: a73b313fe23ed374db7181a382160890
+      internalID: 89477173
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caveground_2
+      name: caveblocks_2
       rect:
         serializedVersion: 2
         x: 128
@@ -154,14 +154,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53174d45892d07d47aa48b36eefd20e9
-      internalID: -1422632220
+      spriteID: 5fa69634c0943904f8df748016290ad7
+      internalID: 1771477695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caveground_3
+      name: caveblocks_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94a7b715ff5217e4bbdcf800bddb4cf6
+      internalID: -210798082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caveblocks_4
       rect:
         serializedVersion: 2
         x: 0
@@ -175,14 +196,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a3e9d385db33494a8e6554d1d88d25c
-      internalID: -2022724540
+      spriteID: a2ff4395c404862499e5e267f59d1b72
+      internalID: 1013317148
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caveground_4
+      name: caveblocks_5
       rect:
         serializedVersion: 2
         x: 64
@@ -196,14 +217,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89e1d5e83b1a4f940bdb0f764ecde7e7
-      internalID: 185354455
+      spriteID: 2755eead3a75e854f8dafe4c84d7f9f4
+      internalID: 1172711898
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caveground_5
+      name: caveblocks_6
       rect:
         serializedVersion: 2
         x: 128
@@ -217,14 +238,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e96fe7b884bd85a4da5d492b8685521d
-      internalID: -114391433
+      spriteID: b7123cf11cb54474f8b28e7804bb2a0d
+      internalID: 427989525
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caveground_6
+      name: caveblocks_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd7873c0d10991840a1341725230885c
+      internalID: -972578532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caveblocks_8
       rect:
         serializedVersion: 2
         x: 0
@@ -238,14 +280,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c0a2403c64697b40aaa24865e0a6c1d
-      internalID: -1685476662
+      spriteID: a96f7e10f7b1a8a449cefc5e23550472
+      internalID: 663961739
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caveground_7
+      name: caveblocks_9
       rect:
         serializedVersion: 2
         x: 64
@@ -259,14 +301,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b5ff849d2fb83f4e84e778110b34d24
-      internalID: 1596131056
+      spriteID: 6f0007f9032bd104498057ec8bd54d79
+      internalID: -1018252478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caveground_8
+      name: caveblocks_10
       rect:
         serializedVersion: 2
         x: 128
@@ -280,14 +322,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aac8fed82a952174782c443a241849ef
-      internalID: -1185054695
+      spriteID: 6bfe8ee587c2d084ea2cca1785f4edcd
+      internalID: 1764790264
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caveground_9
+      name: caveblocks_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40115d0a5ec7a51489a7d78fb028f2eb
+      internalID: -1714285238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caveblocks_12
       rect:
         serializedVersion: 2
         x: 0
@@ -301,14 +364,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f367831c26e29d943ae644e40b755043
-      internalID: 1966120470
+      spriteID: 9a2d18e147ad2214ab4b20892d8c7145
+      internalID: -311828039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caveground_10
+      name: caveblocks_13
       rect:
         serializedVersion: 2
         x: 64
@@ -322,29 +385,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0d461340d65ce1488ea9cac00bad320
-      internalID: 1235134239
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: caveground_11
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1c6c668b54152f64db5f3051c762d95f
-      internalID: 1490669869
+      spriteID: c7e878b5492db23448829697e79c1a18
+      internalID: -1714582734
       vertices: []
       indices: 
       edges: []
@@ -352,7 +394,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 74d9042e99464f74fb9eaeb9587239aa
+    spriteID: a03139acf346ba9419ce58c947b86d86
     internalID: 0
     vertices: []
     indices: 
@@ -360,18 +402,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      caveground_0: 7310658966428977380
-      caveground_1: 109934148
-      caveground_10: 1235134239
-      caveground_11: 1490669869
-      caveground_2: -1422632220
-      caveground_3: -2022724540
-      caveground_4: 185354455
-      caveground_5: -114391433
-      caveground_6: -1685476662
-      caveground_7: 1596131056
-      caveground_8: -1185054695
-      caveground_9: 1966120470
+      caveblocks_0: 7591552717487624155
+      caveblocks_1: 89477173
+      caveblocks_10: 1764790264
+      caveblocks_11: -1714285238
+      caveblocks_12: -311828039
+      caveblocks_13: -1714582734
+      caveblocks_2: 1771477695
+      caveblocks_3: -210798082
+      caveblocks_4: 1013317148
+      caveblocks_5: 1172711898
+      caveblocks_6: 427989525
+      caveblocks_7: -972578532
+      caveblocks_8: 663961739
+      caveblocks_9: -1018252478
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
