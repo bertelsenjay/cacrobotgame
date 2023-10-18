@@ -6,7 +6,7 @@ public class PlayerCombat : MonoBehaviour
 {
 
     public Animator animator;
-
+    AudioSource audioSource; 
     public int attackDamage = 5;
     public int upgradedAtttackDamage = 8; 
     public Transform attackPoint;
@@ -16,7 +16,12 @@ public class PlayerCombat : MonoBehaviour
     public float attackRate;
     float nextAttackTime = 0f;
     public AudioClip attackClip;
-    
+
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -40,6 +45,7 @@ public class PlayerCombat : MonoBehaviour
         animator.SetTrigger("Attack");
         Debug.Log("Attacked");
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+        audioSource.PlayOneShot(attackClip);
         //Collider2D[] hitBoss = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, bossLayers);
         //Collider2D[] hitBullets = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, bulletLayers);
         Debug.Log(hitEnemies.Length + " enemies");
