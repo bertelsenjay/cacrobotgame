@@ -93,15 +93,23 @@ public class PlayerMovement : MonoBehaviour
         playerHealth = FindObjectOfType<PlayerHealth>();
         rb = GetComponent<Rigidbody2D>(); 
         animator = GetComponent<Animator>();
-        
+        #region Test Variables
         if (testDoubleJump)
         {
             hasDoubleJump = true; 
             
         }
+        else if (!testDoubleJump)
+        {
+            hasDoubleJump = false;
+        }
         if (testDash)
         {
             hasDash = true;
+        }
+        else if (!testDash)
+        {
+            hasDash = false;
         }
         if (testWallJump)
         {
@@ -116,18 +124,35 @@ public class PlayerMovement : MonoBehaviour
         {
             hasChip1 = true;
         }
+        else if (!hasChip1)
+        {
+            hasChip1 = false;
+        }
         if (testChip2)
         {
             hasChip2 = true;
+        }
+        else if (!testChip2)
+        {
+            hasChip2 = false;
         }
         if (testChip3)
         {
             hasChip3 = true;
         }
+        else if (!testChip3)
+        {
+            hasChip3 = false;
+        }
         if (testChip4)
         {
             hasChip4 = true;
         }
+        else if (!testChip4)
+        {
+            hasChip4 = false;
+        }
+        #endregion
     }
 
     // Start is called before the first frame update

@@ -13160,6 +13160,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 582583659}
     - target: {fileID: 5644917813910904072, guid: 41a4bc2280cc2154bb082c663318f04a, type: 3}
+      propertyPath: healthCanvas
+      value: 
+      objectReference: {fileID: 202120142}
+    - target: {fileID: 5644917813910904072, guid: 41a4bc2280cc2154bb082c663318f04a, type: 3}
+      propertyPath: bossHealthCanvas
+      value: 
+      objectReference: {fileID: 912218376}
+    - target: {fileID: 5644917813910904072, guid: 41a4bc2280cc2154bb082c663318f04a, type: 3}
       propertyPath: 'hearts.Array.data[0]'
       value: 
       objectReference: {fileID: 1639838358}

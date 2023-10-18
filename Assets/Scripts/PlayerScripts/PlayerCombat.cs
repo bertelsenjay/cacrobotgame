@@ -15,6 +15,7 @@ public class PlayerCombat : MonoBehaviour
     public LayerMask bossLayers;
     public float attackRate;
     float nextAttackTime = 0f;
+    public AudioClip attackClip;
     
     // Update is called once per frame
     void Update()

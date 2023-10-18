@@ -17,6 +17,8 @@ public class PlayerHealth : MonoBehaviour
     public static int publicHeartPieces = 0; 
     public TextMeshProUGUI heartText;
     UIShop shop;
+    public Canvas healthCanvas;
+    public Canvas bossHealthCanvas; 
     //public static bool healthLocked = false;
 
     
@@ -28,6 +30,7 @@ public class PlayerHealth : MonoBehaviour
         noOfHearts = publicNoOfHearts;
         heartPieces = publicHeartPieces;
         shop = FindObjectOfType<UIShop>();
+        healthCanvas.enabled = true;
     }
     private void Update()
     {
@@ -72,6 +75,8 @@ public class PlayerHealth : MonoBehaviour
             health = noOfHearts;
             publicHealth = noOfHearts;
             shop.LoseMoneyOnDeath();
+            healthCanvas.enabled = false;
+            bossHealthCanvas.enabled = false;
         }
     }
 
