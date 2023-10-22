@@ -13,7 +13,8 @@ public class Enemy : MonoBehaviour
     AudioSource audioSource;
     public AudioClip hurtSound;
     public AudioClip deathSound; 
-    public int currentHealth; 
+    public int currentHealth;
+    public bool isBoss = false; 
     
     // Start is called before the first frame update
     void Start()
@@ -37,15 +38,21 @@ public class Enemy : MonoBehaviour
         Debug.Log("CallingFunction");
         audioSource.PlayOneShot(hurtSound);
             currentHealth -= damage;
-        if (currentHealth <= 0 )
+        if (currentHealth <= 0 && !isBoss)
         {
-            Die(); 
+            Invoke("Die", 0.25f);
+            AudioManager.enemyDeathTrigger = true;
+        }
+        else if (currentHealth <= 0 && isBoss)
+        {
+            Die();
         }
         StartCoroutine(FlashRed());
     }
     void Die()
     {
-        audioSource.PlayOneShot(deathSound);
+        //audioSource.PlayOneShot(deathSound);
+        
         Destroy(gameObject);
         Debug.Log("Dead");
         shop.AddCurrency(moneyWorth);
