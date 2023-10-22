@@ -10,6 +10,7 @@ public class MeleeEnemy : MonoBehaviour
     public float attackDistance;
     public float moveSpeed;
     public float timer;
+    [Header("Make sure the bounds are not attached to the gameobject")]
     public Transform leftLimit;
     public Transform rightLimit;
     [HideInInspector] public Transform target;

@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour
     SpriteRenderer spriteRenderer;
     AudioSource audioSource;
     public AudioClip hurtSound;
-    public AudioClip deathSound; 
+    public AudioClip deathSound;
     public int currentHealth;
     public bool isBoss = false; 
     

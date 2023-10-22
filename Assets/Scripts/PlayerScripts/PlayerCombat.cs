@@ -87,7 +87,11 @@ public class PlayerCombat : MonoBehaviour
                     enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
                     Debug.Log("Did boss damage");
                 }
-                
+                else if (enemy.name.Contains("Flyer"))
+                {
+                    enemy.GetComponent<FlyingEnemy>().TakeDamage(attackDamage);
+                    Debug.Log("Did damage to flyer");
+                }
             }
             else if (Enemy.hasUpgrade == true)
             {
@@ -109,7 +113,10 @@ public class PlayerCombat : MonoBehaviour
                     enemy.GetComponent<Enemy>().TakeDamage(upgradedAtttackDamage);
                     Debug.Log("Did boss damage");
                 }
-
+                else if (enemy.name.Contains("Flyer"))
+                {
+                    enemy.GetComponent<FlyingEnemy>().TakeDamage(upgradedAtttackDamage);
+                }
 
             }
 
