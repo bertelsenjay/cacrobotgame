@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SewerDoorWIP_0: 5895212201962059528
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
