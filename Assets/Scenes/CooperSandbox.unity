@@ -981,7 +981,7 @@ MonoBehaviour:
   heuristic: 2
   heuristicScale: 1
   threadCount: 1
-  maxFrameTime: 1
+  maxFrameTime: 10
   batchGraphUpdates: 0
   graphUpdateBatchingInterval: 0.2
   euclideanEmbedding:
@@ -7816,12 +7816,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 976715097}
+  - component: {fileID: 976715100}
   - component: {fileID: 976715096}
   - component: {fileID: 976715095}
   - component: {fileID: 976715094}
-  - component: {fileID: 976715100}
   - component: {fileID: 976715099}
   - component: {fileID: 976715101}
+  - component: {fileID: 976715102}
   m_Layer: 7
   m_Name: Flyer
   m_TagString: Enemy
@@ -8002,6 +8003,33 @@ MonoBehaviour:
   currentHealth: 0
   player: {fileID: 1598957769}
   closeDistance: 10
+--- !u!50 &976715102
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976715093}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &977573050
 GameObject:
   m_ObjectHideFlags: 0
@@ -8115,6 +8143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d34e6b6fd77de846bf2bf81a9a4647a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstEverSavePoint: 0
   position: {fileID: 984065358}
 --- !u!61 &984065357
 BoxCollider2D:
