@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
     public static bool hasUpgrade = false; 
     public int maxHealth = 10;
     public int moneyWorth = 0;
-    public float flashDelay;
+    
     UIShop shop;
     SpriteRenderer spriteRenderer;
     AudioSource audioSource;
@@ -25,12 +25,7 @@ public class Enemy : MonoBehaviour
         currentHealth = maxHealth;
     }
 
-    private IEnumerator FlashRed()
-    {
-        spriteRenderer.color = Color.red;
-        yield return new WaitForSeconds(flashDelay);
-        spriteRenderer.color = Color.white; 
-    }
+   
 
     public void TakeDamage(int damage)
     {
@@ -47,9 +42,9 @@ public class Enemy : MonoBehaviour
         {
             Die();
         }
-        StartCoroutine(FlashRed());
+        
     }
-    void Die()
+    public void Die()
     {
         //audioSource.PlayOneShot(deathSound);
         

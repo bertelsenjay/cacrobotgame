@@ -180,11 +180,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 10
-  moneyWorth: 20
-  flashDelay: 0
+  moneyWorth: 10
   hurtSound: {fileID: 8300000, guid: 09e1616cadf78af4980c92dcba55c942, type: 3}
   deathSound: {fileID: 8300000, guid: 4584977f6c4502c4e89fd64a8d6950c3, type: 3}
   currentHealth: 0
+  isBoss: 0
 --- !u!95 &3688475224499411477
 Animator:
   serializedVersion: 7
