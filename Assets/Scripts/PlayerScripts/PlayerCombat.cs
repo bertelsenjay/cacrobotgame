@@ -109,7 +109,7 @@ public class PlayerCombat : MonoBehaviour
                     enemy.GetComponent<Enemy>().TakeDamage(upgradedAtttackDamage);
                     Debug.Log("Did boss damage");
                 }
-
+                
 
             }
 

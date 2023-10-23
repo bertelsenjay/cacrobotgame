@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class SavePoint : MonoBehaviour
 {
     public static int saveIndex;
+    public bool firstEverSavePoint = false; 
     //public int initialSaveIndex = 0;
     public Transform position;
     private GameObject target;
@@ -35,40 +36,64 @@ public class SavePoint : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        hasSaved = true;
-        playerHealth.LoseHealth(-8);
-        if (SceneManager.GetActiveScene().buildIndex == 0)
+        if (Input.GetKeyDown(KeyCode.E) || firstEverSavePoint)
         {
-            saveIndex = 0;
-        }
-        if (SceneManager.GetActiveScene().buildIndex == 1)
-        {
-            saveIndex = 1;
-        }
-        if (SceneManager.GetActiveScene().buildIndex == 2)
-        {
-            saveIndex = 2;
-        }
-        if (collision.gameObject.tag == "Player")
-        {
-
-            switch (saveIndex)
+            hasSaved = true;
+            playerHealth.LoseHealth(-8);
+            if (SceneManager.GetActiveScene().buildIndex == 0)
             {
-                case 0:
-                    Debug.Log("Index Set");
-                    LevelLoader.savePointIndex = 0;
-                    target = collision.gameObject;
-                    break;
-                case 1:
-                    LevelLoader.savePointIndex = 1;
-                    break;
-                case 2:
-                    LevelLoader.savePointIndex = 2;
-                    break;
+                saveIndex = 0;
+            }
+            if (SceneManager.GetActiveScene().buildIndex == 1)
+            {
+                saveIndex = 1;
+            }
+            if (SceneManager.GetActiveScene().buildIndex == 2)
+            {
+                saveIndex = 2;
+            }
+            if (SceneManager.GetActiveScene().buildIndex == 3)
+            {
+                saveIndex = 3;
+            }
+            if (SceneManager.GetActiveScene().buildIndex == 4)
+            {
+                saveIndex = 4;
+            }
+            if (SceneManager.GetActiveScene().buildIndex == 5)
+            {
+                saveIndex = 5;
+            }
+            if (collision.gameObject.tag == "Player")
+            {
 
+                switch (saveIndex)
+                {
+                    case 0:
+                        Debug.Log("Index Set");
+                        LevelLoader.savePointIndex = 0;
+                        target = collision.gameObject;
+                        break;
+                    case 1:
+                        LevelLoader.savePointIndex = 1;
+                        break;
+                    case 2:
+                        LevelLoader.savePointIndex = 2;
+                        break;
+                    case 3:
+                        LevelLoader.savePointIndex = 3;
+                        break;
+                    case 4:
+                        LevelLoader.savePointIndex = 4;
+                        break;
+                    case 5:
+                        LevelLoader.savePointIndex = 5;
+                        break;
+                }
             }
         }
+        
     }
 }
