@@ -416,7 +416,7 @@ public class PlayerMovement : MonoBehaviour
             //SetNewPosition();
             Invoke("SetNewPosition", newPositionDelay);
             rb.velocity = Vector2.zero;
-            gotHitByTrap = true; 
+            //gotHitByTrap = true; 
         }
 
         if (collision.gameObject.tag == "HeartPiece")
