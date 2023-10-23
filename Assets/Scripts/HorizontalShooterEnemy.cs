@@ -28,17 +28,20 @@ public class HorizontalShooterEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         Vector3 moveDirection = (player.transform.position - transform.position);
         float distance = moveDirection.magnitude;
         moveDirection.Normalize(); 
         if (distance < close)
         {
             isClose = true;
+
         }
         else
         {
             isClose = false;
         }
+        Debug.Log(isClose);
         Vector2 fireDirection = (player.transform.position - transform.position);
         fireDirection.Normalize();
         timer -= Time.deltaTime;

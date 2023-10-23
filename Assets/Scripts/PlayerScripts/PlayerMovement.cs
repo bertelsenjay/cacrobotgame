@@ -481,6 +481,11 @@ public class PlayerMovement : MonoBehaviour
                 Debug.Log("chip 4");
             }
         }
+        if (collision.gameObject.tag == "HeartPiece")
+        {
+            playerHealth.heartPieces++;
+            Destroy(collision.gameObject);
+        }
     }
 
     private void SetNewPosition()
