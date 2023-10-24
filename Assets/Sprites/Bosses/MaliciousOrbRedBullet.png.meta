@@ -176,7 +176,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MaliciousOrbRedBullet_0: -9200197341531697054
+      MaliciousOrbRedBullet_1: 8402505732954424283
+      MaliciousOrbRedBullet_2: -223358033157979740
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

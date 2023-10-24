@@ -176,7 +176,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MaliciousOrbBlueBullet_0: -6741351543954065835
+      MaliciousOrbBlueBullet_1: 6919729933915315722
+      MaliciousOrbBlueBullet_2: -149142657415764269
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
