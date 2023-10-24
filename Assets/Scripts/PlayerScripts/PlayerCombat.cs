@@ -70,7 +70,7 @@ public class PlayerCombat : MonoBehaviour
             {
                 if (enemy.name.Contains("Horizontal"))
                 {
-                    if (HorizontalShooterEnemy.isClose)
+                    if (HorizontalShooterEnemy.isClose || true)
                     {
                         enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
                         Debug.Log("Did Damage");
@@ -93,7 +93,7 @@ public class PlayerCombat : MonoBehaviour
             {
                 if (enemy.name.Contains("Horizontal"))
                 {
-                    if (HorizontalShooterEnemy.isClose)
+                    if (HorizontalShooterEnemy.isClose || true)
                     {
                         enemy.GetComponent<Enemy>().TakeDamage(upgradedAtttackDamage);
                         Debug.Log("Did Damage");

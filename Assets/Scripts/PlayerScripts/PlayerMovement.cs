@@ -416,7 +416,7 @@ public class PlayerMovement : MonoBehaviour
             //SetNewPosition();
             Invoke("SetNewPosition", newPositionDelay);
             rb.velocity = Vector2.zero;
-            gotHitByTrap = true; 
+            //gotHitByTrap = true; 
         }
 
         if (collision.gameObject.tag == "HeartPiece")
@@ -480,6 +480,11 @@ public class PlayerMovement : MonoBehaviour
                 hasChip4 = true;
                 Debug.Log("chip 4");
             }
+        }
+        if (collision.gameObject.tag == "HeartPiece")
+        {
+            playerHealth.heartPieces++;
+            Destroy(collision.gameObject);
         }
     }
 

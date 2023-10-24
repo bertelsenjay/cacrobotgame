@@ -9,7 +9,6 @@ public class Enemy : MonoBehaviour
     public int moneyWorth = 0;
     
     UIShop shop;
-    SpriteRenderer spriteRenderer;
     AudioSource audioSource;
     public AudioClip hurtSound;
     public AudioClip deathSound;
@@ -19,7 +18,6 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
         shop = FindObjectOfType<UIShop>(); 
         audioSource = GetComponent<AudioSource>();
         currentHealth = maxHealth;
@@ -47,7 +45,7 @@ public class Enemy : MonoBehaviour
     public void Die()
     {
         //audioSource.PlayOneShot(deathSound);
-        
+        PlayerHealth.amountKilled++;
         Destroy(gameObject);
         Debug.Log("Dead");
         shop.AddCurrency(moneyWorth);

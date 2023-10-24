@@ -14,9 +14,10 @@ public class HorizontalShooterEnemy : MonoBehaviour
     private GameObject bulletSpawn;
     Rigidbody2D rb;
     Animator anim; 
-    private bool canFire;
+    public static bool canFire = false;
     public float close = 2;
-    public static bool isClose; 
+    public static bool isClose = false;
+    public static bool isAttacking = false; 
     // Start is called before the first frame update
     void Start()
     {
@@ -28,17 +29,20 @@ public class HorizontalShooterEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         Vector3 moveDirection = (player.transform.position - transform.position);
         float distance = moveDirection.magnitude;
         moveDirection.Normalize(); 
         if (distance < close)
         {
             isClose = true;
+
         }
         else
         {
             isClose = false;
         }
+        Debug.Log(isClose);
         Vector2 fireDirection = (player.transform.position - transform.position);
         fireDirection.Normalize();
         timer -= Time.deltaTime;
@@ -57,7 +61,14 @@ public class HorizontalShooterEnemy : MonoBehaviour
             timer = bulletDelay; 
             Debug.Log("Instantiated");
         }
-        
+        if (isAttacking)
+        {
+            anim.SetBool("isAttacking", true);
+        }
+        else if (!isAttacking)
+        {
+            anim.SetBool("isAttacking", false); 
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -73,8 +84,8 @@ public class HorizontalShooterEnemy : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Debug.Log("Player Exited Trigger");
-            canFire = false;
-            anim.SetBool("isAttacking", false);
+            //canFire = false;
+            //anim.SetBool("isAttacking", false);
         }
     }
 
@@ -83,8 +94,8 @@ public class HorizontalShooterEnemy : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Debug.Log("Player is in trigger");
-            canFire = true;
-            anim.SetBool("isAttacking", true);
+            //canFire = true;
+            //anim.SetBool("isAttacking", true);
         }
     }
 }

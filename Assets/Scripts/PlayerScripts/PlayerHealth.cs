@@ -18,7 +18,8 @@ public class PlayerHealth : MonoBehaviour
     public TextMeshProUGUI heartText;
     UIShop shop;
     public Canvas healthCanvas;
-    public Canvas bossHealthCanvas; 
+    public Canvas bossHealthCanvas;
+    public static int amountKilled; 
     //public static bool healthLocked = false;
 
     
@@ -77,6 +78,11 @@ public class PlayerHealth : MonoBehaviour
             shop.LoseMoneyOnDeath();
             healthCanvas.enabled = false;
             bossHealthCanvas.enabled = false;
+        }
+        if (amountKilled >= 2)
+        {
+            health++;
+            amountKilled -= 2; 
         }
     }
 
