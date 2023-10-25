@@ -10,8 +10,10 @@ public class Orb_Fly : StateMachineBehaviour
     FirstBoss boss; 
     public float speed = 2.5f;
     public float attackRange = 1.5f;
-    public float minimumDistance;
-    public Transform bossLocation; 
+    public float minimumDistance = 1f;
+    public float minRange;
+    public float maxRange;
+    //public Transform bossLocation; 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
@@ -26,7 +28,7 @@ public class Orb_Fly : StateMachineBehaviour
         boss.LookAtPlayer();
 
         Vector2 target = new Vector2(player.position.x, rb.position.y);
-        if (Vector2.Distance(bossLocation.position, player.position ) < minimumDistance)
+        if (Vector2.Distance(rb.position, player.position ) < minimumDistance)
         {
             Vector2 newPosition = Vector2.MoveTowards(rb.position, target, -speed * Time.fixedDeltaTime);
             rb.MovePosition(newPosition);
@@ -34,7 +36,7 @@ public class Orb_Fly : StateMachineBehaviour
         //Vector2 newPosition = Vector2.MoveTowards(rb.position, target, -speed * Time.fixedDeltaTime);
         //rb.MovePosition(newPosition);
 
-        if (Vector2.Distance(player.position, rb.position) <= attackRange)
+        if (Vector2.Distance(player.position, rb.position) <= maxRange && Vector2.Distance(player.position, rb.position) >= minRange)
         {
             animator.SetTrigger("Attack");
         }
