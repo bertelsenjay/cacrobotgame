@@ -52,6 +52,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float dashingPower;
     [SerializeField] private float dashingTime;
     [SerializeField] private float dashingCooldown;
+    public AudioClip dashSound;
+    public float dashVolume = 0.6f;
 
 
     private SpriteRenderer spriteRenderer;
@@ -313,6 +315,7 @@ public class PlayerMovement : MonoBehaviour
             if (hasDoubleJump && totalJumps == 1 )
             {
                 animator.SetTrigger("doubleJump");
+                GetComponent<AudioSource>().PlayOneShot(dashSound, dashVolume);
             }
             if (!wallSliding)
             {
@@ -373,6 +376,7 @@ public class PlayerMovement : MonoBehaviour
         
         if (hasDash && !gotHitByTrap)
         {
+            GetComponent<AudioSource>().PlayOneShot(dashSound, dashVolume);
             animator.SetTrigger("Dash");
             canDash = false;
             isDashing = true;

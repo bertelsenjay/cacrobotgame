@@ -14,12 +14,14 @@ public class BossShoot : MonoBehaviour
     private GameObject blueBulletSpawn;
     private GameObject purpleBulletSpawn;
     private GameObject redBulletSpawn;
-    public float bulletSpeed = 1.5f; 
-
+    public float bulletSpeed = 1.5f;
+    public AudioClip shootSound;
+    public float shootVolume = 0.5f; 
 
     public void Shoot()
     {
         Debug.Log("Successful Shot");
+        GetComponent<AudioSource>().PlayOneShot(shootSound, shootVolume);
         Vector2 fireDirection = (player.transform.position - transform.position);
         fireDirection.Normalize();
         Vector2 blueSpawn = blueSpawnPoint.position;

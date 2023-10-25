@@ -344,7 +344,17 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FinalBossWalk_0: 7601658824446984420
+      FinalBossWalk_1: -6028683347440838493
+      FinalBossWalk_2: 1041475279769478786
+      FinalBossWalk_3: 8946576250069448077
+      FinalBossWalk_4: -265695131429619490
+      FinalBossWalk_5: 2790601926379122779
+      FinalBossWalk_6: -1765120964972882084
+      FinalBossWalk_7: 6555129677172001499
+      FinalBossWalk_8: 3933814583084076221
+      FinalBossWalk_9: 5736248975301064244
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
