@@ -60,6 +60,8 @@ public class PlayerMovement : MonoBehaviour
     [Header("IFrames")]
     [SerializeField] private float iFrameDuration;
     [SerializeField] private int noOfFlashes;
+    public AudioClip getHitSound;
+    public float getHitVolume;
 
     [Header("WallJump")]
     bool isTouchingFront;
@@ -403,24 +405,27 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
+            GetComponent<AudioSource>().PlayOneShot(getHitSound, getHitVolume);
             StartCoroutine(Invulnerability());
             playerHealth.health--;
         }
 
         if (collision.gameObject.tag == "Boss")
         {
+            GetComponent<AudioSource>().PlayOneShot(getHitSound, getHitVolume);
             StartCoroutine(Invulnerability());
             playerHealth.health--;
         }
 
         if (collision.gameObject.tag == "Trap")
         {
+            GetComponent<AudioSource>().PlayOneShot(getHitSound, getHitVolume);
             StartCoroutine(Invulnerability());
             playerHealth.health--;
             //SetNewPosition();
             Invoke("SetNewPosition", newPositionDelay);
             rb.velocity = Vector2.zero;
-            //gotHitByTrap = true; 
+            gotHitByTrap = true; 
         }
 
         if (collision.gameObject.tag == "HeartPiece")
@@ -441,6 +446,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (collision.gameObject.tag == "EnemyBullet")
         {
+            GetComponent<AudioSource>().PlayOneShot(getHitSound, getHitVolume);
             StartCoroutine(Invulnerability());
             playerHealth.health--;
         }

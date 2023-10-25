@@ -71,6 +71,7 @@ public class PlayerHealth : MonoBehaviour
         }
         if (health <= 0 && !LevelLoader.localIsDead)
         {
+            AudioManager.playerDeathTrigger = true;
             LevelLoader.isDead = true;
 
             health = noOfHearts;

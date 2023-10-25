@@ -153,8 +153,12 @@ MonoBehaviour:
   dashingPower: 6
   dashingTime: 0.25
   dashingCooldown: 1
+  dashSound: {fileID: 0}
+  dashVolume: 0.6
   iFrameDuration: 0.5
   noOfFlashes: 1
+  getHitSound: {fileID: 0}
+  getHitVolume: 1
   frontCheck: {fileID: 6009968677646343151}
   wallSlidingSpeed: 1
   xWallForce: 30

@@ -13,7 +13,9 @@ public class Enemy : MonoBehaviour
     public AudioClip hurtSound;
     public AudioClip deathSound;
     public int currentHealth;
-    public bool isBoss = false; 
+    public bool isBoss = false;
+    public GameObject wallJumpChip;
+    public Transform spawnPoint; 
     
     // Start is called before the first frame update
     void Start()
@@ -49,9 +51,10 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
         Debug.Log("Dead");
         shop.AddCurrency(moneyWorth);
-        if (gameObject.name == "Boss(Clone)")
+        if (gameObject.name == "FirstBoss")
         {
             BossSpawn.hasDied1 = true;
+            Instantiate(wallJumpChip, spawnPoint.position, Quaternion.identity);
         }
 
     }
