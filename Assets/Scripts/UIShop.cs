@@ -16,6 +16,9 @@ public class UIShop : MonoBehaviour
     public TextMeshProUGUI[] priceTexts;
     public int[] upgradePrices;
     PlayerHealth playerHealth;
+    public static bool hasPurchased1 = false;
+    public static bool hasPurchased2 = false;
+    public static bool hasPurchased3 = false;
     // 0 is Weapon Upgrade
 
 
@@ -27,6 +30,22 @@ public class UIShop : MonoBehaviour
     private void Start()
     {
         GetComponent<Canvas>().enabled = false; 
+
+        if (hasPurchased1)
+        {
+            priceTexts[0].text = "Sold";
+            buttons[0].GetComponent<Button>().interactable = false;
+        }
+        if (hasPurchased2)
+        {
+            priceTexts[1].text = "Sold";
+            buttons[1].GetComponent<Button>().interactable = false;
+        }
+        if (hasPurchased3)
+        {
+            priceTexts[2].text = "Sold";
+            buttons[2].GetComponent<Button>().interactable = false;
+        }
     }
     public void LoseCurrency(int amount)
     {
@@ -90,7 +109,7 @@ public class UIShop : MonoBehaviour
                 if (currentCurrency >= upgradePrices[2])
                 {
                     currentCurrency -= upgradePrices[2];
-                    PlayerMovement.amountOfKeys++;
+                    Enemy.hasUpgrade = true;
                     priceTexts[2].text = "Sold";
                     buttons[2].GetComponent<Button>().interactable = false;
                 }

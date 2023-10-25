@@ -220,7 +220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 7644923385168340168}
   attackDamage: 5
-  upgradedAtttackDamage: 8
+  upgradedAtttackDamage: 10
   attackPoint: {fileID: 6196509147186810496}
   attackRange: 1.2
   enemyLayers:

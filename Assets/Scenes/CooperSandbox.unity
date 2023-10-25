@@ -578,7 +578,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Key
+  m_text: Weapon Upgrade
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0aae337b70dbfdb429f685f4e980cca8, type: 2}
   m_sharedMaterial: {fileID: -5649259538679234132, guid: 0aae337b70dbfdb429f685f4e980cca8, type: 2}
@@ -1358,7 +1358,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 80
+  m_text: 250
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0aae337b70dbfdb429f685f4e980cca8, type: 2}
   m_sharedMaterial: {fileID: -5649259538679234132, guid: 0aae337b70dbfdb429f685f4e980cca8, type: 2}
@@ -1996,7 +1996,7 @@ MonoBehaviour:
   - {fileID: 701760078}
   - {fileID: 829800941}
   - {fileID: 198014135}
-  upgradePrices: 280000003200000050000000
+  upgradePrices: 5000000064000000fa000000
 --- !u!1 &314238298
 GameObject:
   m_ObjectHideFlags: 0
@@ -2636,8 +2636,9 @@ GameObject:
   - component: {fileID: 444079231}
   - component: {fileID: 444079230}
   - component: {fileID: 444079229}
+  - component: {fileID: 444079232}
   m_Layer: 0
-  m_Name: Key
+  m_Name: WeaponUpgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2770,6 +2771,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 444079227}
   m_CullTransparentMesh: 1
+--- !u!114 &444079232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444079227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceacda77a20b50b4bb3d3f16d1bccdaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  content: Doubles the damage dealth with your melee strikes.
+  header: Weapon Upgrade
 --- !u!1 &455740271
 GameObject:
   m_ObjectHideFlags: 0
@@ -5226,7 +5241,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 40
+  m_text: 80
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0aae337b70dbfdb429f685f4e980cca8, type: 2}
   m_sharedMaterial: {fileID: -5649259538679234132, guid: 0aae337b70dbfdb429f685f4e980cca8, type: 2}
@@ -5465,6 +5480,7 @@ GameObject:
   - component: {fileID: 740580684}
   - component: {fileID: 740580683}
   - component: {fileID: 740580682}
+  - component: {fileID: 740580685}
   m_Layer: 0
   m_Name: HeartPiece2
   m_TagString: Untagged
@@ -5599,6 +5615,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 740580680}
   m_CullTransparentMesh: 1
+--- !u!114 &740580685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740580680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceacda77a20b50b4bb3d3f16d1bccdaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  content: Getting four of these will increase your maximum health!
+  header: Heart Piece
 --- !u!1 &750167326
 GameObject:
   m_ObjectHideFlags: 0
@@ -5689,7 +5719,7 @@ Transform:
   m_GameObject: {fileID: 750167326}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 37.036133, y: -2.2798393, z: -10.263894}
+  m_LocalPosition: {x: 14.15613, y: -1.5498393, z: -10.263894}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5883,6 +5913,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalEnemyDeath: {fileID: 8300000, guid: 4584977f6c4502c4e89fd64a8d6950c3, type: 3}
   bossDeathSound: {fileID: 0}
+  playerDeathSound: {fileID: 0}
 --- !u!1 &760590124
 GameObject:
   m_ObjectHideFlags: 0
@@ -6293,7 +6324,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 50
+  m_text: 100
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0aae337b70dbfdb429f685f4e980cca8, type: 2}
   m_sharedMaterial: {fileID: -5649259538679234132, guid: 0aae337b70dbfdb429f685f4e980cca8, type: 2}
@@ -10908,7 +10939,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 60.759495, y: 661.26575}
+  m_AnchoredPosition: {x: 49.63546, y: 626.6805}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1800226056
@@ -12148,6 +12179,8 @@ MonoBehaviour:
   deathSound: {fileID: 0}
   currentHealth: 0
   isBoss: 0
+  wallJumpChip: {fileID: 0}
+  spawnPoint: {fileID: 0}
 --- !u!1 &2047800665
 GameObject:
   m_ObjectHideFlags: 0
@@ -12342,7 +12375,7 @@ Transform:
   m_GameObject: {fileID: 2052772594}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 37.036133, y: -2.2798393, z: -10.263894}
+  m_LocalPosition: {x: 14.15613, y: -1.5498393, z: -10.263894}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12962,11 +12995,11 @@ PrefabInstance:
       objectReference: {fileID: 1084212960}
     - target: {fileID: 3302911007843463209, guid: 2bb21a25df1b2854496c21a3e90e2889, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 61.04
+      value: 38.16
       objectReference: {fileID: 0}
     - target: {fileID: 3302911007843463209, guid: 2bb21a25df1b2854496c21a3e90e2889, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.11
+      value: -1.38
       objectReference: {fileID: 0}
     - target: {fileID: 3302911007843463209, guid: 2bb21a25df1b2854496c21a3e90e2889, type: 3}
       propertyPath: m_LocalPosition.z
