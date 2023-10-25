@@ -52,12 +52,16 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float dashingPower;
     [SerializeField] private float dashingTime;
     [SerializeField] private float dashingCooldown;
+    public AudioClip dashSound;
+    public float dashVolume = 0.6f;
 
 
     private SpriteRenderer spriteRenderer;
     [Header("IFrames")]
     [SerializeField] private float iFrameDuration;
     [SerializeField] private int noOfFlashes;
+    public AudioClip getHitSound;
+    public float getHitVolume;
 
     [Header("WallJump")]
     bool isTouchingFront;
@@ -313,6 +317,7 @@ public class PlayerMovement : MonoBehaviour
             if (hasDoubleJump && totalJumps == 1 )
             {
                 animator.SetTrigger("doubleJump");
+                GetComponent<AudioSource>().PlayOneShot(dashSound, dashVolume);
             }
             if (!wallSliding)
             {
@@ -373,6 +378,7 @@ public class PlayerMovement : MonoBehaviour
         
         if (hasDash && !gotHitByTrap)
         {
+            GetComponent<AudioSource>().PlayOneShot(dashSound, dashVolume);
             animator.SetTrigger("Dash");
             canDash = false;
             isDashing = true;
@@ -399,24 +405,27 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
+            GetComponent<AudioSource>().PlayOneShot(getHitSound, getHitVolume);
             StartCoroutine(Invulnerability());
             playerHealth.health--;
         }
 
         if (collision.gameObject.tag == "Boss")
         {
+            GetComponent<AudioSource>().PlayOneShot(getHitSound, getHitVolume);
             StartCoroutine(Invulnerability());
             playerHealth.health--;
         }
 
         if (collision.gameObject.tag == "Trap")
         {
+            GetComponent<AudioSource>().PlayOneShot(getHitSound, getHitVolume);
             StartCoroutine(Invulnerability());
             playerHealth.health--;
             //SetNewPosition();
             Invoke("SetNewPosition", newPositionDelay);
             rb.velocity = Vector2.zero;
-            //gotHitByTrap = true; 
+            gotHitByTrap = true; 
         }
 
         if (collision.gameObject.tag == "HeartPiece")
@@ -437,6 +446,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (collision.gameObject.tag == "EnemyBullet")
         {
+            GetComponent<AudioSource>().PlayOneShot(getHitSound, getHitVolume);
             StartCoroutine(Invulnerability());
             playerHealth.health--;
         }

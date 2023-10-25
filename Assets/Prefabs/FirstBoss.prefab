@@ -347,9 +347,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 50
   moneyWorth: 125
-  flashDelay: 0
   hurtSound: {fileID: 8300000, guid: 09e1616cadf78af4980c92dcba55c942, type: 3}
+  deathSound: {fileID: 0}
   currentHealth: 0
+  isBoss: 0
+  wallJumpChip: {fileID: 560181487697173678, guid: df4cb752a9aa7a649ad72ba303aaebad, type: 3}
+  spawnPoint: {fileID: 0}
 --- !u!82 &4376122072669488156
 AudioSource:
   m_ObjectHideFlags: 0
