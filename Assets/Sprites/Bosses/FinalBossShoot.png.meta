@@ -488,7 +488,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FinalBossShoot_0: -5130840552257766699
+      FinalBossShoot_1: 6643073461685499056
+      FinalBossShoot_10: 8567882297257529532
+      FinalBossShoot_11: 6071906144015533559
+      FinalBossShoot_12: 1430398857048366820
+      FinalBossShoot_13: -4429969129413298117
+      FinalBossShoot_14: -9128800690422447527
+      FinalBossShoot_15: -1859062400651786573
+      FinalBossShoot_2: 2346921129415034332
+      FinalBossShoot_3: -6892644047865946631
+      FinalBossShoot_4: 4381384114265623718
+      FinalBossShoot_5: 1468541019077695450
+      FinalBossShoot_6: -425013797475204272
+      FinalBossShoot_7: 3337908105998635591
+      FinalBossShoot_8: -5034151302824929127
+      FinalBossShoot_9: 8790414311201656623
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

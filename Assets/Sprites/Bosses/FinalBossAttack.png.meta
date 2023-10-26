@@ -488,7 +488,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FinalBossAttack_0: 2104806915601084116
+      FinalBossAttack_1: -1618831892035859402
+      FinalBossAttack_10: 4273766874685204919
+      FinalBossAttack_11: 3718849506245353942
+      FinalBossAttack_12: -4711858573027316368
+      FinalBossAttack_13: 5729141656560948471
+      FinalBossAttack_14: -4537427572752169598
+      FinalBossAttack_15: 6297068474660403351
+      FinalBossAttack_2: -796301294877984661
+      FinalBossAttack_3: 7426085221903201619
+      FinalBossAttack_4: -2125193168944355111
+      FinalBossAttack_5: 1025784165779536643
+      FinalBossAttack_6: 5300523161186861553
+      FinalBossAttack_7: 2797515082700765319
+      FinalBossAttack_8: -4194828651360076331
+      FinalBossAttack_9: -3589243443488565632
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

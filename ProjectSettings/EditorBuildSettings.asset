@@ -17,5 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cave.unity
     guid: 39ffef9ac63c8d14b901a83d6d3ce9ea
+  - enabled: 1
+    path: Assets/Scenes/Sewers.unity
+    guid: a3d254f39cd45ce44ab664721fde6cb8
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
