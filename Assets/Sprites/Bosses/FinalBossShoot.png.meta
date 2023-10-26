@@ -1,0 +1,512 @@
+fileFormatVersion: 2
+guid: bb0b9844225ff724eb2d2a1f8afbde77
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5130840552257766699
+    second: FinalBossShoot_0
+  - first:
+      213: 6643073461685499056
+    second: FinalBossShoot_1
+  - first:
+      213: 2346921129415034332
+    second: FinalBossShoot_2
+  - first:
+      213: -6892644047865946631
+    second: FinalBossShoot_3
+  - first:
+      213: 4381384114265623718
+    second: FinalBossShoot_4
+  - first:
+      213: 1468541019077695450
+    second: FinalBossShoot_5
+  - first:
+      213: -425013797475204272
+    second: FinalBossShoot_6
+  - first:
+      213: 3337908105998635591
+    second: FinalBossShoot_7
+  - first:
+      213: -5034151302824929127
+    second: FinalBossShoot_8
+  - first:
+      213: 8790414311201656623
+    second: FinalBossShoot_9
+  - first:
+      213: 8567882297257529532
+    second: FinalBossShoot_10
+  - first:
+      213: 6071906144015533559
+    second: FinalBossShoot_11
+  - first:
+      213: 1430398857048366820
+    second: FinalBossShoot_12
+  - first:
+      213: -4429969129413298117
+    second: FinalBossShoot_13
+  - first:
+      213: -9128800690422447527
+    second: FinalBossShoot_14
+  - first:
+      213: -1859062400651786573
+    second: FinalBossShoot_15
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FinalBossShoot_0
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 383
+        width: 64
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dab18bb3b79bc8b0800000000000000
+      internalID: -5130840552257766699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalBossShoot_1
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 383
+        width: 78
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b4b69ced10f03c50800000000000000
+      internalID: 6643073461685499056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalBossShoot_2
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 383
+        width: 78
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd544aa2550f19020800000000000000
+      internalID: 2346921129415034332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalBossShoot_3
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 191
+        width: 78
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fd5dbbd1c86850a0800000000000000
+      internalID: -6892644047865946631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalBossShoot_4
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 191
+        width: 87
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ac875b63adcdcc30800000000000000
+      internalID: 4381384114265623718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalBossShoot_5
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 191
+        width: 102
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad75734b64e416410800000000000000
+      internalID: 1468541019077695450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalBossShoot_6
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 317
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 053c9d8f33c0a1af0800000000000000
+      internalID: -425013797475204272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalBossShoot_7
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 97
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74212f6ccb1a25e20800000000000000
+      internalID: 3337908105998635591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalBossShoot_8
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 123
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 998dc89ef0a132ab0800000000000000
+      internalID: -5034151302824929127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalBossShoot_9
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 140
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2f4faf0e33ddf970800000000000000
+      internalID: 8790414311201656623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalBossShoot_10
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 0
+        width: 78
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb094650e8b37e670800000000000000
+      internalID: 8567882297257529532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalBossShoot_11
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 93
+        width: 49
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f5ce87b77eb34450800000000000000
+      internalID: 6071906144015533559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalBossShoot_12
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 0
+        width: 78
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ee1e719e2cc9d310800000000000000
+      internalID: 1430398857048366820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalBossShoot_13
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 0
+        width: 78
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b38bf5b3c869582c0800000000000000
+      internalID: -4429969129413298117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalBossShoot_14
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 41
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9528706732cff4180800000000000000
+      internalID: -9128800690422447527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalBossShoot_15
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 35
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b68dd9a8984336e0800000000000000
+      internalID: -1859062400651786573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      FinalBossShoot_0: -5130840552257766699
+      FinalBossShoot_1: 6643073461685499056
+      FinalBossShoot_10: 8567882297257529532
+      FinalBossShoot_11: 6071906144015533559
+      FinalBossShoot_12: 1430398857048366820
+      FinalBossShoot_13: -4429969129413298117
+      FinalBossShoot_14: -9128800690422447527
+      FinalBossShoot_15: -1859062400651786573
+      FinalBossShoot_2: 2346921129415034332
+      FinalBossShoot_3: -6892644047865946631
+      FinalBossShoot_4: 4381384114265623718
+      FinalBossShoot_5: 1468541019077695450
+      FinalBossShoot_6: -425013797475204272
+      FinalBossShoot_7: 3337908105998635591
+      FinalBossShoot_8: -5034151302824929127
+      FinalBossShoot_9: 8790414311201656623
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

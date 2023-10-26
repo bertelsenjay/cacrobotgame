@@ -1,12 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI; 
 
 public class Chip : MonoBehaviour
 {
     public bool wallChip = false;
     public bool doubleJumpChip = false;
     public bool dashChip = false;
+    public GameObject wallInfo;
+    public GameObject doubleJumpInfo;
+    public GameObject dashInfo;
+    //public float inactiveDelay; 
 
 
 
@@ -33,16 +38,44 @@ public class Chip : MonoBehaviour
             if (wallChip)
             {
                 PlayerMovement.hasWallJump = true;
+                SetCanvasActive(wallInfo);
+                InfoCanvas.wallJumpHide = true; 
             }
             if (doubleJumpChip)
             {
                 PlayerMovement.hasDoubleJump = true;
+                SetCanvasActive(doubleJumpInfo);
+                InfoCanvas.doubleJumpHide = true; 
             }
             if (dashChip)
             {
                 PlayerMovement.hasDash = true;
+                SetCanvasActive(dashInfo);
+                InfoCanvas.dashHide = true; 
             }
             Destroy(gameObject);
+        }
+    }
+
+    public void SetCanvasActive(GameObject canvas)
+    {
+        canvas.SetActive(true); 
+    }
+
+    public void SetCanvasInactive()
+    {
+        Debug.Log("Set inactive");
+        if (wallChip)
+        {
+            wallInfo.SetActive(false);
+        }
+        if (doubleJumpChip)
+        {
+            doubleJumpInfo.SetActive(false);
+        }
+        if (dashChip)
+        {
+            dashInfo.SetActive(false);
         }
     }
 }

@@ -87,6 +87,10 @@ public class PlayerCombat : MonoBehaviour
                     enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
                     Debug.Log("Did boss damage");
                 }
+                else if (enemy.name.Contains("Orb"))
+                {
+                    enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+                }
                 
             }
             else if (Enemy.hasUpgrade == true)
@@ -109,7 +113,10 @@ public class PlayerCombat : MonoBehaviour
                     enemy.GetComponent<Enemy>().TakeDamage(upgradedAtttackDamage);
                     Debug.Log("Did boss damage");
                 }
-                
+                else if (enemy.name.Contains("Orb"))
+                {
+                    enemy.GetComponent<Enemy>().TakeDamage(upgradedAtttackDamage);
+                }
 
             }
 

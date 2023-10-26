@@ -137,3 +137,6 @@ MonoBehaviour:
   wallChip: 1
   doubleJumpChip: 0
   dashChip: 0
+  wallInfo: {fileID: 0}
+  doubleJumpInfo: {fileID: 0}
+  dashInfo: {fileID: 0}
