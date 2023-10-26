@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 04c93858ea2c1a24e8b7c3cf20ba80b2
+guid: bcdbf84f34d7b2d46b19088821221dfe
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -440,21 +440,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      FinalBossAttackWIP_0: 4305121554862256630
-      FinalBossAttackWIP_1: 7890616751195807041
-      FinalBossAttackWIP_10: 446266763717298290
-      FinalBossAttackWIP_11: 7544288541143720439
-      FinalBossAttackWIP_12: 8555678185191593801
-      FinalBossAttackWIP_13: -6020034366889924280
-      FinalBossAttackWIP_2: 3021615577733386408
-      FinalBossAttackWIP_3: 7247676592309686292
-      FinalBossAttackWIP_4: 591183507341382529
-      FinalBossAttackWIP_5: -2939199373103570148
-      FinalBossAttackWIP_6: 233274478961365400
-      FinalBossAttackWIP_7: 7274246513403481987
-      FinalBossAttackWIP_8: -5741210880310094213
-      FinalBossAttackWIP_9: -1435038143902590670
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
