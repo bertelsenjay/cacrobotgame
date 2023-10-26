@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
     public AudioClip deathSound;
     public int currentHealth;
     public bool isBoss = false;
-    public GameObject wallJumpChip;
+    public GameObject upgradeChip;
     public Transform spawnPoint; 
     
     // Start is called before the first frame update
@@ -54,7 +54,7 @@ public class Enemy : MonoBehaviour
         if (gameObject.name == "FirstBoss")
         {
             BossSpawn.hasDied1 = true;
-            Instantiate(wallJumpChip, spawnPoint.position, Quaternion.identity);
+            Instantiate(upgradeChip, spawnPoint.position, Quaternion.identity);
         }
 
     }
