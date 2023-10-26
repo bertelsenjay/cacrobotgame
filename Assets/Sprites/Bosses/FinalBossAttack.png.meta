@@ -82,7 +82,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -96,7 +96,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -120,7 +120,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -146,10 +146,10 @@ TextureImporter:
       name: FinalBossAttack_0
       rect:
         serializedVersion: 2
-        x: 70
-        y: 575
-        width: 63
-        height: 143
+        x: 0
+        y: 576
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,10 +167,10 @@ TextureImporter:
       name: FinalBossAttack_1
       rect:
         serializedVersion: 2
-        x: 262
-        y: 575
-        width: 68
-        height: 142
+        x: 192
+        y: 576
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,10 +188,10 @@ TextureImporter:
       name: FinalBossAttack_2
       rect:
         serializedVersion: 2
-        x: 458
-        y: 575
-        width: 67
-        height: 143
+        x: 384
+        y: 576
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,10 +209,10 @@ TextureImporter:
       name: FinalBossAttack_3
       rect:
         serializedVersion: 2
-        x: 656
-        y: 575
-        width: 67
-        height: 142
+        x: 576
+        y: 576
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,10 +230,10 @@ TextureImporter:
       name: FinalBossAttack_4
       rect:
         serializedVersion: 2
-        x: 77
-        y: 383
-        width: 73
-        height: 140
+        x: 0
+        y: 384
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -251,10 +251,10 @@ TextureImporter:
       name: FinalBossAttack_5
       rect:
         serializedVersion: 2
-        x: 269
-        y: 383
-        width: 73
-        height: 140
+        x: 192
+        y: 384
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -272,10 +272,10 @@ TextureImporter:
       name: FinalBossAttack_6
       rect:
         serializedVersion: 2
-        x: 460
-        y: 383
-        width: 76
-        height: 134
+        x: 384
+        y: 384
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -293,10 +293,10 @@ TextureImporter:
       name: FinalBossAttack_7
       rect:
         serializedVersion: 2
-        x: 652
-        y: 383
-        width: 76
-        height: 134
+        x: 576
+        y: 384
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -314,10 +314,10 @@ TextureImporter:
       name: FinalBossAttack_8
       rect:
         serializedVersion: 2
-        x: 76
-        y: 191
-        width: 76
-        height: 134
+        x: 0
+        y: 192
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -335,10 +335,10 @@ TextureImporter:
       name: FinalBossAttack_9
       rect:
         serializedVersion: 2
-        x: 268
-        y: 191
-        width: 76
-        height: 134
+        x: 192
+        y: 192
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -356,10 +356,10 @@ TextureImporter:
       name: FinalBossAttack_10
       rect:
         serializedVersion: 2
-        x: 460
-        y: 191
-        width: 76
-        height: 134
+        x: 384
+        y: 192
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -377,10 +377,10 @@ TextureImporter:
       name: FinalBossAttack_11
       rect:
         serializedVersion: 2
-        x: 652
-        y: 191
-        width: 76
-        height: 134
+        x: 576
+        y: 192
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -398,10 +398,10 @@ TextureImporter:
       name: FinalBossAttack_12
       rect:
         serializedVersion: 2
-        x: 76
+        x: 0
         y: 0
-        width: 76
-        height: 133
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -419,10 +419,10 @@ TextureImporter:
       name: FinalBossAttack_13
       rect:
         serializedVersion: 2
-        x: 191
+        x: 192
         y: 0
-        width: 147
-        height: 135
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -440,10 +440,10 @@ TextureImporter:
       name: FinalBossAttack_14
       rect:
         serializedVersion: 2
-        x: 419
+        x: 384
         y: 0
-        width: 111
-        height: 135
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -461,10 +461,10 @@ TextureImporter:
       name: FinalBossAttack_15
       rect:
         serializedVersion: 2
-        x: 616
+        x: 576
         y: 0
-        width: 106
-        height: 135
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -481,7 +481,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: da9995ec89247a946bad1175c0123521
     internalID: 0
     vertices: []
     indices: 
