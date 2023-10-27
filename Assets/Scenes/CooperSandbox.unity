@@ -5942,7 +5942,6 @@ GameObject:
   m_Component:
   - component: {fileID: 760590127}
   - component: {fileID: 760590126}
-  - component: {fileID: 760590125}
   - component: {fileID: 760590129}
   - component: {fileID: 760590128}
   m_Layer: 0
@@ -5952,33 +5951,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &760590125
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 760590124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f63a0cc6d7bbc947a9aa4627e024b0a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isNPC: 0
-  isShop: 0
-  isDoor: 1
-  dialoguePanel: {fileID: 815909317}
-  dialogueText: {fileID: 1041686230}
-  chipRequiredIndex: 0
-  chipNeeded: 1
-  dialogue: []
-  dialogueWithChip: []
-  dialogueAfterChip: []
-  inTutorial: 0
-  buildIndex: 0
-  continueButton: {fileID: 0}
-  wordSpeed: 0
-  playerIsClose: 0
 --- !u!212 &760590126
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11653,7 +11625,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 34.36301, y: 617.13525}
+  m_AnchoredPosition: {x: 32.453953, y: 607.58997}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1800226056
