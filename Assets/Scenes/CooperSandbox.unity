@@ -1700,11 +1700,11 @@ PrefabInstance:
       objectReference: {fileID: 956200261}
     - target: {fileID: 6326368496155738157, guid: df4cb752a9aa7a649ad72ba303aaebad, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 54.99
+      value: 42.67
       objectReference: {fileID: 0}
     - target: {fileID: 6326368496155738157, guid: df4cb752a9aa7a649ad72ba303aaebad, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.08
+      value: -1.83
       objectReference: {fileID: 0}
     - target: {fileID: 6326368496155738157, guid: df4cb752a9aa7a649ad72ba303aaebad, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2365,6 +2365,11 @@ MonoBehaviour:
   doubleJump: 1
   dash: 0
   hideDelay: 5
+  myUIGRoup: {fileID: 0}
+  fadeIn: 0
+  fadeOut: 0
+  fadeInSpeed: 0
+  fadeOutSpeed: 0
 --- !u!114 &314332634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5909,8 +5914,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   normalEnemyDeath: {fileID: 8300000, guid: 4584977f6c4502c4e89fd64a8d6950c3, type: 3}
+  normalEnemyDeathVolume: 1
   bossDeathSound: {fileID: 0}
+  bossDeathVolume: 1
   playerDeathSound: {fileID: 0}
+  playerDeathVolume: 1
 --- !u!1 &760590124
 GameObject:
   m_ObjectHideFlags: 0
@@ -8010,13 +8018,14 @@ GameObject:
   - component: {fileID: 956200264}
   - component: {fileID: 956200263}
   - component: {fileID: 956200266}
+  - component: {fileID: 956200267}
   m_Layer: 5
   m_Name: WallJumpInfo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &956200262
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8117,6 +8126,23 @@ MonoBehaviour:
   doubleJump: 0
   dash: 0
   hideDelay: 5
+  myUIGRoup: {fileID: 956200267}
+  fadeIn: 0
+  fadeOut: 0
+  fadeInSpeed: 2
+  fadeOutSpeed: 2
+--- !u!225 &956200267
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956200261}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &962798355
 GameObject:
   m_ObjectHideFlags: 0
@@ -9261,11 +9287,11 @@ PrefabInstance:
       objectReference: {fileID: 1791340321}
     - target: {fileID: 6390506769259870638, guid: 1fef4c62ffdc41e4fb3b34dcd4b0a01c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 43.755623
+      value: 52.5
       objectReference: {fileID: 0}
     - target: {fileID: 6390506769259870638, guid: 1fef4c62ffdc41e4fb3b34dcd4b0a01c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.23225641
+      value: 1.64
       objectReference: {fileID: 0}
     - target: {fileID: 6390506769259870638, guid: 1fef4c62ffdc41e4fb3b34dcd4b0a01c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11257,6 +11283,11 @@ MonoBehaviour:
   doubleJump: 0
   dash: 1
   hideDelay: 5
+  myUIGRoup: {fileID: 0}
+  fadeIn: 0
+  fadeOut: 0
+  fadeInSpeed: 0
+  fadeOutSpeed: 0
 --- !u!114 &1791340324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11360,7 +11391,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 611.6456, y: 1426.8354}
+  m_AnchoredPosition: {x: 43.90829, y: 586.5904}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1800226056

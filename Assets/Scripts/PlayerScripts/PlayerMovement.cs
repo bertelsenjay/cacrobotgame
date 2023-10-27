@@ -191,6 +191,11 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (InfoCanvas.isShowingInfo)
+        {
+            rb.velocity = new Vector2(0f, rb.velocity.y);
+            return;
+        }
         if (UIShop.isEnabled) { return; }
         if (isPanelEnabled) { return;  }
         if (PauseMenu.isPaused) { return; }
@@ -218,6 +223,7 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("triggered");
             return; 
         }
+        if (InfoCanvas.isShowingInfo) { return; }
         if (LevelLoader.isDead) { return; }
         if (UIShop.isEnabled) { return; }
         if (isPanelEnabled) { return; }

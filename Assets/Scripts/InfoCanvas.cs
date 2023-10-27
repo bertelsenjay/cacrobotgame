@@ -13,25 +13,81 @@ public class InfoCanvas : MonoBehaviour
     public static bool dashHide = false;
     public float hideDelay = 5f;
     private bool once = true;
+    [SerializeField] private CanvasGroup myUIGRoup;
+    [SerializeField] private bool fadeIn = false;
+    [SerializeField] private bool fadeOut = false;
+    [SerializeField] private float fadeInSpeed;
+    [SerializeField] private float fadeOutSpeed;
+    public static bool isShowingInfo = false; 
+
+    private void Start()
+    {
+        HideUIStart();
+    }
     private void Update()
     {
         if (wallJump && wallJumpHide && once)
         {
-            Invoke("SetInactive", hideDelay);
+            ShowUI();
+            Invoke("HideUI", hideDelay);
             once = false;
         }
         if (doubleJump && doubleJumpHide && once)
         {
-            Invoke("SetInactive", hideDelay);
+            ShowUI();
+            Invoke("HideUI", hideDelay);
             once = false;
         }
         if (dash && dashHide && once)
         {
-            Invoke("SetInactive", hideDelay);
+
+            ShowUI();
+            Invoke("HideUI", hideDelay);
             once = false;
+        }
+
+        if (fadeIn)
+        {
+            if (myUIGRoup.alpha < 1)
+            {
+                myUIGRoup.alpha += (Time.deltaTime * fadeInSpeed);
+                if (myUIGRoup.alpha >= 1)
+                {
+
+                    fadeIn = false;
+                }
+            }
+        }
+        if (fadeOut)
+        {
+            Debug.Log("Fading out");
+            if (myUIGRoup.alpha >= 0)
+            {
+                myUIGRoup.alpha -= (Time.deltaTime * fadeOutSpeed);
+                if (myUIGRoup.alpha == 0)
+                {
+                    fadeOut = false;
+                }
+            }
         }
     }
 
+    public void HideUIStart()
+    {
+        myUIGRoup.alpha = 0f;
+    }
+
+    public void HideUI()
+    {
+        fadeOut = true; 
+        isShowingInfo = false;
+    }
+
+    public void ShowUI()
+    {
+        fadeIn = true;
+        isShowingInfo = true;
+    }
     public void SetInactive()
     {
         gameObject.SetActive(false);
