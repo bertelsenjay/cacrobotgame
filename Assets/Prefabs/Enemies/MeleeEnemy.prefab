@@ -222,6 +222,8 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: 4584977f6c4502c4e89fd64a8d6950c3, type: 3}
   currentHealth: 0
   isBoss: 0
+  upgradeChip: {fileID: 560181487697173678, guid: df4cb752a9aa7a649ad72ba303aaebad, type: 3}
+  spawnPoint: {fileID: 0}
 --- !u!70 &1779307329690610922
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

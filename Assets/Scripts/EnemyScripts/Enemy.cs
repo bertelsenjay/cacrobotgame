@@ -7,7 +7,6 @@ public class Enemy : MonoBehaviour
     public static bool hasUpgrade = false; 
     public int maxHealth = 10;
     public int moneyWorth = 0;
-    
     UIShop shop;
     AudioSource audioSource;
     public AudioClip hurtSound;
@@ -54,6 +53,10 @@ public class Enemy : MonoBehaviour
         if (gameObject.name == "FirstBoss")
         {
             BossSpawn.hasDied1 = true;
+            Instantiate(upgradeChip, spawnPoint.position, Quaternion.identity);
+        }
+        if (gameObject.name == "MeleeEnemy")
+        {
             Instantiate(upgradeChip, spawnPoint.position, Quaternion.identity);
         }
 

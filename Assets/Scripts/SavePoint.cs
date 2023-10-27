@@ -38,7 +38,7 @@ public class SavePoint : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (Input.GetKeyDown(KeyCode.E) || firstEverSavePoint)
+        if (Input.GetKey(KeyCode.E) || firstEverSavePoint)
         {
             hasSaved = true;
             playerHealth.LoseHealth(-8);
