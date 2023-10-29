@@ -40,6 +40,7 @@ public class PlayerCombat : MonoBehaviour
 
     void Attack()
     {
+        if (InfoCanvas.isShowingInfo) { return; }
         if (PlayerMovement.isPanelEnabled) { return;  }
         if (UIShop.isEnabled) { return; }
         animator.SetTrigger("Attack");

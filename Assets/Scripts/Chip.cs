@@ -13,7 +13,22 @@ public class Chip : MonoBehaviour
     public GameObject dashInfo;
     //public float inactiveDelay; 
 
-
+    private void Start()
+    {
+        if (doubleJumpChip)
+        {
+            doubleJumpInfo = GameObject.Find("DoubleJumpInfo");
+        }
+        if (wallChip)
+        {
+            wallInfo = GameObject.Find("WallJumpInfo");
+        }
+        if (dashChip)
+        {
+            dashInfo = GameObject.Find("DashInfo");
+        }
+        
+    }
 
     private void Update()
     {

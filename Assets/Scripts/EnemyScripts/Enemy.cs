@@ -59,6 +59,10 @@ public class Enemy : MonoBehaviour
         {
             Instantiate(upgradeChip, spawnPoint.position, Quaternion.identity);
         }
+        if (gameObject.name == "MaliciousOrbSheet")
+        {
+            Instantiate(upgradeChip, spawnPoint.position, Quaternion.identity);
+        }
 
     }
 

@@ -29,6 +29,9 @@ public class NPCScript : MonoBehaviour
     public GameObject continueButton; 
     public float wordSpeed;
     public bool playerIsClose;
+    public bool toTutorial; 
+
+    public GameObject pressECanvas; 
 
     private void Start()
     {
@@ -44,12 +47,25 @@ public class NPCScript : MonoBehaviour
         }
         else
         {
-            buildIndex = SceneManager.GetActiveScene().buildIndex; 
+            //buildIndex = SceneManager.GetActiveScene().buildIndex; 
+        }
+        if (toTutorial)
+        {
+            SpawnManager.spawnIndex = 1;
         }
     }
     // Update is called once per frame
     void Update()
     {
+        if (playerIsClose)
+        {
+            pressECanvas.SetActive(true);
+        }
+        if (!playerIsClose)
+        {
+            pressECanvas.SetActive(false);
+        }
+
         if (chipNeeded == 1 && PlayerMovement.hasChip1)
         {
             hasCorrectChip = true;

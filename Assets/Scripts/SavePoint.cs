@@ -12,10 +12,12 @@ public class SavePoint : MonoBehaviour
     private GameObject target;
     public static bool hasSaved = false;
     PlayerHealth playerHealth;
+    public GameObject pressECanvas;
     // Start is called before the first frame update
     void Start()
     {
         playerHealth = FindObjectOfType<PlayerHealth>();
+        pressECanvas.SetActive(false);
         /*switch (saveIndex)
         {
             case 0:
@@ -38,6 +40,7 @@ public class SavePoint : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
+        pressECanvas.SetActive(true);
         if (Input.GetKey(KeyCode.E) || firstEverSavePoint)
         {
             hasSaved = true;
@@ -95,5 +98,9 @@ public class SavePoint : MonoBehaviour
             }
         }
         
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        pressECanvas.SetActive(false);
     }
 }
