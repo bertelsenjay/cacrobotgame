@@ -22,6 +22,7 @@ public class Slash : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (InfoCanvas.isShowingInfo) { return; }
         if (UIShop.isEnabled) { return; }
         if (PauseMenu.isPaused) { return; }
         if (Time.time >= nextAttackTime)

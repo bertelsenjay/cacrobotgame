@@ -8,9 +8,11 @@ public class InfoCanvas : MonoBehaviour
     public bool wallJump = false;
     public bool doubleJump = false;
     public bool dash = false;
+    public bool healthPiece = false; 
     public static bool wallJumpHide = false;
     public static bool doubleJumpHide = false;
     public static bool dashHide = false;
+    public static bool healthPieceHide = false;
     public float hideDelay = 5f;
     private bool once = true;
     [SerializeField] private CanvasGroup myUIGRoup;
@@ -41,6 +43,12 @@ public class InfoCanvas : MonoBehaviour
         if (dash && dashHide && once)
         {
 
+            ShowUI();
+            Invoke("HideUI", hideDelay);
+            once = false;
+        }
+        if (healthPiece && healthPieceHide && once)
+        {
             ShowUI();
             Invoke("HideUI", hideDelay);
             once = false;

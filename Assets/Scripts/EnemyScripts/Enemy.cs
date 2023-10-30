@@ -14,7 +14,8 @@ public class Enemy : MonoBehaviour
     public int currentHealth;
     public bool isBoss = false;
     public GameObject upgradeChip;
-    public Transform spawnPoint; 
+    public Transform spawnPoint;
+    public GameObject finalChip; 
     
     // Start is called before the first frame update
     void Start()
@@ -58,6 +59,14 @@ public class Enemy : MonoBehaviour
         if (gameObject.name == "MeleeEnemy")
         {
             Instantiate(upgradeChip, spawnPoint.position, Quaternion.identity);
+        }
+        if (gameObject.name == "MaliciousOrbSheet")
+        {
+            Instantiate(upgradeChip, spawnPoint.position, Quaternion.identity);
+        }
+        if (gameObject.name == "FinalBoss")
+        {
+            finalChip.SetActive(true);
         }
 
     }

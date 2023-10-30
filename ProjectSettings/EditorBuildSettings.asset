@@ -20,5 +20,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sewers.unity
     guid: a3d254f39cd45ce44ab664721fde6cb8
+  - enabled: 1
+    path: Assets/Scenes/Core.unity
+    guid: 0216640e560a9044899d2f6844468059
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 2cf6888efa10a34469bda6de2fe70865
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
