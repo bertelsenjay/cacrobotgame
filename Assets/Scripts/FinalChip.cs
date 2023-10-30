@@ -9,7 +9,7 @@ public class FinalChip : MonoBehaviour
     public float loadCreditsDelay = 6f;
     SpriteRenderer spriteRenderer;
     BoxCollider2D boxCollider;
-    
+    public static bool isActive = false; 
 
     private void Start()
     {
@@ -17,6 +17,11 @@ public class FinalChip : MonoBehaviour
         winCanvas.SetActive(false);
         spriteRenderer = GetComponent<SpriteRenderer>();
         boxCollider = GetComponent<BoxCollider2D>();
+        gameObject.SetActive(false);
+    }
+    private void Update()
+    {
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

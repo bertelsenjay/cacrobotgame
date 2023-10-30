@@ -47,6 +47,12 @@ public class InfoCanvas : MonoBehaviour
             Invoke("HideUI", hideDelay);
             once = false;
         }
+        if (healthPiece && healthPieceHide && once)
+        {
+            ShowUI();
+            Invoke("HideUI", hideDelay);
+            once = false;
+        }
 
         if (fadeIn)
         {

@@ -8,9 +8,11 @@ public class Chip : MonoBehaviour
     public bool wallChip = false;
     public bool doubleJumpChip = false;
     public bool dashChip = false;
+    public bool healthPiece = false;
     public GameObject wallInfo;
     public GameObject doubleJumpInfo;
     public GameObject dashInfo;
+    public GameObject healthInfo;
     //public float inactiveDelay; 
 
     private void Start()
@@ -27,7 +29,10 @@ public class Chip : MonoBehaviour
         {
             dashInfo = GameObject.Find("DashInfo");
         }
-        
+        if (healthPiece)
+        {
+            healthInfo = GameObject.Find("HealthPiecePopup");
+        }
     }
 
     private void Update()
@@ -68,7 +73,13 @@ public class Chip : MonoBehaviour
                 SetCanvasActive(dashInfo);
                 InfoCanvas.dashHide = true; 
             }
-            Destroy(gameObject);
+            if (healthPiece)
+            {
+                Debug.Log("Health piece collected");
+                SetCanvasActive(healthInfo);
+                InfoCanvas.healthPieceHide = true;
+            }
+            //Destroy(gameObject);
         }
     }
 
