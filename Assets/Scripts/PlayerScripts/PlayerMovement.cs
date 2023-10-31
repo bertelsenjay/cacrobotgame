@@ -214,7 +214,13 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        
+        Debug.Log("Is dead " + LevelLoader.isDead);
+        Debug.Log("is showing info " + InfoCanvas.isShowingInfo);
+        Debug.Log("shop is enabled " + UIShop.isEnabled);
+        Debug.Log("is panel enabled " + isPanelEnabled);
+        Debug.Log("is paused " + PauseMenu.isPaused);
+        Debug.Log("Got hit by trap " + gotHitByTrap);
+        Debug.Log("isDashing " + isDashing);
         if (LevelLoader.isDead)
         {
             animator.SetTrigger("isDead");
