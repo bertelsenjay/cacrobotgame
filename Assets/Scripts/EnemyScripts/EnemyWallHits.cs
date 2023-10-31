@@ -32,7 +32,7 @@ public class EnemyWallHits : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Wall" || collision.gameObject.CompareTag("InvisibleWall"))
+        if (collision.gameObject.tag == "b" || collision.gameObject.CompareTag("InvisibleWall"))
         {
             if (transform.eulerAngles == new Vector3(0f, 180f, 0f))
             {
