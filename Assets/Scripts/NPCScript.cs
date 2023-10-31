@@ -24,7 +24,7 @@ public class NPCScript : MonoBehaviour
     //public string[] dialogueAfterChip;
 
     public bool inTutorial = false;
-    private int index;
+    private int index = 0;
     public int buildIndex;
     public GameObject continueButton; 
     public float wordSpeed;
@@ -57,6 +57,7 @@ public class NPCScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (playerIsClose)
         {
             pressECanvas.SetActive(true);
@@ -112,10 +113,14 @@ public class NPCScript : MonoBehaviour
         }
         if (dialogue != null)
         {
-            if (dialogueText.text == dialogue[index] && true)
+            if (dialogue[index] != null)
             {
-                continueButton.SetActive(true);
+                if (dialogueText.text == dialogue[index] && true)
+                {
+                    continueButton.SetActive(true);
+                }
             }
+            
         }
         /*if (dialogueText.text == dialogue[index] && !hasCorrectChip)
         {
