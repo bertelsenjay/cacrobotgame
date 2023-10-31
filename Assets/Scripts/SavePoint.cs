@@ -13,6 +13,7 @@ public class SavePoint : MonoBehaviour
     public static bool hasSaved = false;
     PlayerHealth playerHealth;
     public GameObject pressECanvas;
+    public int spawnIndexDetermined = 0; 
     // Start is called before the first frame update
     void Start()
     {
@@ -48,26 +49,32 @@ public class SavePoint : MonoBehaviour
             if (SceneManager.GetActiveScene().buildIndex == 0)
             {
                 saveIndex = 0;
+                SpawnManager.spawnIndex = spawnIndexDetermined;
             }
             if (SceneManager.GetActiveScene().buildIndex == 1)
             {
                 saveIndex = 1;
+                SpawnManager.spawnIndex = spawnIndexDetermined;
             }
             if (SceneManager.GetActiveScene().buildIndex == 2)
             {
                 saveIndex = 2;
+                SpawnManager.spawnIndex = spawnIndexDetermined;
             }
             if (SceneManager.GetActiveScene().buildIndex == 3)
             {
                 saveIndex = 3;
+                SpawnManager.spawnIndex = spawnIndexDetermined;
             }
             if (SceneManager.GetActiveScene().buildIndex == 4)
             {
                 saveIndex = 4;
+                SpawnManager.spawnIndex = spawnIndexDetermined;
             }
             if (SceneManager.GetActiveScene().buildIndex == 5)
             {
                 saveIndex = 5;
+                SpawnManager.spawnIndex = spawnIndexDetermined;
             }
             if (collision.gameObject.tag == "Player")
             {

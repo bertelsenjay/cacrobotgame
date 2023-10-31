@@ -6,8 +6,10 @@ public class MainMenu : MonoBehaviour
 {
     public Canvas confirmationCanvas;
     public Canvas newGameCanvas; 
+    LevelLoader levelLoader;
     private void Start()
     {
+        levelLoader = FindObjectOfType<LevelLoader>();
         confirmationCanvas.enabled = false;
         newGameCanvas.enabled = false;
     }
@@ -18,7 +20,8 @@ public class MainMenu : MonoBehaviour
 
     public void Continue()
     {
-        Debug.Log("Continuing"); 
+        Debug.Log("Continuing");
+        levelLoader.LoadSavedLevel();
     }
 
     public void Options()

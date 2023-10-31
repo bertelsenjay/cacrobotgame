@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Orb_Fly : StateMachineBehaviour
 {
-
+    private float timer = 0; 
     Transform player;
     Rigidbody2D rb;
     FirstBoss boss; 
@@ -13,6 +13,7 @@ public class Orb_Fly : StateMachineBehaviour
     public float minimumDistance = 1f;
     public float minRange;
     public float maxRange;
+    public float timeBetweenAttacks = 0.5f; 
     //public Transform bossLocation; 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -26,7 +27,7 @@ public class Orb_Fly : StateMachineBehaviour
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         boss.LookAtPlayer();
-
+        timer += Time.deltaTime; 
         Vector2 target = new Vector2(player.position.x, rb.position.y);
         if (Vector2.Distance(rb.position, player.position ) < minimumDistance)
         {
@@ -36,9 +37,10 @@ public class Orb_Fly : StateMachineBehaviour
         //Vector2 newPosition = Vector2.MoveTowards(rb.position, target, -speed * Time.fixedDeltaTime);
         //rb.MovePosition(newPosition);
 
-        if (Vector2.Distance(player.position, rb.position) <= maxRange && Vector2.Distance(player.position, rb.position) >= minRange)
+        if (Vector2.Distance(player.position, rb.position) <= maxRange && Vector2.Distance(player.position, rb.position) >= minRange || timer >= timeBetweenAttacks);
         {
             animator.SetTrigger("Attack");
+            timer = 0; 
         }
     }
 

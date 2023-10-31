@@ -9,7 +9,7 @@ public class LevelLoader : MonoBehaviour
 {
     public static bool isDead = false;
     public static bool localIsDead = false;
-    public static int savePointIndex = 2;
+    public static int savePointIndex = 1;
     public int saveLevelIndex; 
     public Animator transition;
     Animator anim; 
@@ -48,6 +48,7 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadSavedLevel()
     {
+        PauseMenu.isPaused = false;
         StartCoroutine(LoadLevel(savePointIndex));
     }
 
