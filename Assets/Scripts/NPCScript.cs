@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using UnityEditor.Rendering;
-using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
 
 public class NPCScript : MonoBehaviour
