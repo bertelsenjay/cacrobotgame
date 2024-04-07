@@ -30,12 +30,12 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(int damage)
     {
         
-        Debug.Log("CallingFunction");
+        //Debug.Log("CallingFunction");
         audioSource.PlayOneShot(hurtSound);
             currentHealth -= damage;
         if (currentHealth <= 0 && !isBoss)
         {
-            Invoke("Die", 0.25f);
+            Invoke("Die", 0);
             AudioManager.enemyDeathTrigger = true;
         }
         else if (currentHealth <= 0 && isBoss)
