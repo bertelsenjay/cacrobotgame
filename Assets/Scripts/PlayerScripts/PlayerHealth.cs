@@ -37,10 +37,11 @@ public class PlayerHealth : MonoBehaviour
     {
         
         publicHealth = health;
-        heartText.text = "Heart Pieces: " + heartPieces;
-        if (heartPieces >= 4)
+        heartText.text = "Heart Pieces: " + publicHeartPieces;
+        if (publicHeartPieces >= 4)
         {
-            heartPieces -= 4;
+            //heartPieces -= 4;
+            publicHeartPieces -= 4; 
             noOfHearts++;
             publicNoOfHearts++;
             health = noOfHearts;
@@ -94,6 +95,12 @@ public class PlayerHealth : MonoBehaviour
         //if (healthLocked) { return; }
         health -= damage;
         
+    }
+
+    public void IncreasePublicHeartPieces()
+    {
+        publicHeartPieces++;
+        Debug.LogError("Success!");
     }
 
     

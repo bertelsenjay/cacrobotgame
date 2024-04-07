@@ -443,7 +443,7 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.tag == "HeartPiece")
         {
             //HealthPieceCanvas.showHealthPieceCanvas = true;
-            playerHealth.heartPieces++;
+            //playerHealth.heartPieces++;
             //Destroy(collision.gameObject);
         }
 
@@ -507,7 +507,7 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.tag == "HeartPiece")
         {
             playerHealth.heartPieces++;
-            Destroy(collision.gameObject);
+            //Destroy(collision.gameObject);
         }
     }
 
