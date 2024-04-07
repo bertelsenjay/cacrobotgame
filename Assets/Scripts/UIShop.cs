@@ -91,7 +91,7 @@ public class UIShop : MonoBehaviour
                 if (currentCurrency >= upgradePrices[0])
                 {
                     currentCurrency -= upgradePrices[0];
-                    playerHealth.heartPieces++;
+                    playerHealth.IncreasePublicHeartPieces();
                     priceTexts[0].text = "Sold";
                     buttons[0].GetComponent<Button>().interactable = false;
                 }
@@ -100,7 +100,7 @@ public class UIShop : MonoBehaviour
                 if (currentCurrency >= upgradePrices[1])
                 {
                     currentCurrency -= upgradePrices[1];
-                    playerHealth.heartPieces++;
+                    playerHealth.IncreasePublicHeartPieces();
                     priceTexts[1].text = "Sold";
                     buttons[1].GetComponent<Button>().interactable = false;
                 }

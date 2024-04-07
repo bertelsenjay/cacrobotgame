@@ -17,6 +17,7 @@ public class Transition : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            SpawnManager.spawnIndex = 0; 
             levelLoader.LoadNextLevel(nextSceneIndex);
             Debug.Log("Hit Player");
         }
@@ -26,6 +27,7 @@ public class Transition : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            SpawnManager.spawnIndex = 0;
             levelLoader.LoadNextLevel(nextSceneIndex);
             Debug.Log("Triggered Player");
         }

@@ -6,7 +6,7 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     public Transform[] spawnPoints;
-    public static int spawnIndex;
+    public static int spawnIndex = 0;
     public GameObject player;
     private void Start()
     {
