@@ -16,6 +16,7 @@ public class UIShop : MonoBehaviour
     public TextMeshProUGUI[] priceTexts;
     public int[] upgradePrices;
     PlayerHealth playerHealth;
+    PlayerMovement playerMovement;
     public static bool hasPurchased1 = false;
     public static bool hasPurchased2 = false;
     public static bool hasPurchased3 = false;
@@ -25,6 +26,7 @@ public class UIShop : MonoBehaviour
     private void Awake()
     {
         playerHealth = FindObjectOfType<PlayerHealth>();
+        playerMovement = FindObjectOfType<PlayerMovement>(); 
         currentCurrency = publicCurrentCurrency; 
     }
     private void Start()
@@ -129,7 +131,7 @@ public class UIShop : MonoBehaviour
 
     private void Update()
     {
-        currencyText.text = "$" + currentCurrency.ToString();
+        currencyText.text = "$" + publicCurrentCurrency.ToString();
         
         if (Input.GetKeyDown(KeyCode.Escape))
         {

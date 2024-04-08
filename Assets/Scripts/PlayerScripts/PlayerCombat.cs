@@ -28,7 +28,7 @@ public class PlayerCombat : MonoBehaviour
         if (PauseMenu.isPaused) {  return; }
         if (Time.time >= nextAttackTime)
         {
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+            if (Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.M))
             {
                 Attack();
                 Debug.Log("Pressed left click");

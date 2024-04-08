@@ -34,6 +34,13 @@ public class Slash : MonoBehaviour
                 animator.SetTrigger("Attack");
                 timer = initialTimer;
             }
+            else if (Input.GetKeyDown(KeyCode.M) && timer < 0 && !PlayerMovement.isPanelEnabled)
+            {
+                nextAttackTime = Time.time + 1f / attackRate;
+                spriteRenderer.enabled = true;
+                animator.SetTrigger("Attack");
+                timer = initialTimer;
+            }
         }
         
         timer -= Time.deltaTime;

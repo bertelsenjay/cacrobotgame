@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
     public static bool hasChip2 = false;
     public static bool hasChip3 = false;
     public static bool hasChip4 = false;
+    [Header("Money")]
+    public int currentMoney = 0; 
     [Header("MovementUpgradeTests")]
     public bool testDoubleJump = false; 
     public bool testDash = false;  
