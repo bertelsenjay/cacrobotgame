@@ -48,7 +48,7 @@ public class Enemy : MonoBehaviour
     {
         //audioSource.PlayOneShot(deathSound);
         PlayerHealth.amountKilled++;
-        Destroy(gameObject);
+        
         Debug.Log("Dead");
         shop.AddCurrency(moneyWorth);
         if (gameObject.name == "FirstBoss")
@@ -58,7 +58,8 @@ public class Enemy : MonoBehaviour
         }
         if (gameObject.name == "MeleeEnemy")
         {
-            Instantiate(upgradeChip, spawnPoint.position, Quaternion.identity);
+            //(upgradeChip, spawnPoint.position, Quaternion.identity);
+            upgradeChip.SetActive(true);
         }
         if (gameObject.name == "MaliciousOrbSheet")
         {
@@ -68,7 +69,7 @@ public class Enemy : MonoBehaviour
         {
             finalChip.SetActive(true);
         }
-
+        Destroy(gameObject);
     }
 
     public void GetLocalScale()
