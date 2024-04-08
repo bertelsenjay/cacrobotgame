@@ -506,7 +506,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (collision.gameObject.tag == "HeartPiece")
         {
-            playerHealth.heartPieces++;
+            //playerHealth.heartPieces++;
             //Destroy(collision.gameObject);
         }
     }

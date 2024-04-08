@@ -16,7 +16,7 @@ public class SpawnManager : MonoBehaviour
     {
         if (spawnIndex > spawnPoints.Length - 1)
         {
-            spawnIndex = 0;
+            //spawnIndex = 0;
         }
     }
 }
