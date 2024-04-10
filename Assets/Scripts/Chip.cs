@@ -55,19 +55,19 @@ public class Chip : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (wallChip)
+            if (wallChip && !PlayerMovement.hasWallJump)
             {
                 PlayerMovement.hasWallJump = true;
                 SetCanvasActive(wallInfo);
                 InfoCanvas.wallJumpHide = true; 
             }
-            if (doubleJumpChip)
+            if (doubleJumpChip && !PlayerMovement.hasDoubleJump)
             {
                 PlayerMovement.hasDoubleJump = true;
                 SetCanvasActive(doubleJumpInfo);
                 InfoCanvas.doubleJumpHide = true; 
             }
-            if (dashChip)
+            if (dashChip && !PlayerMovement.hasDash)
             {
                 PlayerMovement.hasDash = true;
                 SetCanvasActive(dashInfo);

@@ -107,7 +107,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (!testDoubleJump)
         {
-            hasDoubleJump = false;
+            //hasDoubleJump = false;
         }
         if (testDash)
         {
@@ -115,7 +115,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (!testDash)
         {
-            hasDash = false;
+            //hasDash = false;
         }
         if (testWallJump)
         {
@@ -123,7 +123,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            hasWallJump = false;
+            //hasWallJump = false;
         }
         
         if (testChip1)

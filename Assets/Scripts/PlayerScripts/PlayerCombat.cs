@@ -80,7 +80,7 @@ public class PlayerCombat : MonoBehaviour
                 else if (enemy.name.Contains("Enemy"))
                 {
                     enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
-                    Debug.Log("Did Damage");
+                    Debug.LogError("Did Damage");
 
                 }
                 else if (enemy.name.Contains("Boss"))

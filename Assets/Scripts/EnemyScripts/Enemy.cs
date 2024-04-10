@@ -32,7 +32,7 @@ public class Enemy : MonoBehaviour
         
         //Debug.Log("CallingFunction");
         audioSource.PlayOneShot(hurtSound);
-            currentHealth -= damage;
+        currentHealth -= damage;
         if (currentHealth <= 0 && !isBoss)
         {
             Invoke("Die", 0);

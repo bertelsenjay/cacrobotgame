@@ -459,7 +459,19 @@ MonoBehaviour:
     X3nus:
     Cave Music
 
-'
+    LittleRobotSoundFactory: Cave Noises
+
+    InspectorJ: Sewer Background
+
+    DanLew69:
+    Dash Sound
+
+    EminYILDIRIM: Player Hurt Sound
+
+    kbrecordzz: Final Boss
+
+    All
+    sounds found on freesound.org'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0aae337b70dbfdb429f685f4e980cca8, type: 2}
   m_sharedMaterial: {fileID: -5649259538679234132, guid: 0aae337b70dbfdb429f685f4e980cca8, type: 2}

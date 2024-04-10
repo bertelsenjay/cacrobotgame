@@ -13,6 +13,9 @@ public class InfoCanvas : MonoBehaviour
     public static bool doubleJumpHide = false;
     public static bool dashHide = false;
     public static bool healthPieceHide = false;
+    public static bool hasWallJumpBeenShown = false;
+    public static bool hasDoubleJumpBeenShown = false;
+    public static bool hasDashBeenShown = false; 
     public float hideDelay = 5f;
     private bool once = true;
     [SerializeField] private CanvasGroup myUIGRoup;
@@ -28,24 +31,27 @@ public class InfoCanvas : MonoBehaviour
     }
     private void Update()
     {
-        if (wallJump && wallJumpHide && once)
+        if (wallJump && wallJumpHide && once && !hasWallJumpBeenShown)
         {
             ShowUI();
             Invoke("HideUI", hideDelay);
             once = false;
+            hasWallJumpBeenShown = true; 
         }
-        if (doubleJump && doubleJumpHide && once)
+        if (doubleJump && doubleJumpHide && once && !hasDoubleJumpBeenShown)
         {
             ShowUI();
             Invoke("HideUI", hideDelay);
             once = false;
+            hasDoubleJumpBeenShown = true;
         }
-        if (dash && dashHide && once)
+        if (dash && dashHide && once && ! hasDashBeenShown)
         {
 
             ShowUI();
             Invoke("HideUI", hideDelay);
             once = false;
+            hasDashBeenShown = true;
         }
         if (healthPiece && healthPieceHide && once)
         {

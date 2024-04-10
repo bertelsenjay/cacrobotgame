@@ -73,7 +73,7 @@ public class UIShop : MonoBehaviour
     
     public void LoseMoneyOnDeath()
     {
-        currentCurrency -= 20;
+        playerMovement.currentMoney -= 20;
         publicCurrentCurrency -= 20;
         if (currentCurrency < 0)
         {
@@ -90,27 +90,27 @@ public class UIShop : MonoBehaviour
         switch (itemIndex)
         {
             case 0: // change static boolean
-                if (currentCurrency >= upgradePrices[0])
+                if (playerMovement.currentMoney >= upgradePrices[0])
                 {
-                    currentCurrency -= upgradePrices[0];
+                    playerMovement.currentMoney -= upgradePrices[0];
                     playerHealth.IncreasePublicHeartPieces();
                     priceTexts[0].text = "Sold";
                     buttons[0].GetComponent<Button>().interactable = false;
                 }
                 break;
             case 1:
-                if (currentCurrency >= upgradePrices[1])
+                if (playerMovement.currentMoney >= upgradePrices[1])
                 {
-                    currentCurrency -= upgradePrices[1];
+                    playerMovement.currentMoney -= upgradePrices[1];
                     playerHealth.IncreasePublicHeartPieces();
                     priceTexts[1].text = "Sold";
                     buttons[1].GetComponent<Button>().interactable = false;
                 }
                 break;
             case 2:
-                if (currentCurrency >= upgradePrices[2])
+                if (playerMovement.currentMoney >= upgradePrices[2])
                 {
-                    currentCurrency -= upgradePrices[2];
+                    playerMovement.currentMoney -= upgradePrices[2];
                     Enemy.hasUpgrade = true;
                     priceTexts[2].text = "Sold";
                     buttons[2].GetComponent<Button>().interactable = false;
